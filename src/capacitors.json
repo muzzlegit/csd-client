@@ -1,0 +1,140 @@
+﻿[
+    {
+        "manufacturer": "RTR",
+        "code": "C40005050000000",
+        "name": "C40005050000000 MA/C/CE Конденсатор 5 KVAR 400V 50HZ 60x200",
+        "power": 5,
+        "voltage":  400,
+        "current": 7.22      
+    },
+    {
+        "manufacturer": "RTR",
+        "code": "D4001005TER0000",
+        "name": "D4001005TER0000 DW Конденсатор 10 KVAR 400V 50HZ 85x215",
+        "power": 10,
+        "voltage":  400,
+        "current": 14.43      
+    },
+    {
+        "manufacturer": "RTR",
+        "code": "D4001505TER0000",
+        "name": "D4001505TER0000 DW Конденсатор 15KVAR, 400V, 50HZ 100x215",
+        "power": 15,
+        "voltage":  400,
+        "current": 21.65     
+    },
+    {
+        "manufacturer": "RTR",
+        "code": "D4002005TER0000",
+        "name": "D4002005TER0000 DW Конденсатор 20 KVAR 400V 50HZ 120x215",
+        "power": 20,
+        "voltage":  400,
+        "current": 28.87     
+    },
+    {
+        "manufacturer": "RTR",
+        "code": "D4002505TER0000",
+        "name": "D4002505TER0000 DW Конденсатор 25KVAR, 400V, 50HZ 120x215",
+        "power": 25,
+        "voltage":  400,
+        "current": 36.08
+    },
+    {
+        "manufacturer": "RTR",
+        "code": "D4003005TER0000",
+        "name": "D4003005TER0000 DW Конденсатор 30KVAR, 400V, 50HZ 136x215",
+        "price": 79.000,
+        "power": 30,
+        "voltage":  400,
+        "current": 43.30
+    },
+    {
+        "manufacturer": "RTR",
+        "code": "D4004005TER0000",
+        "name": "D4004005TER0000 DW Конденсатор 40KVAR, 400V, 50HZ 136х265",
+        "power": 40,
+        "voltage":  400,
+        "current": 58    
+    },
+    {
+        "manufacturer": "RTR",
+        "code": "C4005005TER0000",
+        "name": "C4005005TER0000 MA/C/CE/TER Конденсатор 50KVAR 400V 50HZ 136x300",
+        "power": 50,
+        "voltage":  400,
+        "current": 72    
+    },
+    {
+        "manufacturer": "RTR",
+        "code": "C44005050000000",
+        "name": "C44005050000000 MA/C/CE Конденсатор 5 KVAR 440V 50HZ 60x200",
+        "power": 5,
+        "voltage":  440,
+        "current": 6.6      
+    },
+    {
+        "manufacturer": "RTR",
+        "code": "D4401005TER0000",
+        "name": "D4401005TER0000 DW Конденсатор 10 KVAR 440V 50HZ 70x215",
+        "power": 10,
+        "voltage":  440,
+        "current": 13.12      
+    },
+    {
+        "manufacturer": "RTR",
+        "code": "D4401505TER0000",
+        "name": "D4401505TER0000 DW Конденсатор 15 KVAR 440V 50HZ 85x215",
+        "power": 15,
+        "voltage":  440,
+        "current": 19.68     
+    },
+    {
+        "manufacturer": "RTR",
+        "code": "D4402005TER0000",
+        "name": "D4402005TER0000 DW Конденсатор 20 KVAR 440V 50HZ 85x215",
+        "power": 20,
+        "voltage":  440,
+        "current": 26.24     
+    },
+    {
+        "manufacturer": "RTR",
+        "code": "D4402505TER0000",
+        "name": "D4402505TER0000 DW Конденсатор 25KVAR, 440V, 50HZ 120x215",
+        "power": 25,
+        "voltage":  440,
+        "current": 32.80
+    },
+    {
+        "manufacturer": "RTR",
+        "code": "D4403005TER0000",
+        "name": "D4403005TER0000 DW Конденсатор 30KVAR, 440V, 50HZ 120x215",
+        "power": 30,
+        "voltage":  440,
+        "current": 39.36
+    },
+    {
+        "manufacturer": "RTR",
+        "code": "D4404005TER0000",
+        "name": "D4404005TER0000 DW Конденсатор 40KVAR, 440V, 50HZ 136x215",
+        "price": 114.000,
+        "power": 40,
+        "voltage":  440,
+        "current": 52.49
+    },
+    {
+        "manufacturer": "RTR",
+        "code": "C4405005TER0000",
+        "name": "C4405005TER0000 MA/C/CE/TER Конденсатор 50KVAR, 440V, 50HZ 136x300",
+        "power": 50,
+        "voltage":  440,
+        "current": 65.61    
+    },
+    {
+        "manufacturer": "ELECTRONICON",
+        "code": "276.066-503400/221K02",
+        "name": "276.066-503400/221K02 Конденсаторна банка MKP(D) 5 кВАр 400В (65x155мм)",
+        "power": 5,
+        "voltage":  440,
+        "current": 16.00    
+    }
+]
