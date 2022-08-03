@@ -18,12 +18,13 @@ export default function MainSwitch({
       capacitors.forEach(capacitor => {
         if(capacitor.current){
           setTotalCurrent(prev => Math.ceil(prev + capacitor.current));
-          setTotalSwitchCurrent(prev => Math.ceil((prev + capacitor.current) * mainSwitchCoefficient));
         }
       });
-    }, [capacitors, mainSwitchCoefficient, setTotalSwitchCurrent]);
+      setTotalSwitchCurrent(Math.ceil(totalCurrent * mainSwitchCoefficient));
+    }, [capacitors, totalCurrent, mainSwitchCoefficient, setTotalSwitchCurrent]);
 
     useEffect(()=>{
+      setSwitchCurrent(0);
       if(!totalSwitchCurrent){return}
       const switchesCurrentArray = [];
       switches.forEach((step) => {
