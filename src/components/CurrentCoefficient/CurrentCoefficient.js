@@ -1,27 +1,13 @@
-import { useEffect, useState } from "react"
 
 export default function CurrentCoefficient({
-  mainSwitchCoefficient,
   capacitorCoefficient,
-  setMainSwitchCoefficient,
   setCapacitorCoefficient,
-  defaultMainSwitchCoefficient,
   defaultCapacitorCoefficient
 }) {
 
   return(
     <>
-      <input
-        type="number"
-        value={mainSwitchCoefficient}
-        onChange={(e)=>setMainSwitchCoefficient(e.currentTarget.value)}
-      />
-      <button 
-        type="button"
-        onClick={()=>setMainSwitchCoefficient(defaultMainSwitchCoefficient)}
-      >
-        Reset
-      </button>
+      <h2>Defense current coefficient</h2>
       <input
         type="number"
         value={capacitorCoefficient}

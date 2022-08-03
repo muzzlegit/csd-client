@@ -1,4 +1,12 @@
-﻿[
+﻿[    
+    {
+        "manufacturer": "RTR",
+        "code": "C40002550000000",
+        "name": "C40002550000000 MA/C/CE Конденсатор 2.5 KVAR 400V 50HZ 60x200",
+        "power": 2.5,
+        "voltage":  400,
+        "current": 3.61      
+    },
     {
         "manufacturer": "RTR",
         "code": "C40005050000000",
@@ -14,6 +22,14 @@
         "power": 10,
         "voltage":  400,
         "current": 14.43      
+    },
+    {
+        "manufacturer": "RTR",
+        "code": "D4001255TER0000",
+        "name": "D4001255TER0000 DW Конденсатор 12.5KVAR, 400V, 50HZ 85x215*",
+        "power": 12.5,
+        "voltage":  400,
+        "current": 18.04      
     },
     {
         "manufacturer": "RTR",
@@ -43,7 +59,6 @@
         "manufacturer": "RTR",
         "code": "D4003005TER0000",
         "name": "D4003005TER0000 DW Конденсатор 30KVAR, 400V, 50HZ 136x215",
-        "price": 79.000,
         "power": 30,
         "voltage":  400,
         "current": 43.30
@@ -66,6 +81,14 @@
     },
     {
         "manufacturer": "RTR",
+        "code": "C4400255TER0000",
+        "name": "C4400255TER0000 Конденсатор 2,5 KVAR 440V 50HZ",
+        "power": 2.5,
+        "voltage":  440,
+        "current": 3.28      
+    },
+    {
+        "manufacturer": "RTR",
         "code": "C44005050000000",
         "name": "C44005050000000 MA/C/CE Конденсатор 5 KVAR 440V 50HZ 60x200",
         "power": 5,
@@ -79,6 +102,14 @@
         "power": 10,
         "voltage":  440,
         "current": 13.12      
+    },
+    {
+        "manufacturer": "RTR",
+        "code": "D4401255TER0000",
+        "name": "D4401255TER0000 DW Конденсатор 12.5KVAR, 440V, 50HZ 85x215",
+        "power": 12.5,
+        "voltage":  440,
+        "current": 16.40
     },
     {
         "manufacturer": "RTR",
@@ -134,7 +165,7 @@
         "code": "276.066-503400/221K02",
         "name": "276.066-503400/221K02 Конденсаторна банка MKP(D) 5 кВАр 400В (65x155мм)",
         "power": 5,
-        "voltage":  440,
+        "voltage":  400,
         "current": 16.00    
     }
 ]

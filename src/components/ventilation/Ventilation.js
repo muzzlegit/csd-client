@@ -1,25 +1,20 @@
 import { useEffect, useState } from "react"
+import useTotalCapacity from "../../hooks/useTotalCapacity";
 
-export default function Ventilation() {
-  const [value, setValue] = useState(0);
+export default function Ventilation({capacitors}) {
+  const totalCapacity = useTotalCapacity(capacitors);
   const [ventilationValue, setVentilationValue] = useState(0);
 
-  const onChange = (e) => {
-    setValue(e.currentTarget.value);
-  }
-  
+
   useEffect(()=>{
-    setVentilationValue(Math.ceil((3.1 * (.3 * value)) / .6));
-  }, [value]);
+    setVentilationValue(Math.ceil((3.1 * (.3 * totalCapacity)) / .6));
+  }, [totalCapacity]);
 
   return(
     <>
-      <input
-        type="number"
-        value={value}
-        onChange={onChange}
-      />
-      <div>{ventilationValue}</div>
+      <h2>Ventilation</h2>
+      <div>{totalCapacity} kVAr</div>     
+      <div>{ventilationValue} m3</div>
     </>
   )
 }
