@@ -7,6 +7,7 @@ export default function CooperPrice() {
   const [discount, setDiscount] = useState(0);
   const [toggle, setToggle] = useState(false);
   const [f, setF] = useState(false);
+
   useEffect(()=>{
     setDiscount(Math.abs((((copperPrice / exchange) / coefficient) - 1) * 100).toFixed(2));
   },[copperPrice, exchange, coefficient, setDiscount]);
@@ -15,7 +16,6 @@ export default function CooperPrice() {
     <>
       <h2>Cooper Price</h2>
       <h3>Coefficient</h3>
-
       {!toggle && 
         <small>{coefficient}</small>
       }
@@ -62,7 +62,7 @@ export default function CooperPrice() {
           });
         }}
       >Copy</button> 
-              { f && <div>copy</div>}  
+      { f && <div>copy</div>}  
     </>
   )
 }

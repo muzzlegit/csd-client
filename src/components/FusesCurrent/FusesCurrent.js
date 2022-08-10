@@ -1,18 +1,15 @@
 
-import getFuseCurrent from "../../helpers/getFuseCurrent"
-
-export default function FusesCurrent({capacitors, capacitorCoefficient}) {
+export default function FusesCurrent({fuses}) {
 
   return(
     <ul>
-      { capacitors.map((capacitor) => {
+      { fuses.map((fuse) => {
         return (
-          <li key={`fuse${capacitor.step}`}>  
-            {getFuseCurrent(capacitor.current, capacitorCoefficient)}
+          <li key={`fuse${fuse.step}`}>  
+            {fuse.current}
           </li>
         )
       })}
     </ul>
   )
-
 }

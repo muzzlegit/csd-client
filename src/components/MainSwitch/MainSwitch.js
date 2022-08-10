@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react"
 
-import switches from '../../switches.json';
+import switches from '../../data/switches.json';
 
 export default function MainSwitch({
     mainSwitchCoefficient,

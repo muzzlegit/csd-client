@@ -45,7 +45,6 @@ export default function Step({
                 <option
                   value="0"
                   selected = {isSelected}
-                  // selected = {stepsPower[capacitor.step - 1] ? true : false}
                 >0</option>
                 <option value="2.5">2.5</option>
                 <option value="5">5</option>
@@ -65,7 +64,5 @@ export default function Step({
       <h2>Total capacity</h2>
       <p>{totalCapacity}</p>
     </>
-
   )
-
 }

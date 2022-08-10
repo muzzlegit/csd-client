@@ -10,6 +10,8 @@ export default function CurrentCoefficient({
       <h2>Defense current coefficient</h2>
       <input
         type="number"
+        min="1"
+        step=".1"
         value={capacitorCoefficient}
         onChange={(e)=>setCapacitorCoefficient(e.currentTarget.value)}
       />

@@ -13,6 +13,8 @@ import CopperPrice from "./components/Copper/CopperPrice";
 
 import getCapacitor from "./helpers/getCapacitor";
 import setCapacitor from "./helpers/setCapacitors";
+import getFuses from "./helpers/getFuses";
+import getContactors from "./helpers/getContactors";
 
 const defaultMainSwitchCoefficient = 1.8;
 const defaultCapacitorCoefficient = 1.6;
@@ -24,29 +26,30 @@ function App() {
   const [stepsPower, setStepsPower]= useState([...Array(steps)].map(() => 0))
   const [capacitorManufacturer, setCapacitorManufacturer] = useState("RTR");  
   const [capacitorVoltage, setCapacitorVoltage] = useState(400);
-  const [capacitors, setCapacitors] = useState(setCapacitor(6, "RTR", capacitorVoltage));
+  const [сrp, setCrp] = useState(setCapacitor(6, "RTR", capacitorVoltage));
 
   useEffect(() => {
-    setCapacitors(prev => {
-
-      let capacitorsArray = [...prev];
-
+    setCrp(prev => {
+      let crp = {...prev}
+      let capacitorsArray = [...prev.capacitors];
       capacitorsArray = capacitorsArray.map((capacitor) => {
-        console.log(getCapacitor(stepsPower[capacitor.step - 1], capacitorVoltage, capacitorManufacturer, capacitor.step));
+ 
         return getCapacitor(stepsPower[capacitor.step - 1], capacitorVoltage, capacitorManufacturer, capacitor.step)
       });
-      console.log('array',capacitorsArray);
-      return capacitorsArray;
+      crp.capacitors = [...capacitorsArray];
+      crp.fuses = getFuses(crp.capacitors, capacitorCoefficient);
+      crp.contactors = getContactors(crp.capacitors);
+      return crp;
     })
-  },[stepsPower, capacitorVoltage, capacitorManufacturer, setCapacitors]);
 
+  },[stepsPower, capacitorVoltage, capacitorManufacturer, capacitorCoefficient, setCrp]);
 
   return (
     <>
       <Controller
         setSteps={setSteps}
         setStepsPower={setStepsPower}
-        setCapacitors={setCapacitors}
+        setCapacitors={setCrp}
         capacitorVoltage={capacitorVoltage}
         capacitorManufacturer={capacitorManufacturer}
       />
@@ -56,10 +59,10 @@ function App() {
         setCapacitorVoltage={setCapacitorVoltage}
         stepsPower={stepsPower}
         setStepsPower={setStepsPower}
-        capacitors={capacitors}
+        capacitors={сrp.capacitors}
       />
       <Ventilation
-        capacitors={capacitors}
+        capacitors={сrp.capacitors}
       />
       <CurrentCoefficient
         defaultCapacitorCoefficient={defaultCapacitorCoefficient}
@@ -67,13 +70,13 @@ function App() {
         setCapacitorCoefficient={setCapacitorCoefficient}
       />
       <MainSwitch
-        capacitors={capacitors}
+        capacitors={сrp.capacitors}
         defaultMainSwitchCoefficient={defaultMainSwitchCoefficient}      
         mainSwitchCoefficient={mainSwitchCoefficient}      
         setMainSwitchCoefficient={setMainSwitchCoefficient}     
       />
       <FusesCurrent
-        capacitors={capacitors}
+        fuses={сrp.fuses}
         capacitorCoefficient={capacitorCoefficient}
       />
       <ManualVentilation/>
@@ -85,8 +88,8 @@ function App() {
         //     return getCapacitor(power, capacitorVoltage, capacitorManufacturer);
         //   }))}}
           onClick={()=>{
-            console.log(stepsPower)
-            console.log(capacitors)}}
+            console.log(сrp)
+            console.log(сrp.capacitors)}}
       >
         capacitors
       </button>

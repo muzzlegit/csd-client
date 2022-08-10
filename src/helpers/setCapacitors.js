@@ -1,8 +1,8 @@
 export default function setCapacitor(step, manufacturer, voltage) {
 
-  let capacitors = [];
+  let crp = {capacitors: [], fuses: [], contactors: [], switch:0, ventilation: []};
   for (let index = 0; index < step; index++) {
-    capacitors.push(
+    crp.capacitors.push(
       {
         step: index + 1,
         manufacturer: `${manufacturer}`,
@@ -11,9 +11,8 @@ export default function setCapacitor(step, manufacturer, voltage) {
         power: 0,
         voltage:  `${voltage}`,
         current: 0      
-    }
+      }
     )
   }
-
-  return capacitors;
+  return crp;
 }
