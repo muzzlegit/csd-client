@@ -17,6 +17,22 @@
     },
     {
         "manufacturer": "RTR",
+        "code": "C4006255TER0000",
+        "name": "C4006255TER0000 Конденсатор MA/C/CE/TER 6,25 KVAR 400V 50HZ*",
+        "power": 6.25,
+        "voltage":  400,
+        "current": 9      
+    },
+    {
+        "manufacturer": "RTR",
+        "code": "D4000755TER0000",
+        "name": "D4000755TER0000 DW Конденсатор 7,5 KVAR 400V 50HZ",
+        "power": 7.5,
+        "voltage":  400,
+        "current": 10.83      
+    },
+    {
+        "manufacturer": "RTR",
         "code": "D4001005TER0000",
         "name": "D4001005TER0000 DW Конденсатор 10 KVAR 400V 50HZ 85x215",
         "power": 10,

@@ -9,6 +9,10 @@
   },
   {
     "manufacturer": "RTR",
+    "power": 15
+  },
+  {
+    "manufacturer": "RTR",
     "power": 20
   },
   {

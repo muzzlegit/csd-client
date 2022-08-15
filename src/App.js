@@ -8,6 +8,7 @@ import Manufacturer from "./components/Manufacturer/Manufacturer";
 import MainSwitch from "./components/MainSwitch/MainSwitch";
 import ManualVentilation from "./components/ManualVentilation/ManualVentilation";
 import FusesCurrent from "./components/FusesCurrent/FusesCurrent";
+import ItemsList from "./components/ItemsList/ItemsList";
 
 import CopperPrice from "./components/Copper/CopperPrice";
 
@@ -79,6 +80,7 @@ function App() {
         fuses={сrp.fuses}
         capacitorCoefficient={capacitorCoefficient}
       />
+      <ItemsList сrp={сrp} />
       <ManualVentilation/>
       <button
         type="button"
