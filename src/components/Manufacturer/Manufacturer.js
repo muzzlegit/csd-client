@@ -1,3 +1,5 @@
+import { ManufacturerSelector } from "./Manufacturer.styled";
+
 export default function Manufacturer({setCapacitorManufacturer}) {
 
   const onChange = (e) => {
@@ -5,11 +7,12 @@ export default function Manufacturer({setCapacitorManufacturer}) {
     }
   
   return(
-    <>
+    <ManufacturerSelector>
+      <p>Set Manufacturer </p>
       <select onChange={onChange}>
           <option value="RTR">RTR</option>
           <option value="ELECTRONICON">ELECTRONICON</option>
       </select>
-    </>
+    </ManufacturerSelector>
   )
 }

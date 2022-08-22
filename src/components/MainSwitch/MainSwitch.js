@@ -4,8 +4,6 @@ import switches from '../../data/switches.json';
 
 export default function MainSwitch({
     mainSwitchCoefficient,
-    setMainSwitchCoefficient,
-    defaultMainSwitchCoefficient,
     capacitors
   }){
     const [totalCurrent, setTotalCurrent] = useState(0);
@@ -37,19 +35,6 @@ export default function MainSwitch({
   return(
     <>
       <h2>Main Switch</h2>
-      <input
-        type="number"
-        min="1"
-        step=".1"
-        value={mainSwitchCoefficient}
-        onChange={(e)=>setMainSwitchCoefficient(e.currentTarget.value)}
-      />
-      <button 
-        type="button"
-        onClick={()=>setMainSwitchCoefficient(defaultMainSwitchCoefficient)}
-      >
-        Reset
-      </button>
       <p>{totalCurrent} A</p> 
       <p>{totalSwitchCurrent} A</p>
       <p>Switch Current {switchCurrent} A</p> 

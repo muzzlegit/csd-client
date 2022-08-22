@@ -9,7 +9,7 @@ export default function CooperPrice() {
   const [f, setF] = useState(false);
 
   useEffect(()=>{
-    setDiscount(Math.abs((((copperPrice / exchange) / coefficient) - 1) * 100).toFixed(2));
+    setDiscount(Math.abs((((copperPrice / exchange) / coefficient) - 1) * 100 + 0.01).toFixed(2));
   },[copperPrice, exchange, coefficient, setDiscount]);
 
   return (

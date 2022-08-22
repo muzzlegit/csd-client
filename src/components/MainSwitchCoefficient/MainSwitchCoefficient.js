@@ -3,33 +3,33 @@ import { AiOutlineClear, AiOutlinePlus, AiOutlineMinus } from 'react-icons/ai';
 
 import checkOnNumber from "../../helpers/checkOnNumber";
 
-import {
-  CurrentCoefficientSection,
-  CurrentCoefficientTitle,
-  CurrentCoefficientInput,
+import { 
+  MainSwitchCoefficientSection,
+  MainSwitchCoefficientTitle,
+  MainSwitchInput,
+  ResetButton,
   IncrementButton,
-  DecrementButton,
-  ResetButton
-} from "./CurrentCoefficient.styled"
+  DecrementButton
+} from "./MainSwitchCoefficient.styled";
 
-export default function CurrentCoefficient({
-  capacitorCoefficient,
-  setCapacitorCoefficient,
-  defaultCapacitorCoefficient
-}) {
+export default function MainSwitchCoefficient({
+    mainSwitchCoefficient,
+    setMainSwitchCoefficient,
+    defaultMainSwitchCoefficient
+  }){
 
   return(
-    <CurrentCoefficientSection>
-      <CurrentCoefficientTitle>Fuses current coefficient</CurrentCoefficientTitle>
-      <CurrentCoefficientInput
+    <MainSwitchCoefficientSection>
+      <MainSwitchCoefficientTitle>Main Switch Coefficient</MainSwitchCoefficientTitle>
+      <MainSwitchInput
         type="text"
-        value={capacitorCoefficient}
-        onChange={(e)=>setCapacitorCoefficient(checkOnNumber(e.currentTarget.value, defaultCapacitorCoefficient))}
+        value={mainSwitchCoefficient}
+        onChange={(e)=>setMainSwitchCoefficient(checkOnNumber(e.currentTarget.value, defaultMainSwitchCoefficient))}
       />
       <IconContext.Provider value = {{size: '20px'}}>
         <IncrementButton
           type="button"
-          onClick={()=>setCapacitorCoefficient(prev => {
+          onClick={()=>setMainSwitchCoefficient(prev => {
             if(prev >= 2){
               return prev = 2;
             }
@@ -42,7 +42,7 @@ export default function CurrentCoefficient({
       <IconContext.Provider value = {{size: '20px'}}>
         <DecrementButton
           type="button"
-          onClick={()=>setCapacitorCoefficient(prev => {
+          onClick={()=>setMainSwitchCoefficient(prev => {
             if(prev <= 1){
               return prev = 1;
             }
@@ -53,13 +53,13 @@ export default function CurrentCoefficient({
         </DecrementButton>
       </IconContext.Provider>
       <IconContext.Provider value = {{size: '20px'}}>
-        <ResetButton
+        <ResetButton 
           type="button"
-          onClick={()=>setCapacitorCoefficient(defaultCapacitorCoefficient)}
+          onClick={()=>setMainSwitchCoefficient(defaultMainSwitchCoefficient)}
         >
-          <AiOutlineClear/>
+          <AiOutlineClear/>          
         </ResetButton>
       </IconContext.Provider>
-    </CurrentCoefficientSection>
+    </MainSwitchCoefficientSection>
   )
 }

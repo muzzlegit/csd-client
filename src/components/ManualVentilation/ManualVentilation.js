@@ -1,11 +1,20 @@
 import { useEffect, useState } from "react"
 
+import checkOnNumber from "../../helpers/checkOnNumber";
+
+import {
+  ManualVentilationSection,
+  ManualVentilationTitle,
+  ManualVentilationInput,
+  ManualVentilationValue
+} from "./ManualVentilation.styled";
+
 export default function ManualVentilation() {
   const [value, setValue] = useState(0);
   const [ventilationValue, setVentilationValue] = useState(0);
 
   const onChange = (e) => {
-    setValue(e.currentTarget.value);
+    setValue(checkOnNumber(e.currentTarget.value, ''));
   }
 
   useEffect(()=>{
@@ -13,14 +22,14 @@ export default function ManualVentilation() {
   }, [value]);
 
   return(
-    <>
-      <h2>Manual ventilation</h2>
-      <input
-        type="number"
+    <ManualVentilationSection>
+      <ManualVentilationTitle>Manual ventilation</ManualVentilationTitle>
+      <ManualVentilationInput
+        type="text"
         value={value}
         onChange={onChange}
       />  
-      <div>{ventilationValue} m3</div>
-    </>
+      <ManualVentilationValue>{ventilationValue} m3</ManualVentilationValue>
+    </ManualVentilationSection>
   )
 }

@@ -4,7 +4,9 @@ import Controller from "./components/Controller/Controller";
 import Capacitors from "./components/Capacitors/Capacitors";
 import Ventilation from "./components/Ventilation/Ventilation";
 import CurrentCoefficient from "./components/CurrentCoefficient/CurrentCoefficient";
+import MainSwitchCoefficient from "./components/MainSwitchCoefficient/MainSwitchCoefficient";
 import Manufacturer from "./components/Manufacturer/Manufacturer";
+import CapacitorsVoltage from "./components/CapacitorsVoltage/CapacitorsVoltage";
 import MainSwitch from "./components/MainSwitch/MainSwitch";
 import ManualVentilation from "./components/ManualVentilation/ManualVentilation";
 import FusesCurrent from "./components/FusesCurrent/FusesCurrent";
@@ -16,6 +18,8 @@ import getCapacitor from "./helpers/getCapacitor";
 import setCapacitor from "./helpers/setCapacitors";
 import getFuses from "./helpers/getFuses";
 import getContactors from "./helpers/getContactors";
+
+import { CrpSection, CrpSetSection, VentilationSection } from "./App.styled";
 
 const defaultMainSwitchCoefficient = 1.8;
 const defaultCapacitorCoefficient = 1.6;
@@ -47,29 +51,42 @@ function App() {
 
   return (
     <>
-      <Controller
-        setSteps={setSteps}
-        setStepsPower={setStepsPower}
-        setCapacitors={setCrp}
-        capacitorVoltage={capacitorVoltage}
-        capacitorManufacturer={capacitorManufacturer}
-      />
-      <Manufacturer setCapacitorManufacturer={setCapacitorManufacturer}/>
-      <Capacitors
-        steps={steps}
-        setCapacitorVoltage={setCapacitorVoltage}
-        stepsPower={stepsPower}
-        setStepsPower={setStepsPower}
-        capacitors={сrp.capacitors}
-      />
-      <Ventilation
-        capacitors={сrp.capacitors}
-      />
-      <CurrentCoefficient
-        defaultCapacitorCoefficient={defaultCapacitorCoefficient}
-        capacitorCoefficient={capacitorCoefficient}
-        setCapacitorCoefficient={setCapacitorCoefficient}
-      />
+      <CrpSection>
+        <CrpSetSection>
+          <Controller
+            setSteps={setSteps}
+            setStepsPower={setStepsPower}
+            setCapacitors={setCrp}
+            capacitorVoltage={capacitorVoltage}
+            capacitorManufacturer={capacitorManufacturer}
+          />
+          <Manufacturer setCapacitorManufacturer={setCapacitorManufacturer}/>
+          <CapacitorsVoltage setCapacitorVoltage={setCapacitorVoltage}/>
+        </CrpSetSection>
+        <Capacitors
+          steps={steps}
+          stepsPower={stepsPower}
+          setStepsPower={setStepsPower}
+          capacitors={сrp.capacitors}
+        />
+        <CurrentCoefficient
+          defaultCapacitorCoefficient={defaultCapacitorCoefficient}
+          capacitorCoefficient={capacitorCoefficient}
+          setCapacitorCoefficient={setCapacitorCoefficient}
+        />
+        <MainSwitchCoefficient
+          defaultMainSwitchCoefficient={defaultMainSwitchCoefficient}      
+          mainSwitchCoefficient={mainSwitchCoefficient}      
+          setMainSwitchCoefficient={setMainSwitchCoefficient}         
+        />
+      </CrpSection>
+      <VentilationSection>
+        <Ventilation
+          capacitors={сrp.capacitors}
+        />
+        <ManualVentilation/>
+      </VentilationSection>
+
       <MainSwitch
         capacitors={сrp.capacitors}
         defaultMainSwitchCoefficient={defaultMainSwitchCoefficient}      
@@ -81,7 +98,7 @@ function App() {
         capacitorCoefficient={capacitorCoefficient}
       />
       <ItemsList сrp={сrp} />
-      <ManualVentilation/>
+
       <button
         type="button"
         // onClick={()=>{

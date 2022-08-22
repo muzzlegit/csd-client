@@ -1,5 +1,8 @@
 import { useEffect, useState } from "react"
 import useTotalCapacity from "../../hooks/useTotalCapacity";
+import { IconContext } from "react-icons";
+import { AiOutlineClear } from 'react-icons/ai';
+import { Steps, StepsList, StepsListItem, ResetButton, TotalCapacityBox, TotalCapacityTitle, TotalCapacityAmount } from "./Step.styled";
 
 export default function Step({
   capacitors,
@@ -35,12 +38,15 @@ export default function Step({
   }, [power, stepIndex, setStepsPower]);
   
   return(
-    <>
-      <ul>
+    <Steps>
+      <StepsList>
         { capacitors.map((capacitor) => {
           return (
-            <li key={`step${capacitor.step}`}>  
-              <label htmlFor={capacitor.step}>{`Step ${capacitor.step}:`}</label>
+            <StepsListItem 
+              key={`step${capacitor.step}`}
+              value = {capacitor.power}
+            >  
+              <label htmlFor={capacitor.step}>{`Step ${capacitor.step} `}</label>
               <select id={capacitor.step} onChange={onChange}>
                 <option
                   value="0"
@@ -58,13 +64,19 @@ export default function Step({
                 <option value="40">40</option>
                 <option value="50">50</option>
               </select>
-            </li>
+            </StepsListItem>
           )
         })}
-      </ul>
-      <button onClick={onClick}>Reset</button>
-      <h2>Total capacity</h2>
-      <p>{totalCapacity}</p>
-    </>
+      </StepsList>
+      <IconContext.Provider value = {{size: '20px'}}>
+        <ResetButton onClick={onClick}>
+          <AiOutlineClear/>
+        </ResetButton>
+      </IconContext.Provider>
+      <TotalCapacityBox>
+        <TotalCapacityTitle>Total capacity</TotalCapacityTitle>
+        <TotalCapacityAmount>{totalCapacity}</TotalCapacityAmount>
+      </TotalCapacityBox>
+    </Steps>
   )
 }

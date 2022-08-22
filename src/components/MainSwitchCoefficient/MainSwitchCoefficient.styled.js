@@ -1,11 +1,11 @@
 import styled from '@emotion/styled';
 
-export const CurrentCoefficientSection = styled.div(
+export const MainSwitchCoefficientSection = styled.div(
   {
     position: 'absolute',
     bottom: '-8%',
-    left: '20%',
-    transform: 'translate(-50%, -50%)',
+    right: '20%',
+    transform: 'translate(50%, -50%)',
     padding: '8px',
     width: '100px',
     height: '100px',
@@ -22,14 +22,14 @@ export const CurrentCoefficientSection = styled.div(
   }
 );
 
-export const CurrentCoefficientTitle = styled.h2(
+export const MainSwitchCoefficientTitle = styled.h2(
   {
     marginBottom: '10px',
     fontSize: '14px',
   }
 );
 
-export const CurrentCoefficientInput = styled.input(
+export const MainSwitchInput = styled.input(
   {
     width: '30px',
     textAlign: 'center',

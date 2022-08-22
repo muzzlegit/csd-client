@@ -1,6 +1,6 @@
 import styled from '@emotion/styled';
 
-export const ControllerSteps = styled.div(
+export const VoltageSelector = styled.div(
   {
     padding: '8px',
     display: 'flex',

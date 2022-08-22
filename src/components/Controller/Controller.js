@@ -1,4 +1,5 @@
 import setCapacitor from "../../helpers/setCapacitors";
+import { ControllerSteps } from "./Controller.styled";
 
 export default function Controller({
     setSteps,
@@ -32,13 +33,14 @@ export default function Controller({
     }
   }
   return(
-    <>
+    <ControllerSteps>
+      <p>Set Steps Number </p>
       <select onChange={onChange}>
           <option value="6">6</option>
           <option value="8">8</option>
           <option value="12">12</option>
           <option value="14">14</option> 
       </select>
-    </>
+    </ControllerSteps>
   )
 }
