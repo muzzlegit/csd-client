@@ -1,6 +1,12 @@
 import { useEffect, useState } from "react"
 import getFusesSize from "../../helpers/getFusesSize";
 
+import {
+  ItemListSection,
+  ItemBox
+
+ } from "./ItemsList.styled";
+
 export default function ItemsList({сrp}) {
   const [capacitors, setCapacitors] = useState([]);
   const [contactors, setContactors] = useState([]);
@@ -51,55 +57,66 @@ export default function ItemsList({сrp}) {
   }, [сrp]);
 
   return (
-    <>
-      <h2>Capacitors</h2>
-      <ul>
-        {
-          Object.entries(capacitors).map((capacitor) => {
-            return (
-              <li>
-                {capacitor[0]} kVAr x {capacitor[1]}
-              </li>
-            )
-          })
-        }
-      </ul>
-      <h2>Contactors</h2>
-      <ul>
-        {
-          Object.entries(contactors).map((contactor) => {
-            return (
-              <li>
-                {contactor[0]} kVAr x {contactor[1]}
-              </li>
-            )
-          })
-        }
-      </ul>
-      <h2>Fuses</h2>
-      <ul>
-        {
-          Object.entries(fuses).map((fuse) => {
-            return (
-              <li>
-                {fuse[0]} A x {fuse[1]} {getFusesSize(Number(fuse[0]))}
-              </li>
-            )
-          })
-        }
-      </ul>
-      <h2>FusesHolders</h2>
-      <ul>
-        {
-          Object.entries(fusesHolders).map((fuseHolder) => {
-            return (
-              <li>
-                {fuseHolder[0]} x {fuseHolder[1]}
-              </li>
-            )
-          })
-        }
-      </ul>
-    </>
+    <ItemListSection>
+      <ItemBox>
+        <h2>Capacitors</h2>
+        <ul>
+          {
+            Object.entries(capacitors).map((capacitor) => {
+              if(Number(capacitor[0]) === 0){return null}
+              return (
+                  <li>
+                  {capacitor[0]} kVAr x {capacitor[1]}
+                </li>
+              )
+            })
+          }
+        </ul>
+      </ItemBox>
+      <ItemBox>
+        <h2>Contactors</h2>
+        <ul>
+          {
+            Object.entries(contactors).map((contactor) => {
+              if(Number(contactor[0]) === 0){return null}
+              return (
+                <li>
+                  {contactor[0]} kVAr x {contactor[1]}
+                </li>
+              )
+            })
+          }
+        </ul>
+      </ItemBox>
+      <ItemBox>
+        <h2>Fuses</h2>
+        <ul>
+          {
+            Object.entries(fuses).map((fuse) => {
+              if(Number(fuse[0]) === 0){return null}
+              return (
+                <li>
+                  {fuse[0]} A x {fuse[1]} {getFusesSize(Number(fuse[0]))}
+                </li>
+              )
+            })
+          }
+        </ul>
+      </ItemBox>
+      <ItemBox>
+        <h2>FusesHolders</h2>
+        <ul>
+          {
+            Object.entries(fusesHolders).map((fuseHolder) => {
+              return (
+                <li>
+                  {fuseHolder[0]} x {fuseHolder[1]}
+                </li>
+              )
+            })
+          }
+        </ul>
+      </ItemBox>
+    </ItemListSection>
   )
 }

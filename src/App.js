@@ -19,7 +19,13 @@ import setCapacitor from "./helpers/setCapacitors";
 import getFuses from "./helpers/getFuses";
 import getContactors from "./helpers/getContactors";
 
-import { CrpSection, CrpSetSection, VentilationSection } from "./App.styled";
+import {
+  CrpSection,
+  CrpSetSection,
+  VentilationSection,
+  Container
+
+} from "./App.styled";
 
 const defaultMainSwitchCoefficient = 1.8;
 const defaultCapacitorCoefficient = 1.6;
@@ -50,7 +56,7 @@ function App() {
   },[stepsPower, capacitorVoltage, capacitorManufacturer, capacitorCoefficient, setCrp]);
 
   return (
-    <>
+    <Container>
       <CrpSection>
         <CrpSetSection>
           <Controller
@@ -84,36 +90,24 @@ function App() {
         <Ventilation
           capacitors={сrp.capacitors}
         />
+        <MainSwitch
+          capacitors={сrp.capacitors}
+          defaultMainSwitchCoefficient={defaultMainSwitchCoefficient}      
+          mainSwitchCoefficient={mainSwitchCoefficient}      
+          setMainSwitchCoefficient={setMainSwitchCoefficient}     
+        />
         <ManualVentilation/>
       </VentilationSection>
-
-      <MainSwitch
-        capacitors={сrp.capacitors}
-        defaultMainSwitchCoefficient={defaultMainSwitchCoefficient}      
-        mainSwitchCoefficient={mainSwitchCoefficient}      
-        setMainSwitchCoefficient={setMainSwitchCoefficient}     
-      />
-      <FusesCurrent
-        fuses={сrp.fuses}
-        capacitorCoefficient={capacitorCoefficient}
-      />
       <ItemsList сrp={сrp} />
 
-      <button
-        type="button"
-        // onClick={()=>{
 
-        //   console.log(capacitorsPower.map((power) => {
-        //     return getCapacitor(power, capacitorVoltage, capacitorManufacturer);
-        //   }))}}
-          onClick={()=>{
-            console.log(сrp)
-            console.log(сrp.capacitors)}}
-      >
-        capacitors
-      </button>
-      <CopperPrice/>
-    </>
+      {/* <FusesCurrent
+        fuses={сrp.fuses}
+        capacitorCoefficient={capacitorCoefficient}
+      /> */}
+
+      {/* <CopperPrice/> */}
+    </Container>
   )
 }
 

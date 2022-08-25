@@ -18,6 +18,12 @@ export const MainSwitchCoefficientSection = styled.div(
 
     '&:hover': {
       boxShadow: '0px 0px 4px 4px rgba(60,75,240,1)'
+    },
+
+    '@media (max-width: 800px)': {
+      position: 'static',
+      transform: 'translate(0, 0)',
+      marginTop: '40px'
     }
   }
 );

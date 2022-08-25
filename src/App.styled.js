@@ -1,12 +1,23 @@
 import styled from '@emotion/styled';
 
+export const Container = styled.div(
+  {
+    margin: '40px auto 0 auto',
+    padding: '10px',
+    maxWidth: '1680px',
+    display: 'flex',
+    flexDirection: 'column',
+    justifyContent: 'center',
+    alignItems: 'center',
+    gap: '40px'
+  }
+);
+
 export const CrpSection = styled.div(
   {
     position: 'relative',
-    margin: '30px auto 30px auto',
-    padding: '30px 30px 60px 30px',
-    width: 'auto',
-    display: 'inline-flex',
+    padding: '30px 30px 30px 30px',
+    display: 'flex',
     flexDirection:'column',
     justifyContent: 'center',
     alignItems: 'center',
@@ -20,15 +31,24 @@ export const CrpSetSection = styled.div(
     padding: '4px',
     display: 'flex',
     justifyContent: 'center',
-    gap: '16px'
+    gap: '16px',
+
+    '@media (max-width: 800px)': {
+      flexDirection: 'column',
+    }
   }
 );
 export const VentilationSection = styled.div(
   {
-    padding: '10px',
     display: 'flex',
-    width: '200px',
-    flexDirection: 'column',
-    justifyContent: 'center'
+    gap: '20px',
+
+    '@media (max-width: 800px)': {
+      display: 'flex',
+      flexDirection: 'column',
+      justifyContent: 'center',
+      alignItems: 'center',
+      gap: '20px'
+    }
   }
 );

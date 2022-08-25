@@ -11,17 +11,23 @@ export const StepsList = styled.ul(
     marginBottom: '40px',
     padding: '20px',
     display: 'flex',
+    flexWrap: 'wrap',
     justifyContent: 'center',
-    gap: '16px',
+    gap: '10px',
     border: 'solid 1px rgba(60, 75, 240, .4)',
     borderRadius: '2px',
   }
 );
 
-export const StepsListItem = styled.li(
+export const StepsListItem = styled.li({
+    display: 'flex',
+    flexWrap: 'nowrap',
+    justifyContent: 'center',
+    gap: '6px'
+  },
   props => ({
-      color: props.value === 0 ? '#FFFFFF' : '#3C4BF0',
-    })
+    color: props.value === 0 ? '#FFFFFF' : '#3C4BF0',
+  })
 );
 
 export const ResetButton = styled.button(

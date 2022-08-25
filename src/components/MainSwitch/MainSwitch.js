@@ -1,5 +1,7 @@
 import { useEffect, useState } from "react"
 
+import { MainSwitchSection, MainSwitchCurrent } from "./MainSwitch.styled";
+
 import switches from '../../data/switches.json';
 
 export default function MainSwitch({
@@ -33,11 +35,11 @@ export default function MainSwitch({
     }, [totalSwitchCurrent, setSwitchCurrent]);  
 
   return(
-    <>
+    <MainSwitchSection>
       <h2>Main Switch</h2>
-      <p>{totalCurrent} A</p> 
-      <p>{totalSwitchCurrent} A</p>
-      <p>Switch Current {switchCurrent} A</p> 
-    </>
+      <p>Capacitors Current {totalCurrent} A</p> 
+      <p>Capacitors Current With Coefficient {totalSwitchCurrent} A</p>
+      <p>Switch Current <MainSwitchCurrent>{switchCurrent}</MainSwitchCurrent> A</p> 
+    </MainSwitchSection>
   )
 }

@@ -7,7 +7,13 @@ import { Steps, StepsList, StepsListItem, ResetButton, TotalCapacityBox, TotalCa
 export default function Step({
   capacitors,
   steps,
-  setStepsPower
+  setStepsPower,
+  defaultCapacitorCoefficient,
+  capacitorCoefficient,
+  setCapacitorCoefficient,
+  defaultMainSwitchCoefficient,
+  mainSwitchCoefficient,
+  setMainSwitchCoefficient
 }) {
   const [stepIndex, setStepIndex] = useState(1);
   const [power, setPower] = useState(0);
