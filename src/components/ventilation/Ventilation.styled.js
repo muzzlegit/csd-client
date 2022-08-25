@@ -3,6 +3,7 @@ import styled from '@emotion/styled';
 export const VentilationSection = styled.div(
   {
     position: 'relative',
+    padding: '10px',
     width: '180px',
     display: 'inline-flex',
     flexDirection:'column',
