@@ -1,4 +1,4 @@
-import setCapacitor from "../../helpers/setCapacitors";
+import setCapacitor from "../../../helpers/setCapacitors";
 import { ControllerSteps } from "./Controller.styled";
 
 export default function Controller({

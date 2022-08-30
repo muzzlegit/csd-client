@@ -1,4 +1,4 @@
-import Step from "../Step/Step";
+import Step from '../Step/Step';
 
 export default function Capacitors({
   steps,

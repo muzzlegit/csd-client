@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react"
 
-import checkOnNumber from "../../helpers/checkOnNumber";
+import checkOnNumber from "../../../helpers/checkOnNumber";
 
 import {
   ManualVentilationSection,

@@ -1,7 +1,7 @@
 import { IconContext } from "react-icons";
 import { AiOutlineClear, AiOutlinePlus, AiOutlineMinus } from 'react-icons/ai';
 
-import checkOnNumber from "../../helpers/checkOnNumber";
+import checkOnNumber from "../../../helpers/checkOnNumber";
 
 import { 
   MainSwitchCoefficientSection,

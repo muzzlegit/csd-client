@@ -1,6 +1,7 @@
 import contactors from '../data/contactors.json';
 
 export default function getContactors(capacitors) {
+  console.log('functio',capacitors)
   let capacitorsArray = [];
   let powerArray = [];
 

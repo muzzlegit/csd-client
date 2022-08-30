@@ -2,7 +2,7 @@ import { useEffect, useState } from "react"
 
 import { MainSwitchSection, MainSwitchCurrent } from "./MainSwitch.styled";
 
-import switches from '../../data/switches.json';
+import switches from '../../../data/switches.json';
 
 export default function MainSwitch({
     mainSwitchCoefficient,

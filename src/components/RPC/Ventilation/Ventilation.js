@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react"
-import useTotalCapacity from "../../hooks/useTotalCapacity";
+import useTotalCapacity from "../../../hooks/useTotalCapacity";
 
 import {
   VentilationSection,

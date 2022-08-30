@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react"
-import useTotalCapacity from "../../hooks/useTotalCapacity";
+import useTotalCapacity from "../../../hooks/useTotalCapacity";
 import { IconContext } from "react-icons";
 import { AiOutlineClear } from 'react-icons/ai';
 import { Steps, StepsList, StepsListItem, ResetButton, TotalCapacityBox, TotalCapacityTitle, TotalCapacityAmount } from "./Step.styled";
