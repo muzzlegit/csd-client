@@ -5,7 +5,7 @@ export default function Navigation() {
   return(
     <>
       <Link
-        to="/rpc"
+        to="/"
       >
         <p>RPC</p>
       </Link>

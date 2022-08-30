@@ -10,7 +10,7 @@ function App() {
       <>
         <Navigation/>
         <Routes>
-          <Route path="/rpc" element={<Rpc />}/>
+          <Route path="/" element={<Rpc />}/>
           <Route path="/copper" element={<CopperPrice />}/>
         </Routes>
       </>
