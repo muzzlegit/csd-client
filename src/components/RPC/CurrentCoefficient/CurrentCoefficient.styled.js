@@ -3,7 +3,7 @@ import styled from '@emotion/styled';
 export const CurrentCoefficientSection = styled.div(
   {
     position: 'absolute',
-    bottom: '-8%',
+    bottom: '-14%',
     left: '20%',
     transform: 'translate(-50%, -50%)',
     padding: '8px',
