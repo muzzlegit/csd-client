@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react"
 import { IconContext } from "react-icons";
-import { AiFillCopy } from 'react-icons/ai';
+import { AiOutlineCopy } from 'react-icons/ai';
 
 import {
     CopperContainer,
@@ -13,9 +13,9 @@ import {
 export default function CooperPrice() {
   const [copperPrice, setCopperPrice] = useState(515);
   const [exchange,setExchange] = useState(38.26);
-  const [coefficient, setCoefficient] = useState(21);
+  const [coefficient] = useState(21);
   const [discount, setDiscount] = useState(0);
-  const [toggle, setToggle] = useState(false);
+  // const [toggle, setToggle] = useState(false);
   const [f, setF] = useState(false);
 
   useEffect(()=>{
@@ -73,7 +73,7 @@ export default function CooperPrice() {
               });
             }}
           >
-            <AiFillCopy/>
+            <AiOutlineCopy/>
           </CopyButton>
         </IconContext.Provider>
         { f && <div style={{'color': '#64eb0b'}} >Copied!</div>}  
