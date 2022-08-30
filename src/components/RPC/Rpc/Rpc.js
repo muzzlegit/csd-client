@@ -9,7 +9,7 @@ import Manufacturer from "../Manufacturer/Manufacturer";
 import CapacitorsVoltage from "../CapacitorsVoltage/CapacitorsVoltage";
 import MainSwitch from "../MainSwitch/MainSwitch";
 import ManualVentilation from "../ManualVentilation/ManualVentilation";
-import FusesCurrent from "../FusesCurrent/FusesCurrent";
+// import FusesCurrent from "../FusesCurrent/FusesCurrent";
 import ItemsList from "../ItemsList/ItemsList";
 
 import getCapacitor from "../../../helpers/getCapacitor";
