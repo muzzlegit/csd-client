@@ -39,7 +39,7 @@ export default function MainSwitch({
       <h2>Main Switch</h2>
       <p>Capacitors Current {totalCurrent} A</p> 
       <p>Capacitors Current With Coefficient {totalSwitchCurrent} A</p>
-      <p>Switch Current <MainSwitchCurrent>{switchCurrent}</MainSwitchCurrent> A</p> 
+      <p>Switch Current <MainSwitchCurrent>{switchCurrent} A</MainSwitchCurrent></p> 
     </MainSwitchSection>
   )
 }

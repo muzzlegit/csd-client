@@ -17,7 +17,7 @@ export const MainSwitchSection = styled.div(
 );
 export const MainSwitchCurrent = styled.span(
   {
-    color: '#3C4BF0',
+    color: '#eb0b43',
     fontSize: '20px',
     fontWeight: 'bold'
   }

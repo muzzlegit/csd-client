@@ -27,7 +27,7 @@ export const ManualVentilationInput = styled.input(
 );
 export const ManualVentilationValue = styled.p(
   {
-    color: '#3C4BF0',
+    color: '#eb0b43',
     fontSize: '20px',
     fontWeight: 'bold'
   }
