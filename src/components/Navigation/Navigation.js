@@ -1,19 +1,42 @@
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
+
+import { NavSection, NavLinkItem, NavLinkText } from "./Navigation.styled";
 
 export default function Navigation() {
 
+  const active = 
+    {
+      color: '#3C4BF0',
+      textDecoration: 'none',
+    }
+    const notActive = 
+    {
+      color: '#414546',
+      textDecoration: 'none',
+    }
+
   return(
-    <>
-      <Link
-        to="/"
-      >
-        <p>RPC</p>
-      </Link>
-      <Link
-        to="/copper"
-      >
-        <p>Copper Price</p>
-      </Link>
-    </>
+    <NavSection>
+      <NavLinkItem>
+        <NavLink
+          to="/"
+          style={({ isActive }) =>
+            isActive ? active : notActive
+          }
+        >
+          <NavLinkText>RPC</NavLinkText>
+        </NavLink>
+      </NavLinkItem>
+      <NavLinkItem>
+        <NavLink
+          to="/copper"
+          style={({ isActive }) =>
+          isActive ? active : notActive
+        }
+        >
+          <NavLinkText>Copper Price</NavLinkText>
+        </NavLink>
+      </NavLinkItem>
+    </NavSection>
   )
 }

@@ -1,4 +1,14 @@
 import { useEffect, useState } from "react"
+import { IconContext } from "react-icons";
+import { AiFillCopy } from 'react-icons/ai';
+
+import {
+    CopperContainer,
+    CooperPriceInput,
+    CooperDiscount,
+    CopyButton,
+    DiscountWrap
+  } from "./CopperPrice.styled";
 
 export default function CooperPrice() {
   const [copperPrice, setCopperPrice] = useState(515);
@@ -13,9 +23,8 @@ export default function CooperPrice() {
   },[copperPrice, exchange, coefficient, setDiscount]);
 
   return (
-    <>
-      <h2>Cooper Price</h2>
-      <h3>Coefficient</h3>
+    <CopperContainer>
+      {/* <h3>Coefficient</h3>
       {!toggle && 
         <small>{coefficient}</small>
       }
@@ -30,9 +39,9 @@ export default function CooperPrice() {
       <button
         type="button"
         onClick={() => setToggle(!toggle)}
-      >{toggle ? 'set' : 'change'}</button>
-      <h3>Cooper</h3>
-      <input
+      >{toggle ? 'set' : 'change'}</button> */}
+      <h3>Cooper Price</h3>
+      <CooperPriceInput
         type="number"
         min="0"
         step="1"
@@ -40,29 +49,36 @@ export default function CooperPrice() {
         onChange={(e)=>setCopperPrice(e.currentTarget.value)}
       />
       <h3>Exchange</h3>
-      <input
+      <CooperPriceInput
         type="number"
         min="0"
         step=".01"
         value={exchange}
         onChange={(e)=>setExchange(e.currentTarget.value)}
       />
-      <h3>discount</h3>
-      <small>{discount}</small>
-      <button
-        type="button"
-        onClick={(e) => {
-          navigator.clipboard.writeText(`${discount}`).then(() => {
-            setF(true);
-            setTimeout(() => {
-              setF(false);
-            }, 2000);
-          },() => {
-            /* Rejected - clipboard failed */
-          });
-        }}
-      >Copy</button> 
-      { f && <div>copy</div>}  
-    </>
+      <h3>Discount</h3>
+      <DiscountWrap>
+        <CooperDiscount>{discount}</CooperDiscount>
+        <IconContext.Provider value = {{size: '20px'}}>
+          <CopyButton
+            type="button"
+            onClick={(e) => {
+              navigator.clipboard.writeText(`${discount}`).then(() => {
+                setF(true);
+                setTimeout(() => {
+                  setF(false);
+                }, 1000);
+              },() => {
+                /* Rejected - clipboard failed */
+              });
+            }}
+          >
+            <AiFillCopy/>
+          </CopyButton>
+        </IconContext.Provider>
+        { f && <div style={{'color': '#64eb0b'}} >Copied!</div>}  
+      </DiscountWrap>
+
+    </CopperContainer>
   )
 }
