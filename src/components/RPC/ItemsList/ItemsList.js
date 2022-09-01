@@ -96,7 +96,7 @@ export default function ItemsList({сrp}) {
               if(Number(fuse[0]) === 0){return null}
               return (
                 <li>
-                  {fuse[0]} A x {fuse[1]} {getFusesSize(Number(fuse[0]))}
+                  {fuse[0]} A x {fuse[1] * 3} {getFusesSize(Number(fuse[0]))}
                 </li>
               )
             })

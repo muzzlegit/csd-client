@@ -28,7 +28,7 @@ export default function ManualVentilation() {
         type="text"
         value={value}
         onChange={onChange}
-      />  
+      />
       <ManualVentilationValue>{ventilationValue} m3</ManualVentilationValue>
     </ManualVentilationSection>
   )
