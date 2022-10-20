@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react"
 import { IconContext } from "react-icons";
 import { AiOutlineCopy } from 'react-icons/ai';
+import useLocalStorage from "../../../hooks/useLocalStorage";
 
 import {
     CopperContainer,
@@ -11,11 +12,10 @@ import {
   } from "./CopperPrice.styled";
 
 export default function CooperPrice() {
-  const [copperPrice, setCopperPrice] = useState(515);
-  const [exchange,setExchange] = useState(38.26);
+  const [copperPrice, setCopperPrice] = useLocalStorage('price', 525);
+  const [exchange,setExchange] = useLocalStorage('exchange', 38.22);
   const [coefficient] = useState(21);
   const [discount, setDiscount] = useState(0);
-  // const [toggle, setToggle] = useState(false);
   const [f, setF] = useState(false);
 
   useEffect(()=>{

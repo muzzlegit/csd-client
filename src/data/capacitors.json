@@ -1,91 +1,125 @@
 ﻿[    
     {
         "manufacturer": "RTR",
+        "series": "MA/C/CE",
         "code": "C40002550000000",
-        "name": "C40002550000000 MA/C/CE Конденсатор 2.5 KVAR 400V 50HZ 60x200",
+        "name": "C40002550000000 MA/C/CE Конденсатор 2.5 kVAr, 400 V, 50 Hz",
         "power": 2.5,
         "voltage":  400,
-        "current": 3.61      
+        "current": 3.61,
+        "capacity": "3 x 16.58 mF",
+        "dimensions": "60 x 200 mm",
+        "overvoltage": "1.10 x Un (until 8 h/day) 1.15 x Un (until 30 min/day) 1.20 x Un (until 5 min/day) 1.30 x Un (until 1 min/day)",
+        "overcurrent": "1.50 x In",
+        "UsefulLife": "130.000 h"
     },
     {
         "manufacturer": "RTR",
+        "series": "MA/C/CE",
         "code": "C40005050000000",
-        "name": "C40005050000000 MA/C/CE Конденсатор 5 KVAR 400V 50HZ 60x200",
+        "name": "C40005050000000 MA/C/CE Конденсатор 5 kVAr, 400 V, 50 Hz",
         "power": 5,
         "voltage":  400,
-        "current": 7.22      
+        "current": 7.22,
+        "capacity": "3 x 33.16 mF",
+        "dimensions": "60 x 200 mm",
+        "overvoltage": "1.10 x Un (until 8 h/day) 1.15 x Un (until 30 min/day) 1.20 x Un (until 5 min/day) 1.30 x Un (until 1 min/day)",
+        "overcurrent": "1.50 x In",
+        "UsefulLife": "130.000 h"
     },
     {
         "manufacturer": "RTR",
         "code": "C4006255TER0000",
-        "name": "C4006255TER0000 Конденсатор MA/C/CE/TER 6,25 KVAR 400V 50HZ*",
+        "name": "C4006255TER0000 Конденсатор MA/C/CE/TER 6.25 kVAr, 400 V, 50 Hz",
         "power": 6.25,
         "voltage":  400,
-        "current": 9      
+        "current": 9,
+        "capacity": "3x40 mF",
+        "dimensions": "60x260 mm"
     },
     {
         "manufacturer": "RTR",
+        "series": "DWCAP",
         "code": "D4000755TER0000",
-        "name": "D4000755TER0000 DW Конденсатор 7,5 KVAR 400V 50HZ",
+        "name": "D4000755TER0000 DWCAP Конденсатор 7.5 kVAr, 400 V, 50 Hz",
         "power": 7.5,
         "voltage":  400,
-        "current": 10.83      
+        "current": 10.83,
+        "capacity": "3x49.74 mF",
+        "dimensions": "70x260 mm",
+        "overvoltage": "1.10 x Un (until 8 h/day) 1.15 x Un (until 30 min/day) 1.20 x Un (until 5 min/day) 1.30 x Un (until 1 min/day)",
+        "overcurrent": "1.50 x In",
+        "UsefulLife": "100.000 h"
     },
     {
         "manufacturer": "RTR",
         "code": "D4001005TER0000",
-        "name": "D4001005TER0000 DW Конденсатор 10 KVAR 400V 50HZ 85x215",
+        "name": "D4001005TER0000 DWCAP Конденсатор 10 kVAr, 400 V, 50 Hz",
         "power": 10,
         "voltage":  400,
-        "current": 14.43      
+        "current": 14.43,
+        "capacity": "3x66.31 mF",
+        "dimensions": "85x260 mm"
     },
     {
         "manufacturer": "RTR",
         "code": "D4001255TER0000",
-        "name": "D4001255TER0000 DW Конденсатор 12.5KVAR, 400V, 50HZ 85x215*",
+        "name": "D4001255TER0000 DWCAP Конденсатор 12.5 kVAr, 400 V, 50 Hz",
         "power": 12.5,
         "voltage":  400,
-        "current": 18.04      
+        "current": 18.04,
+        "capacity": "3x82.89 mF",
+        "dimensions": "85x260 mm"
     },
     {
         "manufacturer": "RTR",
         "code": "D4001505TER0000",
-        "name": "D4001505TER0000 DW Конденсатор 15KVAR, 400V, 50HZ 100x215",
+        "name": "D4001505TER0000 DWCAP Конденсатор 15 kVAr, 400 V, 50 Hz",
         "power": 15,
         "voltage":  400,
-        "current": 21.65     
+        "current": 21.65,
+        "capacity": "3x99.47 mF",
+        "dimensions": "100x260 mm"
     },
     {
         "manufacturer": "RTR",
         "code": "D4002005TER0000",
-        "name": "D4002005TER0000 DW Конденсатор 20 KVAR 400V 50HZ 120x215",
+        "name": "D4002005TER0000 DWCAP Конденсатор 20 kVAr, 400 V, 50 Hz",
         "power": 20,
         "voltage":  400,
-        "current": 28.87     
+        "current": 28.87,
+        "capacity": "3x132.63 mF",
+        "dimensions": "120x265 mm"
     },
     {
         "manufacturer": "RTR",
         "code": "D4002505TER0000",
-        "name": "D4002505TER0000 DW Конденсатор 25KVAR, 400V, 50HZ 120x215",
+        "name": "D4002505TER0000 DWCAP Конденсатор 25 kVAr, 400 V, 50 Hz",
         "power": 25,
         "voltage":  400,
-        "current": 36.08
+        "current": 36.08,
+        "capacity": "3x165.79 mF",
+        "dimensions": "120x265 mm"
     },
     {
         "manufacturer": "RTR",
         "code": "D4003005TER0000",
-        "name": "D4003005TER0000 DW Конденсатор 30KVAR, 400V, 50HZ 136x215",
+        "name": "D4003005TER0000 DWCAP Конденсатор 30 kVAr, 400 V, 50 Hz",
         "power": 30,
         "voltage":  400,
-        "current": 43.30
+        "current": 43.30,
+        "capacity": "3x198.94 mF",
+        "dimensions": "136x265 mm"
     },
     {
         "manufacturer": "RTR",
         "code": "D4004005TER0000",
-        "name": "D4004005TER0000 DW Конденсатор 40KVAR, 400V, 50HZ 136х265",
+        "name": "D4004005TER0000 MA/C/CE/TER Конденсатор 40 kVAr, 400 V, 50 Hz",
         "power": 40,
         "voltage":  400,
-        "current": 58    
+        "current": 57.74,
+        "capacity": "3x265.26 mF",
+        "dimensions": "136x345 mm"
     },
     {
         "manufacturer": "RTR",
