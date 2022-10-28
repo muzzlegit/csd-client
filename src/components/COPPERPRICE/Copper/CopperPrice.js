@@ -24,22 +24,6 @@ export default function CooperPrice() {
 
   return (
     <CopperContainer>
-      {/* <h3>Coefficient</h3>
-      {!toggle && 
-        <small>{coefficient}</small>
-      }
-      {toggle && 
-        <input
-          type="number"
-          min="0"
-          step="1"
-          value={coefficient}
-          onChange={(e)=>setCoefficient(e.currentTarget.value)}
-        />}
-      <button
-        type="button"
-        onClick={() => setToggle(!toggle)}
-      >{toggle ? 'set' : 'change'}</button> */}
       <h3>Cooper Price</h3>
       <CooperPriceInput
         type="number"

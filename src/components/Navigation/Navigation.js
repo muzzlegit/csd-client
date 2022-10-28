@@ -37,6 +37,16 @@ export default function Navigation() {
           <NavLinkText>Copper Price</NavLinkText>
         </NavLink>
       </NavLinkItem>
+      <NavLinkItem>
+        <NavLink
+          to="/telergon"
+          style={({ isActive }) =>
+          isActive ? active : notActive
+        }
+        >
+          <NavLinkText>Телергон</NavLinkText>
+        </NavLink>
+      </NavLinkItem>
     </NavSection>
   )
 }
