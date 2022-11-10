@@ -24,7 +24,9 @@
           {"code": "DS-CAB1", "description": "Пристрій блокування, 1 ключ"},
           {"code": "DS-CEB1", "description": "Пристрій блокування, 2 ключі"}
         ],
-        "relatedItems":[]
+        "relatedItems":[
+          {"manufacturer": "technoelectric", "section": "Вимикачі навантаження", "code": "11001C"}
+        ]
       },
       "S5-00403PB0":{
         "manufacturer": "telergon",
@@ -49,7 +51,9 @@
           {"code": "DS-CAB1", "description": "Пристрій блокування, 1 ключ"},
           {"code": "DS-CEB1", "description": "Пристрій блокування, 2 ключі"}
         ],
-        "relatedItems":[]
+        "relatedItems":[
+          {"manufacturer": "technoelectric", "section": "Вимикачі навантаження", "code": "11001C"}
+        ]
       },
       "S5-00403NB0":{
         "manufacturer": "telergon",

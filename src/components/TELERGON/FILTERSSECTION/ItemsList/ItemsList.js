@@ -5,7 +5,7 @@ import AccessoriesList from '../AccessoriesList/AccessoriesList';
 import RelatedItems from '../RelatedItems/RelatedItems';
 import CopyButton from '../CopyButton/CopyButton';
 //HELPERS
-import getOutlineForItems from '../../../helpers/TELERGON/getOutlineForItems';
+import getOutlineForItems from '../../../../helpers/TELERGON/getOutlineForItems';
 //STYLES
 import { ItemListBox, ItemListBoxTitle, ListBox, ListItem } from './ItemsList.styled';
 
@@ -25,7 +25,7 @@ export default function ItemsList({itemsList}){
 
   return(
     <>
-     {itemsList.length !== 0 &&
+    { itemsList.length !== 0 ?
       <ItemListBox>
         { itemsList.length !== 0 && <ItemListBoxTitle>{itemsList.length === 1 ? 'Елемент' : 'Елементи' }</ItemListBoxTitle> }
         <ListBox>
@@ -36,6 +36,7 @@ export default function ItemsList({itemsList}){
                 onClick={onItemClick}
                 id={item.code}
                 color={toggle && item.code === currentItem.code ? '#00ff88' : '#3C4BF0'}
+                selected={toggle && item.code === currentItem.code ? true : false}
                 outline={getOutlineForItems(item.vectorBase)}
               >
                 {item.code} {item.description}
@@ -46,19 +47,27 @@ export default function ItemsList({itemsList}){
             )
           })}
         </ListBox>
-        {
-          toggle && 
-          <>
-            <AccessoriesList
-              accessoriesList={currentItem.accessories}
-            />
-            <RelatedItems
-              relatedItems={currentItem.relatedItems}
-            />
-          </>
-        }
       </ItemListBox>
-     }   
+      : null
+    }
+    { toggle ?
+      <>
+        {currentItem.accessories.length !==0 ?
+          <AccessoriesList
+            accessoriesList={currentItem.accessories}
+          />
+          : null
+        }
+        
+        {currentItem.relatedItems.length !==0 ?
+          <RelatedItems
+            relatedItems={currentItem.relatedItems}
+          />
+          : null
+        }
+      </>
+      : null
+    }
     </>
   )
 }

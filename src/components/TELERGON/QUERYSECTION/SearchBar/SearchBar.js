@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 //DATA
-import VECTOR from '../../../data/vector.json'
+import VECTOR from '../../../../data/vector.json'
 //STYLED
 import { SearchBarTitle, SearchBarInputBox } from "./SearchBar.styled";
 
@@ -16,10 +16,10 @@ export default function SearchBar({setQuery}) {
   useEffect(()=>{
     for(let key in switches){
       if(key === value){
-        setQuery([switches[key]]);
+        setQuery(switches[key]);
         return;
       } else {
-        setQuery([]);
+        setQuery({});
       }
     }
     

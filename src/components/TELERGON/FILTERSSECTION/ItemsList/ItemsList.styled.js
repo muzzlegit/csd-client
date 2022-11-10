@@ -41,5 +41,8 @@ export const ListItem = styled.li(
   props => ({
     outline: props.outline,
     color: props.color,
+    border: props.selected ? '1px solid #2d3033' : null,
+    borderRadius: props.selected ? '6px' : null,
+    backgroundColor: props.selected ? '#1e2122' : null,
   }),
 );

@@ -1,12 +1,12 @@
 import { useEffect, useState } from "react";
 //DATA
-import VECTOR from '../../../data/vector.json';
+import VECTOR from '../../../../data/vector.json';
 //COMPONENTS
-import SectionSelector from "./SectionSelector/SectionSelector";
-import CurrentSelector from "./CurrentSelector/CurrentSelector";
-import PoleSelector from "./PoleSelector/PoleSelector";
+import SectionSelector from "../SectionSelector/SectionSelector";
+import CurrentSelector from "../CurrentSelector/CurrentSelector";
+import PoleSelector from "../PoleSelector/PoleSelector";
 //STYLES
-import { FiltersBoxTitle, RelatedFiltersBox } from "./FiltersBox.styled";
+import { FiltersBoxTitle, RelatedFiltersBox, FiltersWrap } from "./FiltersBox.styled";
 
 const TELERGON = VECTOR.telergon;
 
@@ -68,7 +68,7 @@ export default function FiltersBox({setElements}){
   }, [sectionFilter,currentFilter, poleFilter,setElements])
 
   return(
-    <>
+    <FiltersWrap>
       <FiltersBoxTitle>Пошук по фільтрам</FiltersBoxTitle>
       <SectionSelector
         sectionElements={sectionElements}
@@ -84,7 +84,7 @@ export default function FiltersBox({setElements}){
           setPoleFilter={setPoleFilter}
         />
       </RelatedFiltersBox>
-    </>
+    </FiltersWrap>
   )
 
 }
