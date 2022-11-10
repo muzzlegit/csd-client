@@ -3,7 +3,7 @@ import { useState } from 'react';
 import SearchByQuery from '../QUERYSECTION/SearchByQuery/SearchByQuery';
 import SearchByFilters from '../FILTERSSECTION/SearchByFilters/SearchByFilters';
 //STYLES
-import { Container, SearchBarContainer, FiltersContainer } from './Telergon.styled';
+import { Container} from './Telergon.styled';
 
 export default function Telergon() {
   return(

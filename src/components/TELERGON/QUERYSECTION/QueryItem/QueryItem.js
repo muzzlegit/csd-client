@@ -4,10 +4,9 @@ import { useState } from 'react'
 import CopyButton from '../../FILTERSSECTION/CopyButton/CopyButton';
 import ItemsList from '../ItemsList/ItemsList';
 import RelatedItems from '../RelatedItems/RelatedItems';
-//HELPERS
-import getOutlineForItems from '../../../../helpers/TELERGON/getOutlineForItems';
+
 //STYLES
-import { Item, ItemListBox, ItemListBoxTitle, ListBox, ListItem  } from './QueryItem.styled';
+import { Item } from './QueryItem.styled';
 
 export default function QueryItems({item}){
   const [accessoriesListToggle, setAccessoriesListToggle] = useState(false);
