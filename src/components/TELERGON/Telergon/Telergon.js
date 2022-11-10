@@ -1,4 +1,4 @@
-import { useState } from 'react';
+
 //COMPONENTS
 import SearchByQuery from '../QUERYSECTION/SearchByQuery/SearchByQuery';
 import SearchByFilters from '../FILTERSSECTION/SearchByFilters/SearchByFilters';
