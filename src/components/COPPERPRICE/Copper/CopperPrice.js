@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react"
 import { IconContext } from "react-icons";
 import { AiOutlineCopy } from 'react-icons/ai';
-import useLocalStorage from "../../../hooks/useLocalStorage";
+import useLocalStorage from "../../../hooks/SWITCHES/useLocalStorage";
 
 import {
     CopperContainer,

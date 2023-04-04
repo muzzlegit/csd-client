@@ -5,11 +5,24 @@
 }
 body {
   text-align: center;
-  background-color: 	#212425;
+  background-color: 	#1c1e21;
   /* color: #3C4BF0; */
-  color: #3C4BF0;
+  color: #8ab4f8;
 }
 f{
-  background-color: 	#66b7fa;
+  
+  color: #D3B19E; /*rgba(211, 177, 158, 1)*/
+  color: #D39CBD; /*rgba(211, 156, 189, 1)*/
+  color: #995E7C;
+  color: #683142;
+  color: #312528;
+  /*green*/
+  color: #202124; /*rgba()*/
 
+  color: #2F70AF; /*rgba()*/
+  color: #969BA1; /*rgba()*/
+  color: #B9848C; /*rgba(185, 132, 140, 1)*/
+  color: #00457C;
+  color: #8ab4f8;
+  color: #806491;
 }

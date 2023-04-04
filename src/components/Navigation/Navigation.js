@@ -39,7 +39,7 @@ export default function Navigation() {
       </NavLinkItem>
       <NavLinkItem>
         <NavLink
-          to="/telergon"
+          to="/switches"
           style={({ isActive }) =>
           isActive ? active : notActive
         }
