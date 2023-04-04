@@ -5,12 +5,6 @@ import getItemFromBaseByCode from "../../helpers/SWITCHES/getItemFromBaseByCode"
 
 export default function useRelatedItemAccessoriesList() {
   const setItem = useSwitchesStore((state) => state.setItem);
-  const selectedRelatedItem = useSwitchesStore(
-    (state) => state.selectedRelatedItem
-  );
-  const setSelectedRelatedItem = useSwitchesStore(
-    (state) => state.setSelectedRelatedItem
-  );
 
   const onItemClick = (e) => {
     if (e.target.nodeName !== "LI") return;
