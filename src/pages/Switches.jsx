@@ -15,7 +15,7 @@ function Switches() {
   const { value, onChange } = useInput();
 
   return (
-    <div className="h-full p-2 grid grid-cols-switches grid-rows-switches grid-areas-switches gap-4">
+    <div className="h-full p-2  grid grid-cols-switches grid-rows-switches grid-areas-switches gap-4 grid-in-content">
       <div className="grid-in-a p-1 flex flex-col justify-start rounded-md bg-primary shadow-switches">
         <p className=" font-caveat text-2xl text-red-600">
           На даний момент доступні наступні серії:

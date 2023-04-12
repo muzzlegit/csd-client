@@ -2,21 +2,18 @@ import { Routes, Route } from "react-router-dom";
 //COMPONENTS
 import Navigation from "modules/Navigation/Navigation";
 // import Rpc from "../components/RPC/Rpc/Rpc";
-// import CopperPrice from "../components/COPPERPRICE/Copper/CopperPrice";
-import { Switches } from "pages";
-//STYLES
-import { Container } from "./styles/App.styled";
+import { Switches, Calculations } from "pages";
 
 function App() {
   return (
-    <Container>
+    <div className="h-full grid grid-cols-layout grid-rows-layout grid-areas-layout gap-4">
       <Navigation />
       <Routes>
-        {/* <Route path="/" element={<Rpc />} />
-        <Route path="/copper" element={<CopperPrice />} /> */}
-        <Route path="/" element={<Switches />} />
+        {/* <Route path="/" element={<Rpc />} /> */}
+        <Route path="/copper" element={<Calculations />} />
+        <Route path="/switches" element={<Switches />} />
       </Routes>
-    </Container>
+    </div>
   );
 }
 

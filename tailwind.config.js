@@ -27,12 +27,18 @@ module.exports = {
         switches: "0.15rem 0.2rem 0.15rem 0.1rem rgba(0, 0, 0, .6)",
       },
       gridTemplateColumns: {
+        layout: "1fr",
+        calculations: "repeat(4, 1fr)",
         switches: "repeat(3, 1fr)",
       },
       gridTemplateRows: {
+        layout: "2rem auto 3rem",
+        calculations: "repeat(3, 1fr)",
         switches: "repeat(4, minmax(80px, auto))",
       },
       gridTemplateAreas: {
+        layout: ["navbar", "content", "footer"],
+        calculations: ["C1 C2 C3 C4", "C5 C6 C7 C8", "C9 C10 C11 C12"],
         switches: ["a b c", "d e f", "g h f", "g h i"],
       },
     },
