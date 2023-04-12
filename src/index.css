@@ -1,28 +1,18 @@
-*{
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-body {
-  text-align: center;
-  background-color: 	#1c1e21;
-  /* color: #3C4BF0; */
-  color: #8ab4f8;
-}
-f{
-  
-  color: #D3B19E; /*rgba(211, 177, 158, 1)*/
-  color: #D39CBD; /*rgba(211, 156, 189, 1)*/
-  color: #995E7C;
-  color: #683142;
-  color: #312528;
-  /*green*/
-  color: #202124; /*rgba()*/
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&display=swap");
 
-  color: #2F70AF; /*rgba()*/
-  color: #969BA1; /*rgba()*/
-  color: #B9848C; /*rgba(185, 132, 140, 1)*/
-  color: #00457C;
-  color: #8ab4f8;
-  color: #806491;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* font-family: 'Caveat', cursive; */
+
+html,
+body,
+#root,
+.app {
+  height: 100%;
+  background-color: #36464d;
+  font-family: "Roboto", sans-serif;
+  @apply text-text;
 }

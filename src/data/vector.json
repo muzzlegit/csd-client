@@ -5244,7 +5244,11 @@
       { "code": "D5LCBB1", "description": "Пристрій блокування, 1 ключ" },
       { "code": "D5LCFB1", "description": "Пристрій блокування, 2 ключі" }
     ],
-    "relatedItems": []
+    "relatedItems": [
+      { "code": "CEC01253PS0" },
+      { "code": "S5L01253PB0" },
+      { "code": "S5F01603PS0" }
+    ]
   },
   {
     "manufacturer": "telergon",
@@ -5281,7 +5285,11 @@
       { "code": "D5LCBB1", "description": "Пристрій блокування, 1 ключ" },
       { "code": "D5LCFB1", "description": "Пристрій блокування, 2 ключі" }
     ],
-    "relatedItems": []
+    "relatedItems": [
+      { "code": "CEC01253NS0" },
+      { "code": "S5L01253NB0" },
+      { "code": "S5F01603NS0" }
+    ]
   },
   {
     "manufacturer": "telergon",
@@ -5318,7 +5326,7 @@
       { "code": "D5LCBB1", "description": "Пристрій блокування, 1 ключ" },
       { "code": "D5LCFB1", "description": "Пристрій блокування, 2 ключі" }
     ],
-    "relatedItems": []
+    "relatedItems": [{ "code": "S5F02003PS0" }, { "code": "S5F02503PD0" }]
   },
   {
     "manufacturer": "telergon",
@@ -5351,11 +5359,10 @@
       { "code": "DS-AU11", "description": "Додатковий контакт 1NO + 1NC" },
       { "code": "DS-AU12", "description": "Додатковий контакт 2NO + 2NC" },
       { "code": "D5LPC03", "description": "Перемички (4шт)" },
-
       { "code": "D5LCBB1", "description": "Пристрій блокування, 1 ключ" },
       { "code": "D5LCFB1", "description": "Пристрій блокування, 2 ключі" }
     ],
-    "relatedItems": []
+    "relatedItems": [{ "code": "S5F02003NS0" }, { "code": "S5F02503ND0" }]
   },
   {
     "manufacturer": "telergon",
@@ -5392,7 +5399,7 @@
       { "code": "D5LCBB1", "description": "Пристрій блокування, 1 ключ" },
       { "code": "D5LCFB1", "description": "Пристрій блокування, 2 ключі" }
     ],
-    "relatedItems": []
+    "relatedItems": [{ "code": "S5F02503PD0" }, { "code": "CCF02003PS0" }]
   },
   {
     "manufacturer": "telergon",
@@ -5429,7 +5436,7 @@
       { "code": "D5LCBB1", "description": "Пристрій блокування, 1 ключ" },
       { "code": "D5LCFB1", "description": "Пристрій блокування, 2 ключі" }
     ],
-    "relatedItems": []
+    "relatedItems": [{ "code": "S5F02503ND0" }, { "code": "CCF02003NS0" }]
   },
   {
     "manufacturer": "telergon",
@@ -5460,7 +5467,11 @@
       { "code": "DS-AU11", "description": "Додатковий контакт 1NO + 1NC" },
       { "code": "DS-AU12", "description": "Додатковий контакт 2NO + 2NC" }
     ],
-    "relatedItems": []
+    "relatedItems": [
+      { "code": "S5F02503PR0" },
+      { "code": "S5F04003PC0" },
+      { "code": "CCF04003PS0" }
+    ]
   },
   {
     "manufacturer": "telergon",
@@ -5491,7 +5502,11 @@
       { "code": "DS-AU11", "description": "Додатковий контакт 1NO + 1NC" },
       { "code": "DS-AU12", "description": "Додатковий контакт 2NO + 2NC" }
     ],
-    "relatedItems": []
+    "relatedItems": [
+      { "code": "S5F02503NR0" },
+      { "code": "S5F04003NC0" },
+      { "code": "CCF04003NS0" }
+    ]
   },
   {
     "manufacturer": "telergon",

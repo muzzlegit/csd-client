@@ -1,7 +1,7 @@
 //STORE
 import useSwitchesStore from "../../../../data/STORE/useSwitchesStore";
 //COMPONENTS
-import SearchBar from "../SearchBar/SearchBar";
+import SearchBar from "../../../../modules/switches/components/SearchBar";
 import QueryItem from "../QueryItem/QueryItem";
 import AccessoriesList from "../AccessoriesList/AccessoriesList";
 import RelatedItems from "../RelatedItems/RelatedItems";
