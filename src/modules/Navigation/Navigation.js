@@ -28,7 +28,7 @@ export default function Navigation() {
         </NavLink> */}
 
         <NavLink
-          to="/switches"
+          to="/"
           style={({ isActive }) => (isActive ? active : notActive)}
         >
           Телергон

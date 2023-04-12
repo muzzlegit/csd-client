@@ -14,7 +14,7 @@ function App() {
       <Routes>
         {/* <Route path="/" element={<Rpc />} />
         <Route path="/copper" element={<CopperPrice />} /> */}
-        <Route path="/switches" element={<Switches />} />
+        <Route path="/" element={<Switches />} />
       </Routes>
     </Container>
   );
