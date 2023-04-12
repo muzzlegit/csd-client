@@ -19,19 +19,17 @@ export default function Navigation() {
         >
           RPC
         </NavLink> */}
-
+        <NavLink
+          to="/"
+          style={({ isActive }) => (isActive ? active : notActive)}
+        >
+          Перемикачі
+        </NavLink>
         <NavLink
           to="/copper"
           style={({ isActive }) => (isActive ? active : notActive)}
         >
           Ціна мідь та алюміній
-        </NavLink>
-
-        <NavLink
-          to="/switches"
-          style={({ isActive }) => (isActive ? active : notActive)}
-        >
-          Перемикачі
         </NavLink>
       </div>
 

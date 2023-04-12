@@ -10,8 +10,8 @@ function App() {
       <Navigation />
       <Routes>
         {/* <Route path="/" element={<Rpc />} /> */}
+        <Route path="/" element={<Switches />} />
         <Route path="/copper" element={<Calculations />} />
-        <Route path="/switches" element={<Switches />} />
       </Routes>
     </div>
   );
