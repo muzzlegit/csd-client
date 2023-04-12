@@ -6,7 +6,7 @@ import useQueryItem from "modules/switches/hooks/useQueryItem";
 import useSwitchesData from "modules/switches/hooks/useSwitchesData";
 
 export default function RelatedItems({ onChange }) {
-  const { queryItem, setItemByID } = useQueryItem();
+  const { queryItem } = useQueryItem();
   const { getItemById } = useSwitchesData();
 
   const { relatedItems } = queryItem;

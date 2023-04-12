@@ -1,5 +1,4 @@
 import styled from "@emotion/styled";
-import theme from "shared/constants/theme";
 
 const appTemplateAreas = `
   'navbar'

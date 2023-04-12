@@ -12,7 +12,7 @@ const useItemsList = () => {
 
   useEffect(() => {
     setItemsList(VECTOR);
-  }, []);
+  }, [VECTOR, setItemsList]);
 
   return { itemsList, setItemsList };
 };

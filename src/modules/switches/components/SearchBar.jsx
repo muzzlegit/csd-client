@@ -1,4 +1,3 @@
-import React, { useState } from "react";
 //COMPONENTS
 import Input from "shared/UI/inputs/Input";
 import Header from "shared/components/Header/Header";

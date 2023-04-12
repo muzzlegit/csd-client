@@ -36,7 +36,7 @@ export const useFilters = () => {
       }
     );
     return options;
-  }, []);
+  }, [VECTOR]);
 
   useEffect(() => {
     let checker = false;

@@ -12,7 +12,7 @@ export default function Navigation() {
 
   return (
     <nav>
-      <dev className="p-1 flex justify-center gap-6">
+      <div className="p-1 flex justify-center gap-6">
         <NavLink
           to="/"
           style={({ isActive }) => (isActive ? active : notActive)}
@@ -33,7 +33,7 @@ export default function Navigation() {
         >
           Телергон
         </NavLink>
-      </dev>
+      </div>
 
       <hr className="border-0 h-px bg-hr" />
     </nav>

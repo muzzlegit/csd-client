@@ -19,10 +19,13 @@ const useSwitchesData = () => {
       return queryItem;
     } else return false;
   };
-  const getFilteredItemsByProperty = useCallback((property, value) => {
-    if (value === "all") return VECTOR;
-    return VECTOR.filter((item) => item[property] === value);
-  }, []);
+  const getFilteredItemsByProperty = useCallback(
+    (property, value) => {
+      if (value === "all") return VECTOR;
+      return VECTOR.filter((item) => item[property] === value);
+    },
+    [VECTOR]
+  );
 
   return { VECTOR, getItemById, getFilteredItemsByProperty };
 };
