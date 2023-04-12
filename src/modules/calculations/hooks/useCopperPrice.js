@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 import useLocalStorage from "shared/hooks/useLocalStorage";
 
 const useCopperPrice = () => {
-  const [copperPrice, setCopperPrice] = useLocalStorage("ціна", 560);
+  const [copperPrice, setCopperPrice] = useLocalStorage("мідь", 560);
   const [exchange, setExchange] = useLocalStorage("курс", 41.0);
   const [coefficient] = useState(21);
   const [discount, setDiscount] = useState(0);
