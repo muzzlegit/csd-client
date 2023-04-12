@@ -13,7 +13,7 @@ export default function Navigation() {
   return (
     <nav>
       <div className="p-1 flex justify-center gap-6">
-        <NavLink
+        {/* <NavLink
           to="/"
           style={({ isActive }) => (isActive ? active : notActive)}
         >
@@ -25,7 +25,7 @@ export default function Navigation() {
           style={({ isActive }) => (isActive ? active : notActive)}
         >
           Ціна мідь та алюміній
-        </NavLink>
+        </NavLink> */}
 
         <NavLink
           to="/switches"
