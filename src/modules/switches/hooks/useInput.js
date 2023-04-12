@@ -1,9 +1,9 @@
-import { useCallback, useEffect, useState } from "react";
+import { useCallback, useState } from "react";
 //HOOKS
 import useQueryItem from "./useQueryItem";
 
 export const useInput = () => {
-  const { setItemByID, clearItem } = useQueryItem();
+  const { setItemByID } = useQueryItem();
   const [value, setValue] = useState("");
 
   const onChange = useCallback(

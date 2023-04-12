@@ -13,7 +13,7 @@ const initialFilter = {
 export const useFilters = () => {
   const [filter, setFilter] = useState(initialFilter);
   const { getFilteredItemsByProperty } = useSwitchesData();
-  const { itemsList, setItemsList } = useItemsList();
+  const { setItemsList } = useItemsList();
   const { VECTOR } = useSwitchesData();
 
   const filtersOptions = useMemo(() => {
