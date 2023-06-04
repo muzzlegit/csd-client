@@ -13,12 +13,12 @@ export default function Navigation() {
   return (
     <nav>
       <div className="p-1 flex justify-center gap-6">
-        {/* <NavLink
-          to="/"
+        <NavLink
+          to="/Rpc"
           style={({ isActive }) => (isActive ? active : notActive)}
         >
           RPC
-        </NavLink> */}
+        </NavLink>
         <NavLink
           to="/"
           style={({ isActive }) => (isActive ? active : notActive)}
