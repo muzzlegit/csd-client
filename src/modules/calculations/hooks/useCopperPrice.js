@@ -6,14 +6,8 @@ const useCopperPrice = () => {
   const [standartCopperPrice, setStandartCopperPrice] = useState(555);
   const [irregularCopperPrice, setIrregularCopperPrice] = useState(565);
 
-  const [standartPrice, setStandartPrice] = useLocalStorage(
-    "мідь_стандарт_прайс",
-    854
-  );
-  const [irregularPrice, setIrregularPrice] = useLocalStorage(
-    "мідь_нестандарт_прайс",
-    869
-  );
+  const [standartPrice] = useLocalStorage("мідь_стандарт_прайс", 854);
+  const [irregularPrice] = useLocalStorage("мідь_нестандарт_прайс", 869);
   const [standartDiscount, setStandartDiscount] = useState(0);
   const [irregularDiscount, setIrregularDiscount] = useState(0);
 
