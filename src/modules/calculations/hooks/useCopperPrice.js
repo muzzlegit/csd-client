@@ -1,29 +1,49 @@
-import { useState, useEffect } from "react";
 //HOOKS
+import { useEffect, useState } from "react";
 import useLocalStorage from "shared/hooks/useLocalStorage";
 
 const useCopperPrice = () => {
-  const [copperPrice, setCopperPrice] = useLocalStorage("мідь", 560);
-  const [exchange, setExchange] = useLocalStorage("курс", 41.0);
-  const [coefficient] = useState(21);
-  const [discount, setDiscount] = useState(0);
+  const [standartCopperPrice, setStandartCopperPrice] = useState(555);
+  const [irregularCopperPrice, setIrregularCopperPrice] = useState(565);
 
-  const setNewCopperPrice = (price) => {
-    setCopperPrice(price);
+  const [standartPrice, setStandartPrice] = useLocalStorage(
+    "мідь_стандарт_прайс",
+    854
+  );
+  const [irregularPrice, setIrregularPrice] = useLocalStorage(
+    "мідь_нестандарт_прайс",
+    869
+  );
+  const [standartDiscount, setStandartDiscount] = useState(0);
+  const [irregularDiscount, setIrregularDiscount] = useState(0);
+
+  const handleStandartPrice = (value) => {
+    setStandartCopperPrice(value);
   };
-  const setNewExchange = (exchange) => {
-    setExchange(exchange);
+  const handleIrregularPrice = (value) => {
+    setIrregularCopperPrice(value);
   };
 
   useEffect(() => {
-    setDiscount(
-      Math.abs((copperPrice / exchange / coefficient - 1) * 100 + 0.01).toFixed(
-        2
-      )
+    setStandartDiscount(
+      (100 - (standartCopperPrice * 100) / standartPrice).toFixed(1)
     );
-  }, [copperPrice, exchange, coefficient, setDiscount]);
+  }, [standartCopperPrice, standartPrice]);
 
-  return { copperPrice, exchange, discount, setNewCopperPrice, setNewExchange };
+  useEffect(() => {
+    setIrregularDiscount(
+      (100 - (irregularCopperPrice * 100) / irregularPrice).toFixed(1)
+    );
+  }, [irregularCopperPrice, irregularPrice]);
+
+  return {
+    standartCopperPrice,
+    irregularCopperPrice,
+    standartDiscount,
+    irregularDiscount,
+    handleIrregularPrice,
+    handleStandartPrice,
+  };
 };
 
 export default useCopperPrice;

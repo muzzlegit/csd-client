@@ -1,10 +1,10 @@
-import { useState, useEffect } from "react";
+import { useEffect, useState } from "react";
 //HOOKS
 import useLocalStorage from "shared/hooks/useLocalStorage";
 
 const useAluminumPrice = () => {
-  const [aluminumPrice, setAluminumPrice] = useLocalStorage("алюміній", 300);
-  const [price] = useState(461.54);
+  const [aluminumPrice, setAluminumPrice] = useLocalStorage("алюміній", 260);
+  const [price] = useState(400);
   const [discount, setDiscount] = useState(0);
 
   const setNewAluminumPrice = (price) => {
