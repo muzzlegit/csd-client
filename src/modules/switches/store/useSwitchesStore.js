@@ -1,6 +1,6 @@
 import { create } from "zustand";
-import { immer } from "zustand/middleware/immer";
 import { devtools } from "zustand/middleware";
+import { immer } from "zustand/middleware/immer";
 //CONSTS
 
 //HELPERS
@@ -21,7 +21,7 @@ const useSwitchesStore = create(
         voltageType: "AC",
         description: "Перемикач навантаження 250 А, 3 полюси",
         accessories: [
-          { code: "UM-Z00011", description: "Мотор-привід 125-400A" },
+          { code: "UM-C0A230ZVPJ9", description: "Мотор-привід 125-400A" },
           { code: "D5LSI01", description: "Пряма ручка" },
           {
             code: "D5LLA01",
