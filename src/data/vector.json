@@ -5220,7 +5220,7 @@
     "voltageType": "AC",
     "description": "Перемикач навантаження 125 А, 3 полюси",
     "accessories": [
-      { "code": "UM-Z00011", "description": "Мотор-привід 125-400A" },
+      { "code": "UM-C0A230ZVPJ9", "description": "Мотор-привід 125-400A" },
       { "code": "D5LSI01", "description": "Пряма ручка" },
       {
         "code": "D5LLA01",
@@ -5262,7 +5262,7 @@
     "voltageType": "AC",
     "description": "Перемикач навантаження 125 А, 3+N полюси",
     "accessories": [
-      { "code": "UM-Z00011", "description": "Мотор-привід 125-400A" },
+      { "code": "UM-C0A230ZVPJ9", "description": "Мотор-привід 125-400A" },
       { "code": "D5LSI01", "description": "Пряма ручка" },
       {
         "code": "D5LLA01",
@@ -5303,7 +5303,7 @@
     "voltageType": "AC",
     "description": "Перемикач навантаження 160 А, 3 полюси",
     "accessories": [
-      { "code": "UM-Z00011", "description": "Мотор-привід 125-400A" },
+      { "code": "UM-C0A230ZVPJ9", "description": "Мотор-привід 125-400A" },
       { "code": "D5LSI01", "description": "Пряма ручка" },
       {
         "code": "D5LLA01",
@@ -5340,7 +5340,7 @@
     "voltageType": "AC",
     "description": "Перемикач навантаження 160 А, 3+N полюси",
     "accessories": [
-      { "code": "UM-Z00011", "description": "Мотор-привід 125-400A" },
+      { "code": "UM-C0A230ZVPJ9", "description": "Мотор-привід 125-400A" },
       { "code": "D5LSI01", "description": "Пряма ручка" },
       {
         "code": "D5LLA01",
@@ -5376,7 +5376,7 @@
     "voltageType": "AC",
     "description": "Перемикач навантаження 200 А, 3 полюси",
     "accessories": [
-      { "code": "UM-Z00011", "description": "Мотор-привід 125-400A" },
+      { "code": "UM-C0A230ZVPJ9", "description": "Мотор-привід 125-400A" },
       { "code": "D5LSI01", "description": "Пряма ручка" },
       {
         "code": "D5LLA01",
@@ -5413,7 +5413,7 @@
     "voltageType": "AC",
     "description": "Перемикач навантаження 200 А, 3+N полюси",
     "accessories": [
-      { "code": "UM-Z00011", "description": "Мотор-привід 125-400A" },
+      { "code": "UM-C0A230ZVPJ9", "description": "Мотор-привід 125-400A" },
       { "code": "D5LSI01", "description": "Пряма ручка" },
       {
         "code": "D5LLA01",
@@ -5450,7 +5450,7 @@
     "voltageType": "AC",
     "description": "Перемикач навантаження 250 А, 3 полюси",
     "accessories": [
-      { "code": "UM-Z00011", "description": "Мотор-привід 125-400A" },
+      { "code": "UM-C0A230ZVPJ9", "description": "Мотор-привід 125-400A" },
       { "code": "D5LSI01", "description": "Пряма ручка" },
       {
         "code": "D5LLA01",
@@ -5485,7 +5485,7 @@
     "voltageType": "AC",
     "description": "Перемикач навантаження 250 А, 3+N полюси",
     "accessories": [
-      { "code": "UM-Z00011", "description": "Мотор-привід 125-400A" },
+      { "code": "UM-C0A230ZVPJ9", "description": "Мотор-привід 125-400A" },
       { "code": "D5LSI01", "description": "Пряма ручка" },
       {
         "code": "D5LLA01",
@@ -5520,7 +5520,7 @@
     "voltageType": "AC",
     "description": "Перемикач навантаження 250 А, 3 полюси",
     "accessories": [
-      { "code": "UM-Z00011", "description": "Мотор-привід 125-400A" },
+      { "code": "UM-C0A230ZVPJ9", "description": "Мотор-привід 125-400A" },
       { "code": "D5LLI12", "description": "Пряма ручка" },
       {
         "code": "D5LLA11",
@@ -5550,7 +5550,7 @@
     "voltageType": "AC",
     "description": "Перемикач навантаження 250 А, 3+N полюси",
     "accessories": [
-      { "code": "UM-Z00011", "description": "Мотор-привід 125-400A" },
+      { "code": "UM-C0A230ZVPJ9", "description": "Мотор-привід 125-400A" },
       { "code": "D5LLI12", "description": "Пряма ручка" },
       {
         "code": "D5LLA11",
@@ -5580,7 +5580,7 @@
     "voltageType": "AC",
     "description": "Перемикач навантаження 315 А, 3 полюси",
     "accessories": [
-      { "code": "UM-Z00011", "description": "Мотор-привід 125-400A" },
+      { "code": "UM-C0A230ZVPJ9", "description": "Мотор-привід 125-400A" },
       { "code": "D5LLI12", "description": "Пряма ручка" },
       {
         "code": "D5LLA11",
@@ -5610,7 +5610,7 @@
     "voltageType": "AC",
     "description": "Перемикач навантаження 315 А, 3+N полюси",
     "accessories": [
-      { "code": "UM-Z00011", "description": "Мотор-привід 125-400A" },
+      { "code": "UM-C0A230ZVPJ9", "description": "Мотор-привід 125-400A" },
       { "code": "D5LLI12", "description": "Пряма ручка" },
       {
         "code": "D5LLA11",
@@ -5640,7 +5640,7 @@
     "voltageType": "AC",
     "description": "Перемикач навантаження 400 А, 3 полюси",
     "accessories": [
-      { "code": "UM-Z00011", "description": "Мотор-привід 125-400A" },
+      { "code": "UM-C0A230ZVPJ9", "description": "Мотор-привід 125-400A" },
       { "code": "D5LLI12", "description": "Пряма ручка" },
       {
         "code": "D5LLA11",
@@ -5670,7 +5670,7 @@
     "voltageType": "AC",
     "description": "Перемикач навантаження 400 А, 3+N полюси",
     "accessories": [
-      { "code": "UM-Z00011", "description": "Мотор-привід 125-400A" },
+      { "code": "UM-C0A230ZVPJ9", "description": "Мотор-привід 125-400A" },
       { "code": "D5LLI12", "description": "Пряма ручка" },
       {
         "code": "D5LLA11",
@@ -5758,7 +5758,7 @@
     "voltageType": "AC",
     "description": "Перемикач навантаження 630 А, 3 полюси",
     "accessories": [
-      { "code": "UM-Z00014", "description": "Мотор-привід 630-800A" },
+      { "code": "UM-C25230MVPJ9", "description": "Мотор-привід 630-800A" },
       { "code": "D5LLI12", "description": "Пряма ручка" },
       {
         "code": "D5LLI22",
@@ -5787,7 +5787,7 @@
     "voltageType": "AC",
     "description": "Перемикач навантаження 630 А, 3+N полюси",
     "accessories": [
-      { "code": "UM-Z00014", "description": "Мотор-привід 630-800A" },
+      { "code": "UM-C25230MVPJ9", "description": "Мотор-привід 630-800A" },
       { "code": "D5LLI12", "description": "Пряма ручка" },
       {
         "code": "D5LLI22",
@@ -5816,7 +5816,7 @@
     "voltageType": "AC",
     "description": "Перемикач навантаження 800 А, 3 полюси",
     "accessories": [
-      { "code": "UM-Z00014", "description": "Мотор-привід 630-800A" },
+      { "code": "UM-C25230MVPJ9", "description": "Мотор-привід 630-800A" },
       { "code": "D5LLI12", "description": "Пряма ручка" },
       {
         "code": "D5LLI22",
@@ -5845,7 +5845,7 @@
     "voltageType": "AC",
     "description": "Перемикач навантаження 800 А, 3+N полюси",
     "accessories": [
-      { "code": "UM-Z00014", "description": "Мотор-привід 630-800A" },
+      { "code": "UM-C25230MVPJ9", "description": "Мотор-привід 630-800A" },
       { "code": "D5LLI12", "description": "Пряма ручка" },
       {
         "code": "D5LLI22",
