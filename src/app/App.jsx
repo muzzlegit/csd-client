@@ -1,5 +1,10 @@
+import AppRouter from "./AppRouter";
+import Providers from "./Providers";
+
 function App() {
-  return <div>fsdfsdfsdfs</div>;
+  return <Providers>
+    <AppRouter />
+  </Providers>
 }
 
 export default App;
