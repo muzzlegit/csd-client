@@ -11,6 +11,8 @@ html,
 body,
 #root,
 .app {
+  height: 100%;
+  background-color: #36464d;
   font-family: "Roboto", sans-serif;
   @apply text-text;
 }

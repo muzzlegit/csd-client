@@ -1,5 +1,5 @@
 //COMPONENTS
-import { Aluminum, CopperPrice } from "modules/calculations";
+import { CopperPrice, Aluminum } from "modules/calculations";
 
 const Сalculations = () => {
   return (
@@ -7,7 +7,6 @@ const Сalculations = () => {
       <div className="grid-in-C2 p-2 bg-primary shadow-switches rounded-md">
         <CopperPrice />
       </div>
-      <div className="grid-in-C3 p-2 bg-primary shadow-switches rounded-md"></div>
       <div className="grid-in-C11 p-2 bg-primary shadow-switches rounded-md">
         <Aluminum />
       </div>

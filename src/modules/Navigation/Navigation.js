@@ -31,12 +31,6 @@ export default function Navigation() {
         >
           Ціна мідь та алюміній
         </NavLink>
-        <NavLink
-          to="/busbars"
-          style={({ isActive }) => (isActive ? active : notActive)}
-        >
-          Шини
-        </NavLink>
       </div>
 
       <hr className="border-0 h-px bg-hr" />
