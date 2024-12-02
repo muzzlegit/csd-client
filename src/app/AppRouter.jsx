@@ -1,18 +1,15 @@
-
+import { InfoModule } from "modules/info";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import RootLayout from "./RootLayout";
 
 const AppRouter = () => {
   return (
-    <BrowserRouter
-      future={{
-        v7_startTransition: true,
-      }}
-    >
+    <BrowserRouter>
       <Routes>
         <Route path="/" element={<RootLayout />}>
-          <Route index element={<div />} />
-          <Route path="auth" element={<div />} />
+          <Route index element={<InfoModule />} />
+          <Route path="switch" element={<div />} />
+          <Route path="rpc" element={<div />} />
         </Route>
       </Routes>
     </BrowserRouter>

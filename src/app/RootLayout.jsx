@@ -1,15 +1,16 @@
-import React from 'react'
-import { Outlet } from 'react-router-dom'
-import { Container } from './RootLayout.styled'
-import { NavBar } from 'interface/index'
+import { NavBar } from "interface/index";
+import { Outlet } from "react-router-dom";
+import { Container, Module } from "./RootLayout.styled";
 
 const RootLayout = () => {
   return (
     <Container>
-      <Outlet />
+      <Module>
+        <Outlet />
+      </Module>
       <NavBar />
     </Container>
-  )
-}
+  );
+};
 
-export default RootLayout
+export default RootLayout;
