@@ -1,9 +1,10 @@
-import CooperCurrent from "modules/info/components/CooperCurrent/CooperCurrent";
+import BusbarsCurrent from "modules/info/components/BusbarsCurrent/BusbarsCurrent";
+import copperData from "../../data/copper.json";
 
 const InfoModule = () => {
   return (
     <div>
-      <CooperCurrent />
+      <BusbarsCurrent type="copper" busbarData={copperData} />
     </div>
   );
 };
