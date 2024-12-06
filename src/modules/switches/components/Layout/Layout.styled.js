@@ -3,7 +3,7 @@ import styled from "@emotion/styled";
 export const Container = styled.div(({ theme }) => ({
   width: "100%",
   borderRadius: "16px",
-  overflow: "hidden",
+  // overflow: "hidden",
   border: `1px solid ${theme.colors.border[100]}`,
   backgroundColor: theme.colors.secondary[100],
 }));
@@ -13,6 +13,8 @@ export const Header = styled.div(({ theme }) => ({
   display: "flex",
   alignItems: "center",
   justifyContent: "center",
+  borderTopRightRadius: "16px",
+  borderTopLeftRadius: "16px",
   backgroundColor: theme.colors.acentYellow[80],
 }));
 
