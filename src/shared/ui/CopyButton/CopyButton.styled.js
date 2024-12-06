@@ -2,7 +2,7 @@ import styled from "@emotion/styled";
 import { theme } from "styles/theme";
 
 const colors = {
-  copy: theme.colors.textIdle[100],
+  copy: theme.colors.acentCyan[60],
   success: theme.colors.acentBlue[100],
   failed: theme.colors.acentRed[100],
 };

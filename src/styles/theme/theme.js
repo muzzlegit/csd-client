@@ -10,7 +10,7 @@ export const theme = {
     textIdle: getColorToken("#909090"),
     acentBlue: getColorToken("#4060bf"),
     acentCyan: getColorToken("#40bf9f"),
-    acentRed: getColorToken("#bf4060"),
+    acentRed: getColorToken("#c8214b"),
     acentYellow: getColorToken("#F8D481"),
   },
 };
