@@ -1,6 +1,7 @@
 //COMPONENTS
 import AccessoriesList from "modules/switches/components/AccessoriesList/AccessoriesList";
 import FiltersBox from "modules/switches/components/FiltersBox/FiltersBox";
+import ItemsList from "modules/switches/components/ItemsList/ItemsList";
 import QueryItem from "modules/switches/components/QueryItem/QueryItem";
 import SearchBar from "modules/switches/components/SearchBar/SearchBar";
 import { Cell, Container } from "./Switches.styled";
@@ -19,7 +20,9 @@ function Switches() {
       <Cell area="e">
         <QueryItem />
       </Cell>
-      <Cell area="f"></Cell>
+      <Cell area="f">
+        <ItemsList />
+      </Cell>
       <Cell area="g"></Cell>
       <Cell area="h">
         <AccessoriesList />

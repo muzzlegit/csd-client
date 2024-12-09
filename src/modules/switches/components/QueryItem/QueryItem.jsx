@@ -1,4 +1,5 @@
 import useSwitchesStore from "modules/switches/store/useSwitchesStore";
+import { CopyButton } from "shared/ui";
 import Layout from "../Layout/Layout";
 import { Container, Label, Wrap } from "./QueryItem.styled";
 
@@ -23,6 +24,9 @@ const QueryItem = () => {
               <Wrap key={index}>
                 <Label>{field.label}</Label>
                 <p>{field.value}</p>
+                {field.label === "Артикул:" ? (
+                  <CopyButton size="12" value={field.value} />
+                ) : null}
               </Wrap>
             ))}
           </>

@@ -27,8 +27,7 @@ export const Button = styled.div(({ theme }) => ({
   gap: "4px",
   borderRadius: "6px",
   cursor: "pointer",
-  fontSize: "14px",
-  fontWeight: 700,
+  fontSize: "12px",
   color: theme.colors?.text[100],
   backgroundColor: theme.colors?.primary[80],
 }));
@@ -42,6 +41,7 @@ export const List = styled.div(({ theme }) => ({
   width: "100%",
   textAlign: "center",
   borderRadius: "4px",
+  border: `1px solid ${theme.colors.border[100]}`,
   backgroundColor: theme.colors?.primary[100],
 }));
 

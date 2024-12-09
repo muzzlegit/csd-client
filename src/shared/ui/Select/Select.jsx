@@ -4,6 +4,7 @@ import { FiChevronDown } from "react-icons/fi";
 import { Button, Container, Item, Label, List, Wrap } from "./Select.styled";
 
 const Select = ({
+  id,
   label,
   title,
   value,
@@ -11,6 +12,7 @@ const Select = ({
   onChange,
   placeholder = "Виберіть варіант",
   width,
+  ...rest
 }) => {
   const [isOpen, setIsOpen] = useState(false);
   const selectRef = useRef(null);
@@ -46,19 +48,16 @@ const Select = ({
     };
   }, [isOpen]);
 
+  console.log(value, options);
+
   return (
-    <Container ref={selectRef} width={width}>
+    <Container ref={selectRef} width={width} {...rest}>
       {label ? <Label>{label}: </Label> : null}
       <Wrap width={width}>
-        <Button
-          type="button"
-          title={title}
-          onClick={() => setIsOpen((prev) => !prev)}
-        >
+        <Button title={title} onClick={() => setIsOpen((prev) => !prev)}>
           <div>
-            {value
-              ? options.find((option) => option.label === value)?.label
-              : placeholder}
+            {options.find((option) => option.value === value)?.label ??
+              placeholder}
           </div>
           <FiChevronDown size="20" />
         </Button>
@@ -67,7 +66,9 @@ const Select = ({
             {options.map((option) => (
               <Item
                 key={option.label}
-                onClick={() => handleSelect(option.value)}
+                onClick={handleSelect}
+                data-name={id}
+                data-value={option.value}
               >
                 {option.label}
               </Item>
@@ -82,12 +83,19 @@ const Select = ({
 export default Select;
 
 Select.propTypes = {
+  id: PropTypes.oneOfType([
+    PropTypes.string.isRequired,
+    PropTypes.number.isRequired,
+  ]),
   label: PropTypes.string,
   title: PropTypes.string,
   value: PropTypes.oneOfType([PropTypes.string, PropTypes.number]).isRequired,
   options: PropTypes.arrayOf(
     PropTypes.shape({
-      label: PropTypes.string.isRequired,
+      label: PropTypes.oneOfType([
+        PropTypes.string.isRequired,
+        PropTypes.number.isRequired,
+      ]),
       value: PropTypes.oneOfType([
         PropTypes.string.isRequired,
         PropTypes.number.isRequired,
