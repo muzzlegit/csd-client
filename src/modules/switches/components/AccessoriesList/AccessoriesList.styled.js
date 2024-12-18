@@ -1,10 +1,16 @@
 import styled from "@emotion/styled";
 
 export const Container = styled.div({
-  minHeight: "120px",
+  maxHeight: "400px",
   display: "flex",
   flexDirection: "column",
   gap: "4px",
+  overflowX: "hidden",
+  overflowY: "auto",
+  scrollbarWidth: "thin",
+  "&::-webkit-scrollbar": {
+    width: "8x",
+  },
 });
 
 export const Wrap = styled.div(({ theme }) => ({

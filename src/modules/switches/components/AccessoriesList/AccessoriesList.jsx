@@ -12,9 +12,9 @@ const AccessoriesList = () => {
         {queryItem?.accessories
           ? queryItem.accessories.map((accessory) => (
               <Wrap key={accessory.code}>
+                <CopyButton size="14" value={accessory.code} />
                 <Code>{accessory.code}</Code>
                 <Description>{accessory.description}</Description>
-                <CopyButton size="14" value={accessory.code} />
               </Wrap>
             ))
           : null}

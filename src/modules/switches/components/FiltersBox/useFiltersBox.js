@@ -1,14 +1,11 @@
-import { getInitialSwitchesList } from "modules/switches/utils/helpers";
-import { useState } from "react";
+import useSwitchesStore from "modules/switches/store/useSwitchesStore";
+import { FILTERS } from "modules/switches/utils/constants";
 import { getSortedUniqueValuesByProperty } from "shared/helpers";
-import SWITCHES from "../../data/vector.json";
-
-const properties = ["manufacturer", "section", "series", "current", "pole"];
+import SWITCHES from "../../data/switches.json";
 
 const createFilterOptions = (switchesList) => {
-  const list = getInitialSwitchesList(switchesList);
-  return properties.reduce((acc, property) => {
-    acc[property] = getSortedUniqueValuesByProperty(property, list).map(
+  return FILTERS.reduce((acc, property) => {
+    acc[property] = getSortedUniqueValuesByProperty(property, switchesList).map(
       (item) => ({
         label: item.toString(),
         value: item.toString(),
@@ -19,24 +16,17 @@ const createFilterOptions = (switchesList) => {
   }, {});
 };
 
-const initialFilter = properties.reduce((acc, property) => {
-  acc[property] = "all";
-  return acc;
-}, {});
-
 const filtersOptions = createFilterOptions(SWITCHES);
 
 const useFiltersBox = () => {
-  const [filters, setFilters] = useState(initialFilter);
+  const filters = useSwitchesStore((state) => state.filters);
+  const setFilter = useSwitchesStore((state) => state.setFilter);
 
   const handleFilters = (e) => {
     const { name, value } = e.currentTarget.dataset;
 
     if (name) {
-      setFilters((prev) => {
-        if (prev[name] === value) return prev;
-        return { ...prev, [name]: value };
-      });
+      setFilter(name, value);
     }
   };
 

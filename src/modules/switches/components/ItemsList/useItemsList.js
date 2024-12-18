@@ -1,16 +1,24 @@
 import useSwitchesStore from "modules/switches/store/useSwitchesStore";
-import { getInitialSwitchesList } from "modules/switches/utils/helpers";
-import SWITCHES from "../../data/vector.json";
+import { useMemo } from "react";
 
 const useItemsList = () => {
+  const filters = useSwitchesStore((state) => state.filters);
   const setQueryItem = useSwitchesStore((state) => state.setQueryItem);
-  const list = getInitialSwitchesList(SWITCHES);
+  const getItemsList = useSwitchesStore((state) => state.getItemsList);
+
+  const filteredItemsList = useMemo(() => {
+    return getItemsList().filter((item) =>
+      Object.entries(filters).every(([filter, value]) =>
+        value === "all" ? true : item?.[filter] === value
+      )
+    );
+  }, [filters, getItemsList]);
 
   const handleItemClick = (item) => {
     setQueryItem(item);
   };
 
-  return { list, handleItemClick };
+  return { filteredItemsList, handleItemClick };
 };
 
 export default useItemsList;

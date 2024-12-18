@@ -25,7 +25,7 @@ const QueryItem = () => {
                 <Label>{field.label}</Label>
                 <p>{field.value}</p>
                 {field.label === "Артикул:" ? (
-                  <CopyButton size="12" value={field.value} />
+                  <CopyButton size="14" value={field.value} />
                 ) : null}
               </Wrap>
             ))}

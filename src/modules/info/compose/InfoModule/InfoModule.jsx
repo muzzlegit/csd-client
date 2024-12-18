@@ -1,11 +1,12 @@
 import BusbarsCurrent from "modules/info/components/BusbarsCurrent/BusbarsCurrent";
 import copperData from "../../data/copper.json";
+import { Container } from "./InfoModule.styled";
 
 const InfoModule = () => {
   return (
-    <div>
+    <Container>
       <BusbarsCurrent type="copper" busbarData={copperData} />
-    </div>
+    </Container>
   );
 };
 

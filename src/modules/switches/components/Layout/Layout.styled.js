@@ -1,10 +1,10 @@
 import styled from "@emotion/styled";
 
 export const Container = styled.div(({ theme }) => ({
+  minHeight: "130px",
+  minWidth: "200px",
   width: "100%",
   borderRadius: "16px",
-  // overflow: "hidden",
-  border: `1px solid ${theme.colors.border[100]}`,
   backgroundColor: theme.colors.secondary[100],
 }));
 
@@ -15,7 +15,7 @@ export const Header = styled.div(({ theme }) => ({
   justifyContent: "center",
   borderTopRightRadius: "16px",
   borderTopLeftRadius: "16px",
-  backgroundColor: theme.colors.acentYellow[80],
+  backgroundColor: theme.colors.white[20],
 }));
 
 export const Title = styled.p(({ theme }) => ({

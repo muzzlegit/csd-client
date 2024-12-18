@@ -4,7 +4,7 @@ export const configObj = {
     aluminum: "Алюмінієва шина",
   },
   color: {
-    copper: "#EC7C06",
+    copper: "#804D16",
     aluminum: "#a5bfc1",
   },
 };

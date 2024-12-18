@@ -17,11 +17,11 @@ export const Item = styled.div(({ theme, isActive }) => ({
   justifyContent: "center",
   borderRadius: "50%",
   cursor: "pointer",
-  border: `1px solid ${theme.colors.border[100]}`,
   color: theme.colors?.textIdle?.[100],
   ...(isActive
     ? {
-        backgroundColor: theme.colors.acentYellow[100],
+        backgroundColor: theme.colors.acent[100],
+        color: theme.colors?.text?.[100],
       }
-    : { backgroundColor: theme.colors.secondary[100] }),
+    : { backgroundColor: theme.colors.white[20] }),
 }));

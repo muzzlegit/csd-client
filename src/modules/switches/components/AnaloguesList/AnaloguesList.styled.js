@@ -6,13 +6,7 @@ export const Container = styled.div(({ theme }) => ({
   display: "flex",
   flexDirection: "column",
   gap: "4px",
-  overflowY: "auto",
-  overflowX: "none",
-  scrollbarWidth: "thin",
-  "&::-webkit-scrollbar": {
-    width: "8x",
-  },
-  fontSize: "14px",
+  overflowY: "scroll",
   color: theme.colors.textIdle[100],
 }));
 

@@ -16,6 +16,7 @@ const Select = ({
 }) => {
   const [isOpen, setIsOpen] = useState(false);
   const selectRef = useRef(null);
+
   const handleSelect = (selectedValue) => {
     onChange(selectedValue);
     setIsOpen(false);
@@ -47,8 +48,6 @@ const Select = ({
       document.removeEventListener("keydown", handleKeyDown);
     };
   }, [isOpen]);
-
-  console.log(value, options);
 
   return (
     <Container ref={selectRef} width={width} {...rest}>

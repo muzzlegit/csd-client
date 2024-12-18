@@ -25,9 +25,10 @@ const BusbarsCurrent = ({ type, busbarData }) => {
   } = useBusbarsCurrent(busbarData);
 
   return (
-    <Container type={type}>
-      <Title>{configObj.title[type]}</Title>
+    <Container>
+      <Title type={type}>{configObj.title[type]}</Title>
       <DotBox>
+        <div>Товщина</div>
         {thicknessList.map((thickness) => {
           return (
             <Dot
@@ -40,6 +41,7 @@ const BusbarsCurrent = ({ type, busbarData }) => {
         })}
       </DotBox>
       <DotBox>
+        <div>Ширина</div>
         {widthList.map((width) => {
           return (
             <Dot

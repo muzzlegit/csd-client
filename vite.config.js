@@ -13,4 +13,13 @@ export default defineConfig({
       shared: "/src/shared/",
     },
   },
+  server: {
+    proxy: {
+      "/api": {
+        target: "https://services.vector-vs.com/price-list-internal", // URL вашого сервера
+        changeOrigin: true, // Змінює заголовок Origin, щоб співпадав із сервером
+        rewrite: (path) => path.replace(/^\/api/, ""),
+      },
+    },
+  },
 });

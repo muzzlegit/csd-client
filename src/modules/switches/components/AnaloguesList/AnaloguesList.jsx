@@ -1,13 +1,14 @@
 import Layout from "../Layout/Layout";
-import { Acent, Container, Item } from "./ItemsList.styled";
-import useItemsList from "./useItemsList";
+import { Acent, Container, Item } from "./AnaloguesList.styled";
+import useAnaloguesList from "./useAnaloguesList";
 
-const ItemsList = () => {
-  const { filteredItemsList, handleItemClick } = useItemsList();
+const AnaloguesList = () => {
+  const { analogues, handleItemClick } = useAnaloguesList();
+  if (!analogues) return null;
   return (
-    <Layout title="Обладнання">
+    <Layout title="Можливі заміни">
       <Container>
-        {filteredItemsList.map((item) => (
+        {analogues.map((item) => (
           <Item
             key={item.code}
             onClick={() => {
@@ -24,4 +25,4 @@ const ItemsList = () => {
   );
 };
 
-export default ItemsList;
+export default AnaloguesList;

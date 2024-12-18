@@ -20,5 +20,5 @@ export const Message = styled.p(({ theme }) => ({
   minHeight: "16px",
   textAlign: "center",
   fontSize: "14px",
-  color: theme.colors.acentRed[100],
+  color: theme.colors.red[100],
 }));

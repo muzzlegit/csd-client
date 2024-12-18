@@ -41,7 +41,7 @@ export const List = styled.div(({ theme }) => ({
   width: "100%",
   textAlign: "center",
   borderRadius: "4px",
-  border: `1px solid ${theme.colors.border[100]}`,
+  border: `1px solid ${theme.colors.textIdle[50]}`,
   backgroundColor: theme.colors?.primary[100],
 }));
 
@@ -52,7 +52,6 @@ export const Item = styled.div(({ theme }) => ({
   cursor: "pointer",
   color: theme.colors?.textIdle[100],
   "&:hover": {
-    fontWeight: 700,
     color: theme.colors?.text[100],
     backgroundColor: theme.colors?.primary[30],
   },

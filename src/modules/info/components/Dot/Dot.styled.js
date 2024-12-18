@@ -6,7 +6,7 @@ export const Container = styled.div(({ theme, selected }) => ({
   alignItems: "center",
   gap: "2px",
   fontSize: "14px",
-  ...(selected ? { color: theme.colors?.acentBlue?.[100] } : {}),
+  ...(selected ? { color: theme.colors?.acent?.[100] } : {}),
 }));
 
 export const DotBox = styled.div(({ theme, selected }) => ({
@@ -18,7 +18,7 @@ export const DotBox = styled.div(({ theme, selected }) => ({
   cursor: "pointer",
   borderRadius: "50%",
   border: `1px solid ${
-    selected ? theme.colors?.acentBlue?.[100] : theme.colors?.textIdle?.[60]
+    selected ? theme.colors?.acent?.[100] : theme.colors?.textIdle?.[60]
   }`,
   backgroundColor: theme.colors?.primary?.[20],
 }));
@@ -27,5 +27,5 @@ export const Color = styled.div(({ theme, selected }) => ({
   width: "60%",
   height: "60%",
   borderRadius: "50%",
-  ...(selected ? { backgroundColor: theme.colors?.acentBlue?.[100] } : {}),
+  ...(selected ? { backgroundColor: theme.colors?.acent?.[100] } : {}),
 }));
