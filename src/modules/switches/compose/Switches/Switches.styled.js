@@ -4,11 +4,13 @@ export const Container = styled.div({
   padding: "8px",
   height: "100%",
   width: "100%",
-  display: "flex",
-  flexWrap: "wrap",
-  alignItems: "start",
+  display: "grid",
+  gridTemplateAreas: '"a b c" "a e f" "a e f" "d h f" "d h f" "d h g" ',
+  gridTemplateColumns: "400px 600px 560px",
+  gridTemplateRows: "repeat(6, 124px)",
+  gap: "16px",
+  alignItems: "space-between",
   justifyContent: "center",
-  gap: "8px",
   overflowY: "auto",
   scrollbarWidth: "thin",
   "&::-webkit-scrollbar": {
@@ -16,10 +18,7 @@ export const Container = styled.div({
   },
 });
 
-export const Column = styled.div({
-  flex: 1,
-  display: "flex",
-  flexDirection: "column",
-  alignItems: "center",
-  gap: "8px",
-});
+export const Cell = styled.div(({ area }) => ({
+  width: "100%",
+  gridArea: area,
+}));

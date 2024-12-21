@@ -7,11 +7,11 @@ const Turnabout = ({ count, index, onNext, onPrev, children }) => {
   return (
     <Container>
       <Wrap>
-        <Button onClick={onPrev}>
+        <Button onClick={onPrev} isActive={count > 1}>
           <GrFormPrevious size="28" />
         </Button>
         {children}
-        <Button onClick={onNext}>
+        <Button onClick={onNext} isActive={count > 1}>
           <GrFormNext size="32" />
         </Button>
       </Wrap>

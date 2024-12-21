@@ -1,8 +1,7 @@
 import styled from "@emotion/styled";
 
 export const Container = styled.div(({ theme }) => ({
-  minHeight: "130px",
-  minWidth: "200px",
+  height: "100%",
   width: "100%",
   borderRadius: "16px",
   backgroundColor: theme.colors.secondary[100],
@@ -26,5 +25,7 @@ export const Title = styled.p(({ theme }) => ({
 
 export const Content = styled.div({
   padding: "10px 12px",
+  height: "100%",
   width: "100%",
+  // overflow: "hidden",
 });

@@ -1,15 +1,19 @@
 import styled from "@emotion/styled";
 
-export const Container = styled.main(({ theme }) => ({
-  padding: "16px",
+export const Container = styled.div(({ theme }) => ({
   height: "100%",
   width: "100%",
   display: "flex",
-  gap: "8px",
+  flexDirection: "column",
   backgroundColor: theme.colors?.primary?.[100] || "#FFF",
 }));
 
-export const Module = styled.section(({ theme }) => ({
+export const Wrap = styled.div({
+  padding: "0 16px",
+  display: "flex",
+});
+
+export const Module = styled.main(({ theme }) => ({
   padding: "8px",
   height: "100%",
   width: "100%",

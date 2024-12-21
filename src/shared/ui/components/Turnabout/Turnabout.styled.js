@@ -1,6 +1,7 @@
 import styled from "@emotion/styled";
 
 export const Container = styled.div({
+  height: "100%",
   display: "flex",
   flexDirection: "column",
   alignItems: "center",
@@ -14,12 +15,13 @@ export const Wrap = styled.div({
   justifyContent: "space-between",
 });
 
-export const Button = styled.div(({ theme }) => ({
+export const Button = styled.div(({ theme, isActive }) => ({
   padding: "4px",
   border: "none",
   backgroundColor: "transparent",
   outline: "nones",
   cursor: "pointer",
+  opacity: isActive ? 1 : 0,
   color: theme?.colors?.text[100],
   "&:hover": {
     color: theme?.colors?.acent[100],

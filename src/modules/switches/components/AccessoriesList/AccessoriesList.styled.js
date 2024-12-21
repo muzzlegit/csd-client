@@ -1,7 +1,7 @@
 import styled from "@emotion/styled";
 
 export const Container = styled.div({
-  maxHeight: "400px",
+  maxHeight: "350px",
   display: "flex",
   flexDirection: "column",
   gap: "4px",
@@ -27,7 +27,6 @@ export const Code = styled.p(({ theme }) => ({
 }));
 
 export const Description = styled.p(({ theme }) => ({
-  whiteSpace: "nowrap",
   fontSize: "14px",
   color: theme.colors.textIdle[100],
 }));

@@ -1,6 +1,10 @@
 import styled from "@emotion/styled";
 
 export const Container = styled.div({
+  height: "340px",
+});
+
+export const Wrap = styled.div({
   height: "300px",
 });
 

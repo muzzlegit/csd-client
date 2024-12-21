@@ -1,14 +1,18 @@
+import Header from "interface/Header/Header";
 import { NavBar } from "interface/index";
 import { Outlet } from "react-router-dom";
-import { Container, Module } from "./RootLayout.styled";
+import { Container, Module, Wrap } from "./RootLayout.styled";
 
 const RootLayout = () => {
   return (
     <Container>
-      <Module>
-        <Outlet />
-      </Module>
-      <NavBar />
+      <Header />
+      <Wrap>
+        <Module>
+          <Outlet />
+        </Module>
+        <NavBar />
+      </Wrap>
     </Container>
   );
 };

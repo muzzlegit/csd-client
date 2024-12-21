@@ -2,7 +2,7 @@ import styled from "@emotion/styled";
 
 export const Container = styled.div(({ theme }) => ({
   paddingRight: "8px",
-  maxHeight: "400px",
+  maxHeight: "480px",
   display: "flex",
   flexDirection: "column",
   gap: "4px",

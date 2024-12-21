@@ -1,7 +1,6 @@
 import styled from "@emotion/styled";
 
 export const Container = styled.div({
-  minHeight: "130px",
   display: "flex",
   flexDirection: "column",
   gap: "4px",

@@ -1,6 +1,6 @@
 import { TextInput } from "shared/ui";
 import Layout from "../Layout/Layout";
-import { InputStyles, Message } from "./SearchBar.styled";
+import { Container, InputStyles, Message } from "./SearchBar.styled";
 import useSearchBar from "./useSearchBar";
 
 const SearchBar = () => {
@@ -8,7 +8,7 @@ const SearchBar = () => {
 
   return (
     <Layout title="Пошук по артикулу">
-      <>
+      <Container>
         <TextInput
           value={query}
           handleInputValue={handleQuery}
@@ -16,7 +16,7 @@ const SearchBar = () => {
           placeholder="...артикул"
         />
         <Message>{message}</Message>
-      </>
+      </Container>
     </Layout>
   );
 };

@@ -2,7 +2,6 @@ import PropTypes from "prop-types";
 import { Container, Dot } from "./Indicators.styled";
 
 const Indicators = ({ count, activeItemIndex }) => {
-  console.log(count);
   return (
     <Container>
       {Array.from({ length: count }, (v, x) => {
