@@ -10,7 +10,16 @@ export const Container = styled.div(({ theme }) => ({
 
 export const Wrap = styled.div({
   padding: "0 16px",
+  height: "100%",
   display: "flex",
+});
+
+export const TemporaryWrap = styled.div({
+  paddingBottom: "16px",
+  display: "flex",
+  flexDirection: "column",
+  alignItems: "center",
+  justifyContent: "space-between",
 });
 
 export const Module = styled.main(({ theme }) => ({

@@ -1,7 +1,8 @@
 import Header from "interface/Header/Header";
 import { NavBar } from "interface/index";
 import { Outlet } from "react-router-dom";
-import { Container, Module, Wrap } from "./RootLayout.styled";
+import { DevLink } from "shared/ui";
+import { Container, Module, TemporaryWrap, Wrap } from "./RootLayout.styled";
 
 const RootLayout = () => {
   return (
@@ -11,7 +12,10 @@ const RootLayout = () => {
         <Module>
           <Outlet />
         </Module>
-        <NavBar />
+        <TemporaryWrap>
+          <NavBar />
+          <DevLink />
+        </TemporaryWrap>
       </Wrap>
     </Container>
   );

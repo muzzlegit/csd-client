@@ -1,6 +1,6 @@
 import styled from "@emotion/styled";
 import { useState } from "react";
-import switches from "../switches/data/vector.json";
+import switches from "../Terminals/data/Terminals.json";
 
 const List = styled.div({
   maxHeight: "800px",
@@ -83,7 +83,7 @@ const Grab = () => {
 
   const addId = async (data) => {
     const updatedData = Object.values(switches).map((item) => {
-      const newItem = data?.find((i) => i.article === item.code);
+      const newItem = data?.find((i) => i.article === item.article);
       if (!newItem) return item;
       return { ...item, remote_id: newItem.remote_id };
     });
@@ -96,12 +96,23 @@ const Grab = () => {
         if (!item?.remote_id) return item;
         const newItem = await go2(item?.remote_id);
         if (!newItem) return item;
-        const { product, mediaFiles, files, ...rest } = newItem;
+        const { features, product, mediaFiles, files, ...rest } = newItem;
         return {
           ...item,
+          description: product.description,
+          series: features?.[2]?.value,
+          type: features?.[3]?.value,
+          size: {
+            width: features?.[5]?.value,
+            length: features?.[6]?.value,
+            height: features?.[7]?.value,
+          },
+          voltage: features?.[8]?.value,
+          current: features?.[9]?.value,
+          cross_section: features?.[10]?.value,
           category_id: product?.category_id,
           mediaFiles,
-          files,
+          // files,
         };
       })
     );
@@ -126,7 +137,7 @@ const Grab = () => {
         </button>
         <button
           onClick={() => {
-            go(11, addId);
+            go(4, addId);
           }}
         >
           Додати ID Телергону
