@@ -4,7 +4,7 @@ import { Cell, Container, Index, Wrap } from "./ColorsBar.styled";
 import { useColorsBar } from "./useColorsBar";
 
 export const ColorsBar = () => {
-  const { currentColorIndex, handleIndex } = useColorsBar();
+  const { currentColor, handleColor } = useColorsBar();
 
   return (
     <Container>
@@ -14,16 +14,16 @@ export const ColorsBar = () => {
             <Cell
               title={data.label}
               color={data.color}
-              isActive={currentColorIndex === data.index}
+              isActive={currentColor === color}
               onClick={() => {
-                handleIndex(data.index);
+                handleColor(color);
               }}
             >
               {data.index === "g" ? null : (
                 <Index shouldRevers={data.index === "5"}>{data.index}</Index>
               )}
             </Cell>
-            {currentColorIndex === data.index ? <GrRevert /> : null}
+            {currentColor === color ? <GrRevert /> : null}
           </Wrap>
         );
       })}

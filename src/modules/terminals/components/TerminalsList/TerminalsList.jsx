@@ -2,7 +2,7 @@ import { Container, Dummy, Item, List } from "./TerminalsList.styled";
 import { useTerminalsList } from "./useTerminalsList";
 
 export const TerminalsList = () => {
-  const { filteredList } = useTerminalsList();
+  const { filteredList, handleItemClick } = useTerminalsList();
 
   return (
     <Container>
@@ -10,7 +10,12 @@ export const TerminalsList = () => {
         <List>
           {filteredList.length ? (
             filteredList.map((terminal) => (
-              <Item key={terminal.article}>
+              <Item
+                key={terminal.article}
+                onClick={() => {
+                  handleItemClick(terminal.article);
+                }}
+              >
                 <p>
                   {terminal.description ?? terminal.article + "  Немає опису"}
                 </p>

@@ -3,16 +3,24 @@ import { useMemo } from "react";
 
 export const useTerminalsList = () => {
   const list = useTerminalsStore((state) => state.terminalsList);
-  const colorIndex = useTerminalsStore((state) => state.colorIndex);
+  const color = useTerminalsStore((state) => state.filter.color);
+  const getList = useTerminalsStore((state) => state.getTerminalsList);
+  const setQueryItem = useTerminalsStore((state) => state.setQueryItem);
 
   const filteredList = useMemo(() => {
     return list.filter((terminal) => {
-      if (colorIndex) {
-        return colorIndex === terminal.color_index;
+      if (color) {
+        return color === terminal.color;
       }
       return terminal;
     });
-  }, [colorIndex, list]);
+  }, [color, list]);
 
-  return { filteredList };
+  const handleItemClick = (article) => {
+    const list = Array.isArray(getList()) ? getList() : [];
+    const queryItem = list.find((item) => item.article === article);
+    setQueryItem(queryItem ? queryItem : null);
+  };
+
+  return { filteredList, handleItemClick };
 };

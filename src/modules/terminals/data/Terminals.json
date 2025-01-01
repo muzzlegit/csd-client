@@ -2,7 +2,7 @@
   {
     "article": "0.0.0.3.04120RP",
     "catalog_article": "304 120RP",
-    "color_index": "0",
+    "color": "grey",
     "types": ["screw"],
     "accesories": [
       "0.0.0.4.44120",
@@ -44,7 +44,7 @@
   {
     "article": "0.0.0.3.04121RP",
     "catalog_article": "304 121RP",
-    "color_index": "1",
+    "color": "blue",
     "types": ["screw"],
     "accesories": [
       "0.0.0.4.44121",
@@ -86,7 +86,7 @@
   {
     "article": "0.0.0.3.04122RP",
     "catalog_article": "304 122RP",
-    "color_index": "2",
+    "color": "green",
     "types": ["screw"],
     "accesories": [
       "0.0.0.4.44122",
@@ -128,7 +128,7 @@
   {
     "article": "0.0.0.3.04123RP",
     "catalog_article": "304 123RP",
-    "color_index": "3",
+    "color": "yellow",
     "types": ["screw"],
     "accesories": [
       "0.0.0.4.44123",
@@ -170,7 +170,7 @@
   {
     "article": "0.0.0.3.04124RP",
     "catalog_article": "304 124RP",
-    "color_index": "4",
+    "color": "red",
     "types": ["screw"],
     "accesories": [
       "0.0.0.4.44124",
@@ -212,7 +212,7 @@
   {
     "article": "0.0.0.3.04125RP",
     "catalog_article": "304 125RP",
-    "color_index": "5",
+    "color": "black",
     "types": ["screw"],
     "accesories": [
       "0.0.0.4.44125",
@@ -254,7 +254,7 @@
   {
     "article": "0.0.0.3.04126RP",
     "catalog_article": "304 126RP",
-    "color_index": "6",
+    "color": "white",
     "types": ["screw"],
     "accesories": [
       "0.0.0.4.44126",
@@ -296,7 +296,7 @@
   {
     "article": "0.0.0.3.04127RP",
     "catalog_article": "304 127RP",
-    "color_index": "7",
+    "color": "orange",
     "types": ["screw"],
     "accesories": [
       "0.0.0.4.44127",
@@ -338,7 +338,7 @@
   {
     "article": "0.0.0.3.04128RP",
     "catalog_article": "304 128RP",
-    "color_index": "8",
+    "color": "brown",
     "types": ["screw"],
     "accesories": [
       "0.0.0.4.44128",
@@ -380,7 +380,7 @@
   {
     "article": "0.0.0.3.04129RP",
     "catalog_article": "304 129RP",
-    "color_index": "9",
+    "color": "beige",
     "types": ["screw"],
     "accesories": [
       "0.0.0.4.44129",
@@ -422,7 +422,7 @@
   {
     "article": "0.0.0.3.04130RP",
     "catalog_article": "304 130RP",
-    "color_index": "0",
+    "color": "grey",
     "types": ["screw"],
     "accesories": [
       "0.0.0.4.44120",
@@ -464,7 +464,7 @@
   {
     "article": "0.0.0.3.04131RP",
     "catalog_article": "304 131RP",
-    "color_index": "1",
+    "color": "blue",
     "types": ["screw"],
     "accesories": [
       "0.0.0.4.44121",
@@ -506,7 +506,7 @@
   {
     "article": "0.0.0.3.04132RP",
     "catalog_article": "304 132RP",
-    "color_index": "2",
+    "color": "green",
     "types": ["screw"],
     "accesories": [
       "0.0.0.4.44122",
@@ -548,7 +548,7 @@
   {
     "article": "0.0.0.3.04133RP",
     "catalog_article": "304 133RP",
-    "color_index": "3",
+    "color": "yellow",
     "types": ["screw"],
     "accesories": [
       "0.0.0.4.44123",
@@ -590,7 +590,7 @@
   {
     "article": "0.0.0.3.04134RP",
     "catalog_article": "304 134RP",
-    "color_index": "4",
+    "color": "red",
     "types": ["screw"],
     "accesories": [
       "0.0.0.4.44124",
@@ -632,7 +632,7 @@
   {
     "article": "0.0.0.3.04135RP",
     "catalog_article": "304 135RP",
-    "color_index": "5",
+    "color": "black",
     "types": ["screw"],
     "accesories": [
       "0.0.0.4.44125",
@@ -674,7 +674,7 @@
   {
     "article": "0.0.0.3.04136RP",
     "catalog_article": "304 136RP",
-    "color_index": "6",
+    "color": "white",
     "types": ["screw"],
     "accesories": [
       "0.0.0.4.44126",
@@ -716,7 +716,7 @@
   {
     "article": "0.0.0.3.04137RP",
     "catalog_article": "304 137RP",
-    "color_index": "7",
+    "color": "orange",
     "types": ["screw"],
     "accesories": [
       "0.0.0.4.44127",
@@ -758,7 +758,7 @@
   {
     "article": "0.0.0.3.04138RP",
     "catalog_article": "304 138RP",
-    "color_index": "8",
+    "color": "brown",
     "types": ["screw"],
     "accesories": [
       "0.0.0.4.44128",
@@ -800,7 +800,7 @@
   {
     "article": "0.0.0.3.04139RP",
     "catalog_article": "304 139RP",
-    "color_index": "9",
+    "color": "beige",
     "types": ["screw"],
     "accesories": [
       "0.0.0.4.44129",
@@ -842,7 +842,7 @@
   {
     "article": "0.0.0.3.04140RP",
     "catalog_article": "304 140RP",
-    "color_index": "0",
+    "color": "grey",
     "types": ["screw"],
     "accesories": [
       "0.0.0.4.44120",
@@ -881,7 +881,7 @@
   {
     "article": "0.0.0.3.04141RP",
     "catalog_article": "304 141RP",
-    "color_index": "1",
+    "color": "blue",
     "types": ["screw"],
     "accesories": [
       "0.0.0.4.44121",
@@ -920,7 +920,7 @@
   {
     "article": "0.0.0.3.04142RP",
     "catalog_article": "304 142RP",
-    "color_index": "2",
+    "color": "green",
     "types": ["screw"],
     "accesories": [
       "0.0.0.4.44122",
@@ -959,7 +959,7 @@
   {
     "article": "0.0.0.3.04143RP",
     "catalog_article": "304 143RP",
-    "color_index": "3",
+    "color": "yellow",
     "types": ["screw"],
     "accesories": [
       "0.0.0.4.44123",
@@ -979,7 +979,7 @@
   {
     "article": "0.0.0.3.04144RP",
     "catalog_article": "304 144RP",
-    "color_index": "4",
+    "color": "red",
     "types": ["screw"],
     "accesories": [
       "0.0.0.4.44124",
@@ -1018,7 +1018,7 @@
   {
     "article": "0.0.0.3.04145RP",
     "catalog_article": "304 145RP",
-    "color_index": "5",
+    "color": "black",
     "types": ["screw"],
     "accesories": [
       "0.0.0.4.44125",
@@ -1057,7 +1057,7 @@
   {
     "article": "0.0.0.3.04146RP",
     "catalog_article": "304 146RP",
-    "color_index": "6",
+    "color": "white",
     "types": ["screw"],
     "accesories": [
       "0.0.0.4.44126",
@@ -1077,7 +1077,7 @@
   {
     "article": "0.0.0.3.04147RP",
     "catalog_article": "304 147RP",
-    "color_index": "7",
+    "color": "orange",
     "types": ["screw"],
     "accesories": [
       "0.0.0.4.44127",
@@ -1097,7 +1097,7 @@
   {
     "article": "0.0.0.3.04148RP",
     "catalog_article": "304 1408P",
-    "color_index": "8",
+    "color": "brown",
     "types": ["screw"],
     "accesories": [
       "0.0.0.4.44128",
@@ -1136,7 +1136,7 @@
   {
     "article": "0.0.0.3.04149RP",
     "catalog_article": "304 149RP",
-    "color_index": "9",
+    "color": "beige",
     "types": ["screw"],
     "accesories": [
       "0.0.0.4.44129",
@@ -1175,7 +1175,7 @@
   {
     "article": "0.0.0.3.04150RP",
     "catalog_article": "304 150RP",
-    "color_index": "0",
+    "color": "grey",
     "types": ["screw"],
     "accesories": [
       "0.0.0.4.44120",
@@ -1214,7 +1214,7 @@
   {
     "article": "0.0.0.3.04151RP",
     "catalog_article": "304 151RP",
-    "color_index": "1",
+    "color": "blue",
     "types": ["screw"],
     "accesories": [
       "0.0.0.4.44121",
@@ -1252,7 +1252,7 @@
   {
     "article": "0.0.0.3.04152RP",
     "catalog_article": "304 152RP",
-    "color_index": "2",
+    "color": "green",
     "types": ["screw"],
     "accesories": [
       "0.0.0.4.44122",
@@ -1285,7 +1285,7 @@
   {
     "article": "0.0.0.3.04153RP",
     "catalog_article": "304 153RP",
-    "color_index": "3",
+    "color": "yellow",
     "types": ["screw"],
     "accesories": [
       "0.0.0.4.44123",
@@ -1324,7 +1324,7 @@
   {
     "article": "0.0.0.3.04154RP",
     "catalog_article": "304 154RP",
-    "color_index": "4",
+    "color": "red",
     "types": ["screw"],
     "accesories": [
       "0.0.0.4.44124",
@@ -1363,7 +1363,7 @@
   {
     "article": "0.0.0.3.04155RP",
     "catalog_article": "304 155RP",
-    "color_index": "5",
+    "color": "black",
     "types": ["screw"],
     "accesories": [
       "0.0.0.4.44125",
@@ -1401,7 +1401,7 @@
   {
     "article": "0.0.0.3.04156RP",
     "catalog_article": "304 156RP",
-    "color_index": "6",
+    "color": "white",
     "types": ["screw"],
     "accesories": [
       "0.0.0.4.44126",
@@ -1440,7 +1440,7 @@
   {
     "article": "0.0.0.3.04157RP",
     "catalog_article": "304 157RP",
-    "color_index": "7",
+    "color": "orange",
     "types": ["screw"],
     "accesories": [
       "0.0.0.4.44127",
@@ -1479,7 +1479,7 @@
   {
     "article": "0.0.0.3.04158RP",
     "catalog_article": "304 158RP",
-    "color_index": "8",
+    "color": "brown",
     "types": ["screw"],
     "accesories": [
       "0.0.0.4.44128",
@@ -1518,7 +1518,7 @@
   {
     "article": "0.0.0.3.04159RP",
     "catalog_article": "304 159RP",
-    "color_index": "9",
+    "color": "beige",
     "types": ["screw"],
     "accesories": [
       "0.0.0.4.44129",
@@ -1538,7 +1538,7 @@
   {
     "article": "0.0.0.3.04160",
     "catalog_article": "304 160",
-    "color_index": "0",
+    "color": "grey",
     "types": ["screw"],
     "accesories": [
       "0.0.0.4.44160",
@@ -1574,7 +1574,7 @@
   {
     "article": "0.0.0.3.04161",
     "catalog_article": "304 161",
-    "color_index": "1",
+    "color": "blue",
     "types": ["screw"],
     "accesories": [
       "0.0.0.4.44161",
@@ -1610,7 +1610,7 @@
   {
     "article": "0.0.0.3.04162",
     "catalog_article": "304 162",
-    "color_index": "2",
+    "color": "green",
     "types": ["screw"],
     "accesories": [
       "0.0.0.4.44162",
@@ -1646,7 +1646,7 @@
   {
     "article": "0.0.0.3.04163",
     "catalog_article": "304 163",
-    "color_index": "3",
+    "color": "yellow",
     "types": ["screw"],
     "accesories": [
       "0.0.0.4.44163",
@@ -1682,7 +1682,7 @@
   {
     "article": "0.0.0.3.04164",
     "catalog_article": "304 164",
-    "color_index": "4",
+    "color": "red",
     "types": ["screw"],
     "accesories": [
       "0.0.0.4.44164",
@@ -1718,7 +1718,7 @@
   {
     "article": "0.0.0.3.04165",
     "catalog_article": "304 165",
-    "color_index": "5",
+    "color": "black",
     "types": ["screw"],
     "accesories": [
       "0.0.0.4.44165",
@@ -1735,7 +1735,7 @@
   {
     "article": "0.0.0.3.04166",
     "catalog_article": "304 166",
-    "color_index": "6",
+    "color": "white",
     "types": ["screw"],
     "accesories": [
       "0.0.0.4.44166",
@@ -1752,7 +1752,7 @@
   {
     "article": "0.0.0.3.04167",
     "catalog_article": "304 167",
-    "color_index": "7",
+    "color": "orange",
     "types": ["screw"],
     "accesories": [
       "0.0.0.4.44167",
@@ -1769,7 +1769,7 @@
   {
     "article": "0.0.0.3.04168",
     "catalog_article": "304 168",
-    "color_index": "8",
+    "color": "brown",
     "types": ["screw"],
     "accesories": [
       "0.0.0.4.44168",
@@ -1786,7 +1786,7 @@
   {
     "article": "0.0.0.3.04169",
     "catalog_article": "304 169",
-    "color_index": "9",
+    "color": "beige",
     "types": ["screw"],
     "accesories": [
       "0.0.0.4.44169",
@@ -1803,7 +1803,7 @@
   {
     "article": "0.0.0.3.04290",
     "catalog_article": "304 290",
-    "color_index": "0",
+    "color": "grey",
     "types": ["screw"],
     "accesories": [
       "0.0.0.4.50250",
@@ -1838,7 +1838,7 @@
   {
     "article": "0.0.0.3.04291",
     "catalog_article": "304 291",
-    "color_index": "1",
+    "color": "blue",
     "types": ["screw"],
     "accesories": [
       "0.0.0.4.50251",
@@ -1873,7 +1873,7 @@
   {
     "article": "0.0.0.3.04292",
     "catalog_article": "304 292",
-    "color_index": "2",
+    "color": "green",
     "types": ["screw"],
     "accesories": [
       "0.0.0.4.50252",
@@ -1889,7 +1889,7 @@
   {
     "article": "0.0.0.3.04293",
     "catalog_article": "304 293",
-    "color_index": "3",
+    "color": "yellow",
     "types": ["screw"],
     "accesories": [
       "0.0.0.4.50253",
@@ -1905,7 +1905,7 @@
   {
     "article": "0.0.0.3.04294",
     "catalog_article": "304 294",
-    "color_index": "4",
+    "color": "red",
     "types": ["screw"],
     "accesories": [
       "0.0.0.4.50254",
@@ -1921,7 +1921,7 @@
   {
     "article": "0.0.0.3.04295",
     "catalog_article": "304 295",
-    "color_index": "5",
+    "color": "black",
     "types": ["screw"],
     "accesories": [
       "0.0.0.4.50255",
@@ -1955,7 +1955,7 @@
   {
     "article": "0.0.0.3.04296",
     "catalog_article": "304 296",
-    "color_index": "6",
+    "color": "white",
     "types": ["screw"],
     "accesories": [
       "0.0.0.4.50256",
@@ -1971,7 +1971,7 @@
   {
     "article": "0.0.0.3.04297",
     "catalog_article": "304 297",
-    "color_index": "7",
+    "color": "orange",
     "types": ["screw"],
     "accesories": [
       "0.0.0.4.50257",
@@ -1987,7 +1987,7 @@
   {
     "article": "0.0.0.3.04298",
     "catalog_article": "304 298",
-    "color_index": "8",
+    "color": "brown",
     "types": ["screw"],
     "accesories": [
       "0.0.0.4.50258",
@@ -2021,7 +2021,7 @@
   {
     "article": "0.0.0.3.04299",
     "catalog_article": "304 299",
-    "color_index": "9",
+    "color": "beige",
     "types": ["screw"],
     "accesories": [
       "0.0.0.4.50259",
@@ -2037,7 +2037,7 @@
   {
     "article": "0.0.0.3.04250",
     "catalog_article": "304 250",
-    "color_index": "0",
+    "color": "grey",
     "types": ["screw"],
     "accesories": [
       "0.0.0.4.62180",
@@ -2073,7 +2073,7 @@
   {
     "article": "0.0.0.3.04251",
     "catalog_article": "304 251",
-    "color_index": "1",
+    "color": "blue",
     "types": ["screw"],
     "accesories": [
       "0.0.0.4.62181",
@@ -2109,7 +2109,7 @@
   {
     "article": "0.0.0.3.04252",
     "catalog_article": "304 252",
-    "color_index": "2",
+    "color": "green",
     "types": ["screw"],
     "accesories": [
       "0.0.0.4.62182",
@@ -2145,7 +2145,7 @@
   {
     "article": "0.0.0.3.04253",
     "catalog_article": "304 253",
-    "color_index": "3",
+    "color": "yellow",
     "types": ["screw"],
     "accesories": [
       "0.0.0.4.62183",
@@ -2181,7 +2181,7 @@
   {
     "article": "0.0.0.3.04254",
     "catalog_article": "304 254",
-    "color_index": "4",
+    "color": "red",
     "types": ["screw"],
     "accesories": [
       "0.0.0.4.62184",
@@ -2217,7 +2217,7 @@
   {
     "article": "0.0.0.3.04255",
     "catalog_article": "304 255",
-    "color_index": "5",
+    "color": "black",
     "types": ["screw"],
     "accesories": [
       "0.0.0.4.62185",
@@ -2234,7 +2234,7 @@
   {
     "article": "0.0.0.3.04256",
     "catalog_article": "304 256",
-    "color_index": "6",
+    "color": "white",
     "types": ["screw"],
     "accesories": [
       "0.0.0.4.62186",
@@ -2251,7 +2251,7 @@
   {
     "article": "0.0.0.3.04257",
     "catalog_article": "304 257",
-    "color_index": "7",
+    "color": "orange",
     "types": ["screw"],
     "accesories": [
       "0.0.0.4.62187",
@@ -2268,7 +2268,7 @@
   {
     "article": "0.0.0.3.04258",
     "catalog_article": "304 258",
-    "color_index": "8",
+    "color": "brown",
     "types": ["screw"],
     "accesories": [
       "0.0.0.4.62188",
@@ -2285,7 +2285,7 @@
   {
     "article": "0.0.0.3.04259",
     "catalog_article": "304 259",
-    "color_index": "9",
+    "color": "beige",
     "types": ["screw"],
     "accesories": [
       "0.0.0.4.62189",

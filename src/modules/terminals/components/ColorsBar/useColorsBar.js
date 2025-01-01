@@ -1,12 +1,12 @@
 import { useTerminalsStore } from "modules/terminals/store/useTerminalsStore";
 
 export const useColorsBar = () => {
-  const currentColorIndex = useTerminalsStore((state) => state.colorIndex);
-  const setColorIndex = useTerminalsStore((state) => state.setColorIndex);
+  const currentColor = useTerminalsStore((state) => state.filter.color);
+  const setColor = useTerminalsStore((state) => state.setColor);
 
-  const handleIndex = (index) => {
-    setColorIndex(currentColorIndex === index ? null : index);
+  const handleColor = (index) => {
+    setColor(currentColor === index ? null : index);
   };
 
-  return { currentColorIndex, handleIndex };
+  return { currentColor, handleColor };
 };
