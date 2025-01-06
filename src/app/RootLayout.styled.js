@@ -14,11 +14,6 @@ export const Wrap = styled.div({
   display: "flex",
 });
 
-export const TemporaryWrap = styled.div({
-  marginBottom: "16px",
-  maxHeight: "100%",
-});
-
 export const Module = styled.main(({ theme }) => ({
   padding: "8px",
   minHeight: "100%",

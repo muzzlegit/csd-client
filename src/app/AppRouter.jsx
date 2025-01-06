@@ -3,6 +3,7 @@ import { InfoModule } from "modules/info";
 import { Switches } from "modules/switches";
 import { Terminals } from "modules/terminals";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { ProtectedRoute } from "./ProtectedRoute";
 import RootLayout from "./RootLayout";
 
 const AppRouter = () => {
@@ -13,7 +14,14 @@ const AppRouter = () => {
           <Route index element={<InfoModule />} />
           <Route path="switch" element={<Switches />} />
           <Route path="terminal" element={<Terminals />} />
-          <Route path="dev" element={<Grab />} />
+          <Route
+            path="admin-panel"
+            element={
+              <ProtectedRoute>
+                <Grab />
+              </ProtectedRoute>
+            }
+          />
         </Route>
       </Routes>
     </BrowserRouter>
