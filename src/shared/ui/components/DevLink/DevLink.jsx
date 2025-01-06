@@ -3,7 +3,9 @@ import { GiDualityMask } from "react-icons/gi";
 import { Link, useLocation } from "react-router-dom";
 
 export const Item = styled.div(({ theme, isActive }) => ({
+  marginTop: "400px",
   width: "60px",
+
   height: "60px",
   display: "flex",
   alignItems: "center",

@@ -15,19 +15,13 @@ export const Wrap = styled.div({
 });
 
 export const TemporaryWrap = styled.div({
-  paddingBottom: "16px",
-  display: "flex",
-  flexDirection: "column",
-  alignItems: "center",
-  justifyContent: "space-between",
+  marginBottom: "16px",
+  maxHeight: "100%",
 });
 
 export const Module = styled.main(({ theme }) => ({
   padding: "8px",
-  height: "100%",
+  minHeight: "100%",
   width: "100%",
   flex: 1,
-  display: "flex",
-  alignItems: "center",
-  justifyContent: "center",
 }));

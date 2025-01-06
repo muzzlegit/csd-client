@@ -11,6 +11,9 @@ export const Container = styled.div({
   "&::-webkit-scrollbar": {
     width: "8x",
   },
+  "@media (max-width: 1720px)": {
+    maxHeight: "330px",
+  },
 });
 
 export const Wrap = styled.div(({ theme }) => ({

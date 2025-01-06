@@ -4,6 +4,15 @@ export const Container = styled.div({
   display: "flex",
   flexDirection: "column",
   gap: "8px",
+  overflowY: "auto",
+  overflowX: "none",
+  scrollbarWidth: "thin",
+  "@media (max-width: 1720px)": {
+    maxHeight: "300px",
+  },
+  "@media (max-width: 1350px)": {
+    maxHeight: "190px",
+  },
 });
 
 export const Wrap = styled.div({

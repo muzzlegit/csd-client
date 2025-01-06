@@ -12,7 +12,9 @@ const useSearchBar = () => {
     const value = String(e.currentTarget.value || "").trim();
     setQuery(value);
     const list = Array.isArray(getList()) ? getList() : [];
-    const queryItem = list.find((item) => item.article === value);
+    const queryItem = list.find(
+      (item) => item.article === value || item.catalog_article === value
+    );
     setQueryItem(queryItem ? queryItem : null);
     setMessage(queryItem ? "" : "Артикул не знайдено");
   };

@@ -1,6 +1,6 @@
 import styled from "@emotion/styled";
 import { useState } from "react";
-import switches from "../Terminals/data/Terminals.json";
+import switches from "../Terminals/data/accesory.json";
 
 const List = styled.div({
   maxHeight: "800px",
@@ -15,6 +15,35 @@ const List = styled.div({
 const Image = styled.img({
   height: "60px",
 });
+
+const getAssessority = () => {
+  const getCatalogArticle = (article) => {
+    const str1 = article.replace(/\./g, "").slice(3);
+    return str1.slice(0, 3) + " " + str1.slice(3);
+  };
+
+  const list = {};
+  switches.forEach((terminal) => {
+    terminal.accesories.forEach((acc) => {
+      if (!list[acc]) {
+        list[acc] = [terminal.article];
+      } else {
+        list[acc].push(terminal.article);
+      }
+    });
+  });
+  const newList = [];
+  Object.entries(list).map(([article, data]) => {
+    newList.push({
+      article,
+      catalog_article: getCatalogArticle(article),
+      entity: "accessory",
+      related_items: data,
+    });
+  });
+  return newList;
+};
+// console.log(getAssessority());
 
 const Wrap = styled.div(({ theme }) => ({
   display: "flex",
@@ -84,7 +113,7 @@ const Grab = () => {
   const addId = async (data) => {
     const updatedData = Object.values(switches).map((item) => {
       const newItem = data?.find((i) => i.article === item.article);
-      if (!newItem) return item;
+      if (!newItem) return { ...item, remote_id: null };
       return { ...item, remote_id: newItem.remote_id };
     });
     console.log(updatedData);
@@ -100,16 +129,10 @@ const Grab = () => {
         return {
           ...item,
           description: product.description,
-          series: features?.[2]?.value,
-          type: features?.[3]?.value,
-          size: {
-            width: features?.[5]?.value,
-            length: features?.[6]?.value,
-            height: features?.[7]?.value,
-          },
-          voltage: features?.[8]?.value,
-          current: features?.[9]?.value,
-          cross_section: features?.[10]?.value,
+          ...(features?.[4]?.characteristic_id === 254 && {
+            pole: features?.[4]?.value,
+          }),
+
           category_id: product?.category_id,
           mediaFiles,
           // files,

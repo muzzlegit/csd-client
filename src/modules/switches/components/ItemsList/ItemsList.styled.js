@@ -14,6 +14,12 @@ export const Container = styled.div(({ theme }) => ({
   },
   fontSize: "14px",
   color: theme.colors.textIdle[100],
+  "@media (max-width: 1720px)": {
+    maxHeight: "460px",
+  },
+  "@media (max-width: 1350px)": {
+    maxHeight: "200px",
+  },
 }));
 
 export const Item = styled.div(({ theme }) => ({
