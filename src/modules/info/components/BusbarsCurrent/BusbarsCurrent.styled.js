@@ -4,6 +4,7 @@ import { configObj } from "./config";
 export const Container = styled.div(({ theme }) => ({
   padding: "12px",
   width: "fit-content",
+  height: "fit-content",
   display: "flex",
   flexDirection: "column",
   gap: "8px",
