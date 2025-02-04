@@ -2,7 +2,7 @@ import styled from "@emotion/styled";
 import { theme } from "styles/theme";
 
 export const Container = styled.div({
-  width: "460px",
+  height: "fit-content",
 });
 
 export const Title = styled.p(({ theme }) => ({
@@ -20,7 +20,7 @@ export const InputStyles = {
   borderRadius: "8px",
   fontSize: "18px",
   color: theme.colors.text[100],
-  backgroundColor: theme.colors.secondary[100],
+  backgroundColor: theme.colors.primary[100],
   "::placeholder": {
     color: theme.colors.textIdle[100],
   },

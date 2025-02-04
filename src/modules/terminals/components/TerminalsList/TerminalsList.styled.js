@@ -1,14 +1,8 @@
 import styled from "@emotion/styled";
 
-export const Container = styled.div(({ theme }) => ({
-  padding: "6px",
-  borderRadius: "8px",
-  backgroundColor: theme.colors.secondary[100],
-}));
-
 export const List = styled.div({
-  height: "188px",
-  width: "460px",
+  maxHeight: "280px",
+  width: "100%",
   display: "flex",
   flexDirection: "column",
   gap: "8px",
@@ -19,14 +13,21 @@ export const List = styled.div({
   },
 });
 
-export const Item = styled.div(({ theme }) => ({
-  padding: "4px",
-  borderRadius: "8px",
-  cursor: "pointer",
+export const Item = styled.div({
+  display: "flex",
+  alignItems: "center",
+  justifyContent: "space-between",
+});
+
+export const Description = styled.p(({ theme, isActive }) => ({
+  padding: "8px",
   fontSize: "14px",
-  color: theme.colors.textIdle[100],
+  cursor: "pointer",
+  borderRadius: "2px",
+  fontWeight: isActive ? 700 : 400,
+  color: isActive ? theme.colors.text[100] : theme.colors.textIdle[100],
+  backgroundColor: isActive ? theme.colors.acent[20] : "transparent",
   "&:hover": {
-    backgroundColor: theme.colors.primary[70],
     color: theme.colors.text[100],
   },
 }));

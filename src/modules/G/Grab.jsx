@@ -1,6 +1,5 @@
 import styled from "@emotion/styled";
 import { useState } from "react";
-import switches from "../Terminals/data/accesory.json";
 
 const List = styled.div({
   maxHeight: "800px",

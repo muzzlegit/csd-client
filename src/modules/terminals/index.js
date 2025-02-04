@@ -1,1 +1,1 @@
-export { Terminals } from "./compose/Terminals/Terminals";
+export { Terminals } from "./page/Terminals";

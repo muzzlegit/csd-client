@@ -17,7 +17,8 @@
         "url": "https://services.vector-vs.com/files/products/7714/1733218680_444120.png",
         "type": "photo"
       }
-    ]
+    ],
+    "features": {}
   },
   {
     "article": "0.0.0.4.62120",
@@ -32,7 +33,8 @@
     "remote_id": 2632846176,
     "description": "0.0.0.4.62120 Розмежувач клеммних груп APP / AVK 2,5-10 Сіра (пак. 25 шт)",
     "category_id": 834,
-    "mediaFiles": []
+    "mediaFiles": [],
+    "features": {}
   },
   {
     "article": "0.0.0.4.74122",
@@ -52,9 +54,15 @@
     ],
     "remote_id": 2916846129,
     "description": "0.0.0.4.74122 Перемичка UK 2,5/2 - AVK 2,5 (пак. 25 шт)",
-    "pole": "2",
     "category_id": 830,
-    "mediaFiles": []
+    "mediaFiles": [],
+    "features": {
+      "pole": {
+        "label": "Кількість полюсів",
+        "value": "2",
+        "unit": null
+      }
+    }
   },
   {
     "article": "0.0.0.4.74123",
@@ -74,9 +82,15 @@
     ],
     "remote_id": 1634831023,
     "description": "0.0.0.4.74123 Перемичка UK 2,5/3 - AVK 2,5 (пак. 20 шт)",
-    "pole": "3",
     "category_id": 830,
-    "mediaFiles": []
+    "mediaFiles": [],
+    "features": {
+      "pole": {
+        "label": "Кількість полюсів",
+        "value": "3",
+        "unit": null
+      }
+    }
   },
   {
     "article": "0.0.0.4.74124",
@@ -96,9 +110,15 @@
     ],
     "remote_id": 1806992310,
     "description": "0.0.0.4.74124 Перемичка UK 2,5/4 - AVK 2,5 (пак. 15 шт)",
-    "pole": "4",
     "category_id": 830,
-    "mediaFiles": []
+    "mediaFiles": [],
+    "features": {
+      "pole": {
+        "label": "Кількість полюсів",
+        "value": "4",
+        "unit": null
+      }
+    }
   },
   {
     "article": "0.0.0.4.74129",
@@ -118,9 +138,15 @@
     ],
     "remote_id": 4038170215,
     "description": "0.0.0.4.74129 Перемичка UK 2,5/10 - AVK 2,5 (пак. 5 шт)",
-    "pole": "10",
     "category_id": 830,
-    "mediaFiles": []
+    "mediaFiles": [],
+    "features": {
+      "pole": {
+        "label": "Кількість полюсів",
+        "value": "10",
+        "unit": null
+      }
+    }
   },
   {
     "article": "0.0.0.4.74210",
@@ -141,7 +167,8 @@
     "remote_id": 1027869322,
     "description": "0.0.0.4.74210 Перемичка UK 2,5/50 - AVK 2,5 (пак. 20 шт)",
     "category_id": 830,
-    "mediaFiles": []
+    "mediaFiles": [],
+    "features": {}
   },
   {
     "article": "0.0.0.4.76262",
@@ -161,9 +188,15 @@
     ],
     "remote_id": 1131207167,
     "description": "0.0.0.4.76262 Перемичка TKO 2,5/2 AVK 2,5 (пак. 25 шт)",
-    "pole": "2",
     "category_id": 830,
-    "mediaFiles": []
+    "mediaFiles": [],
+    "features": {
+      "pole": {
+        "label": "Кількість полюсів",
+        "value": "2",
+        "unit": null
+      }
+    }
   },
   {
     "article": "0.0.0.4.76263",
@@ -183,9 +216,15 @@
     ],
     "remote_id": 2412173665,
     "description": "0.0.0.4.76263 Перемичка TKO 2,5/3 AVK 2,5 (пак. 20 шт)",
-    "pole": "3",
     "category_id": 830,
-    "mediaFiles": []
+    "mediaFiles": [],
+    "features": {
+      "pole": {
+        "label": "Кількість полюсів",
+        "value": "3",
+        "unit": null
+      }
+    }
   },
   {
     "article": "0.0.0.4.76264",
@@ -205,9 +244,15 @@
     ],
     "remote_id": 2231619704,
     "description": "0.0.0.4.76264 Перемичка TKO 2,5/4 AVK 2,5 (пак. 15 шт)",
-    "pole": "4",
     "category_id": 830,
-    "mediaFiles": []
+    "mediaFiles": [],
+    "features": {
+      "pole": {
+        "label": "Кількість полюсів",
+        "value": "4",
+        "unit": null
+      }
+    }
   },
   {
     "article": "0.0.0.4.76269",
@@ -227,9 +272,15 @@
     ],
     "remote_id": 503760297,
     "description": "0.0.0.4.76269 Перемичка TKO 2,5/10 AVK 2,5 (пак. 5 шт)",
-    "pole": "10",
     "category_id": 830,
-    "mediaFiles": []
+    "mediaFiles": [],
+    "features": {
+      "pole": {
+        "label": "Кількість полюсів",
+        "value": "10",
+        "unit": null
+      }
+    }
   },
   {
     "article": "0.0.0.8.11750",
@@ -250,7 +301,8 @@
     "remote_id": 840829005,
     "description": "0.0.0.8.11750* Маркувальна пластина D-NS 5x10 (1 копмл = 72 шт | пак = 10 компл)",
     "category_id": 965,
-    "mediaFiles": []
+    "mediaFiles": [],
+    "features": {}
   },
   {
     "article": "0.0.0.5.05910",
@@ -271,7 +323,8 @@
     "remote_id": 3988596292,
     "description": "0.0.0.5.05910* Маркувальна пластина DB 10/5 пуста (1 компл = 30 шт | пак = 17 компл)",
     "category_id": 964,
-    "mediaFiles": []
+    "mediaFiles": [],
+    "features": {}
   },
   {
     "article": "0.0.0.5.05310",
@@ -289,7 +342,8 @@
       "0.0.0.3.04128RP",
       "0.0.0.3.04129RP"
     ],
-    "remote_id": null
+    "remote_id": null,
+    "features": {}
   },
   {
     "article": "0.0.0.5.05380",
@@ -307,7 +361,8 @@
       "0.0.0.3.04128RP",
       "0.0.0.3.04129RP"
     ],
-    "remote_id": null
+    "remote_id": null,
+    "features": {}
   },
   {
     "article": "0.0.0.4.44121",
@@ -327,7 +382,8 @@
         "url": "https://services.vector-vs.com/files/products/7715/1733299579_444121 NPP AVK 2,5 - 10.png",
         "type": "photo"
       }
-    ]
+    ],
+    "features": {}
   },
   {
     "article": "0.0.0.4.62121",
@@ -342,7 +398,8 @@
     "remote_id": 1346636798,
     "description": "0.0.0.4.62121 Розмежувач клеммних груп APP / AVK 2,5-10 Синя (пак. 10 шт)",
     "category_id": 834,
-    "mediaFiles": []
+    "mediaFiles": [],
+    "features": {}
   },
   {
     "article": "0.0.0.4.44122",
@@ -357,7 +414,8 @@
     "remote_id": 3661977793,
     "description": "0.0.0.4.44122 Торцева кришка NPP/AVK 2,5-10 Зелена (пак. 10 шт)",
     "category_id": 829,
-    "mediaFiles": []
+    "mediaFiles": [],
+    "features": {}
   },
   {
     "article": "0.0.0.4.62122",
@@ -372,7 +430,8 @@
     "remote_id": 3737848861,
     "description": "0.0.0.4.62122 Розмежувач клеммних груп APP / AVK 2,5-10 Зелена (пак. 10 шт)",
     "category_id": 834,
-    "mediaFiles": []
+    "mediaFiles": [],
+    "features": {}
   },
   {
     "article": "0.0.0.4.44123",
@@ -387,7 +446,8 @@
     "remote_id": 384784479,
     "description": "0.0.0.4.44123 Торцева кришка NPP/AVK 2,5-10 Жовта (пак. 10 шт)",
     "category_id": 829,
-    "mediaFiles": []
+    "mediaFiles": [],
+    "features": {}
   },
   {
     "article": "0.0.0.4.62123",
@@ -402,7 +462,8 @@
     "remote_id": 308350083,
     "description": "0.0.0.4.62123 Розмежувач клеммних груп APP / AVK 2,5-10 Жовта (пак. 10 шт)",
     "category_id": 834,
-    "mediaFiles": []
+    "mediaFiles": [],
+    "features": {}
   },
   {
     "article": "0.0.0.4.44124",
@@ -417,7 +478,8 @@
     "remote_id": 472535366,
     "description": "0.0.0.4.44124 Торцева кришка NPP/AVK 2,5-10 червона (пак. 10 шт)",
     "category_id": 829,
-    "mediaFiles": []
+    "mediaFiles": [],
+    "features": {}
   },
   {
     "article": "0.0.0.4.62124",
@@ -432,7 +494,8 @@
     "remote_id": 413402522,
     "description": "0.0.0.4.62124 Розмежувач клеммних груп APP / AVK 2,5-10 Червона (пак. 10 шт)",
     "category_id": 834,
-    "mediaFiles": []
+    "mediaFiles": [],
+    "features": {}
   },
   {
     "article": "0.0.0.4.44125",
@@ -447,7 +510,8 @@
     "remote_id": 3498070488,
     "description": "0.0.0.4.44125 Торцева кришка NPP/AVK 2,5-10 чорна (пак. 10 шт)",
     "category_id": 829,
-    "mediaFiles": []
+    "mediaFiles": [],
+    "features": {}
   },
   {
     "article": "0.0.0.4.62125",
@@ -459,7 +523,8 @@
       "0.0.0.3.04145RP",
       "0.0.0.3.04155RP"
     ],
-    "remote_id": null
+    "remote_id": null,
+    "features": {}
   },
   {
     "article": "0.0.0.4.44126",
@@ -474,7 +539,8 @@
     "remote_id": 1578063419,
     "description": "0.0.0.4.44126 Торцева кришка NPP/AVK 2,5-10 біла (пак. 10 шт)",
     "category_id": 829,
-    "mediaFiles": []
+    "mediaFiles": [],
+    "features": {}
   },
   {
     "article": "0.0.0.4.62126",
@@ -486,7 +552,8 @@
       "0.0.0.3.04146RP",
       "0.0.0.3.04156RP"
     ],
-    "remote_id": null
+    "remote_id": null,
+    "features": {}
   },
   {
     "article": "0.0.0.4.44127",
@@ -498,7 +565,8 @@
       "0.0.0.3.04147RP",
       "0.0.0.3.04157RP"
     ],
-    "remote_id": null
+    "remote_id": null,
+    "features": {}
   },
   {
     "article": "0.0.0.4.62127",
@@ -510,7 +578,8 @@
       "0.0.0.3.04147RP",
       "0.0.0.3.04157RP"
     ],
-    "remote_id": null
+    "remote_id": null,
+    "features": {}
   },
   {
     "article": "0.0.0.4.44128",
@@ -525,7 +594,8 @@
     "remote_id": 1267024905,
     "description": "0.0.0.4.44128 Торцева кришка NPP/AVK 2,5-10 коричнева (пак. 10 шт)",
     "category_id": 829,
-    "mediaFiles": []
+    "mediaFiles": [],
+    "features": {}
   },
   {
     "article": "0.0.0.4.62128",
@@ -537,7 +607,8 @@
       "0.0.0.3.04148RP",
       "0.0.0.3.04158RP"
     ],
-    "remote_id": null
+    "remote_id": null,
+    "features": {}
   },
   {
     "article": "0.0.0.4.44129",
@@ -552,7 +623,8 @@
     "remote_id": 2268021911,
     "description": "0.0.0.4.44129 Торцева кришка NPP/AVK 2,5-10 бежева (пак. 100 шт)",
     "category_id": 829,
-    "mediaFiles": []
+    "mediaFiles": [],
+    "features": {}
   },
   {
     "article": "0.0.0.4.62129",
@@ -567,7 +639,8 @@
     "remote_id": 2208370763,
     "description": "0.0.0.4.62129 Розмежувач клеммних груп APP / AVK 2,5-10 Бежевий (пак. 10 шт)",
     "category_id": 834,
-    "mediaFiles": []
+    "mediaFiles": [],
+    "features": {}
   },
   {
     "article": "0.0.0.4.74132",
@@ -587,9 +660,15 @@
     ],
     "remote_id": 3131088498,
     "description": "0.0.0.4.74132 Перемичка UK 4/2 - AVK 4 (пак. 25 шт)",
-    "pole": "2",
     "category_id": 830,
-    "mediaFiles": []
+    "mediaFiles": [],
+    "features": {
+      "pole": {
+        "label": "Кількість полюсів",
+        "value": "2",
+        "unit": null
+      }
+    }
   },
   {
     "article": "0.0.0.4.74133",
@@ -609,9 +688,15 @@
     ],
     "remote_id": 1980407532,
     "description": "0.0.0.4.74133 Перемичка UK 4/3 - AVK 4 (пак. 20 шт)",
-    "pole": "3",
     "category_id": 830,
-    "mediaFiles": []
+    "mediaFiles": [],
+    "features": {
+      "pole": {
+        "label": "Кількість полюсів",
+        "value": "3",
+        "unit": null
+      }
+    }
   },
   {
     "article": "0.0.0.4.74134",
@@ -631,9 +716,15 @@
     ],
     "remote_id": 2093979637,
     "description": "0.0.0.4.74134 Перемичка UK 4/4 - AVK 4 (пак. 15 шт)",
-    "pole": "4",
     "category_id": 830,
-    "mediaFiles": []
+    "mediaFiles": [],
+    "features": {
+      "pole": {
+        "label": "Кількість полюсів",
+        "value": "4",
+        "unit": null
+      }
+    }
   },
   {
     "article": "0.0.0.4.74139",
@@ -653,9 +744,15 @@
     ],
     "remote_id": 3888808484,
     "description": "0.0.0.4.74139 Перемичка UK 4/10 - AVK 4 / PIK4N/ AVK 4C (пак. 5 шт)",
-    "pole": "10",
     "category_id": 830,
-    "mediaFiles": []
+    "mediaFiles": [],
+    "features": {
+      "pole": {
+        "label": "Кількість полюсів",
+        "value": "10",
+        "unit": null
+      }
+    }
   },
   {
     "article": "0.0.0.4.74180",
@@ -675,9 +772,15 @@
     ],
     "remote_id": 2060453842,
     "description": "0.0.0.4.74180 Перемичка UK 4/20 - AVK 4 / PIK4N/ AVK 4C (пак. 5 шт)",
-    "pole": "20",
     "category_id": 830,
-    "mediaFiles": []
+    "mediaFiles": [],
+    "features": {
+      "pole": {
+        "label": "Кількість полюсів",
+        "value": "20",
+        "unit": null
+      }
+    }
   },
   {
     "article": "0.0.0.4.74190",
@@ -698,7 +801,8 @@
     "remote_id": 1839928209,
     "description": "0.0.0.4.74190 Перемичка UK 4/50 - AVK 4 / PIK4N (пак. 5 шт)",
     "category_id": 830,
-    "mediaFiles": []
+    "mediaFiles": [],
+    "features": {}
   },
   {
     "article": "0.0.0.4.76273",
@@ -718,9 +822,15 @@
     ],
     "remote_id": 2562575650,
     "description": "0.0.0.4.76273 Перемичка TKO 4/3 AVK 4 (пак. 20 шт)",
-    "pole": "3",
     "category_id": 830,
-    "mediaFiles": []
+    "mediaFiles": [],
+    "features": {
+      "pole": {
+        "label": "Кількість полюсів",
+        "value": "3",
+        "unit": null
+      }
+    }
   },
   {
     "article": "0.0.0.4.76274",
@@ -740,9 +850,15 @@
     ],
     "remote_id": 2457388091,
     "description": "0.0.0.4.76274 Перемичка TKO 4/4 AVK 4 (пак. 15 шт)",
-    "pole": "4",
     "category_id": 830,
-    "mediaFiles": []
+    "mediaFiles": [],
+    "features": {
+      "pole": {
+        "label": "Кількість полюсів",
+        "value": "4",
+        "unit": null
+      }
+    }
   },
   {
     "article": "0.0.0.4.76279",
@@ -762,9 +878,15 @@
     ],
     "remote_id": 159240682,
     "description": "0.0.0.4.76279 Перемичка TKO 4/10 AVK 4 (пак. 5 шт)",
-    "pole": "10",
     "category_id": 830,
-    "mediaFiles": []
+    "mediaFiles": [],
+    "features": {
+      "pole": {
+        "label": "Кількість полюсів",
+        "value": "10",
+        "unit": null
+      }
+    }
   },
   {
     "article": "0.0.0.8.12250",
@@ -785,7 +907,8 @@
     "remote_id": 1305847048,
     "description": "0.0.0.8.12250* Маркувальна пластина D-NS 6x10 (1 компл = 60 шт | пак = 10 компл)",
     "category_id": 965,
-    "mediaFiles": []
+    "mediaFiles": [],
+    "features": {}
   },
   {
     "article": "0.0.0.5.05915",
@@ -806,7 +929,8 @@
     "remote_id": 2774345760,
     "description": "0.0.0.5.05915* Маркувальна пластина DB 10/6 пуста (1 компл = 30 шт | пак 17 компл)",
     "category_id": 964,
-    "mediaFiles": []
+    "mediaFiles": [],
+    "features": {}
   },
   {
     "article": "0.0.0.5.05320",
@@ -824,7 +948,8 @@
       "0.0.0.3.04138RP",
       "0.0.0.3.04139RP"
     ],
-    "remote_id": null
+    "remote_id": null,
+    "features": {}
   },
   {
     "article": "0.0.0.5.05390",
@@ -842,7 +967,8 @@
       "0.0.0.3.04138RP",
       "0.0.0.3.04139RP"
     ],
-    "remote_id": null
+    "remote_id": null,
+    "features": {}
   },
   {
     "article": "0.0.0.4.74142",
@@ -862,9 +988,15 @@
     ],
     "remote_id": 3737252795,
     "description": "0.0.0.4.74142 Перемичка UK 6/2 - AVK 6 (пак. 25 шт)",
-    "pole": "2",
     "category_id": 830,
-    "mediaFiles": []
+    "mediaFiles": [],
+    "features": {
+      "pole": {
+        "label": "Кількість полюсів",
+        "value": "2",
+        "unit": null
+      }
+    }
   },
   {
     "article": "0.0.0.4.74143",
@@ -884,9 +1016,15 @@
     ],
     "remote_id": 309064485,
     "description": "0.0.0.4.74143 Перемичка UK 6/3 - AVK 6 (пак. 20 шт)",
-    "pole": "3",
     "category_id": 830,
-    "mediaFiles": []
+    "mediaFiles": [],
+    "features": {
+      "pole": {
+        "label": "Кількість полюсів",
+        "value": "3",
+        "unit": null
+      }
+    }
   },
   {
     "article": "0.0.0.4.74144",
@@ -906,9 +1044,15 @@
     ],
     "remote_id": 414120508,
     "description": "0.0.0.4.74144 Перемичка UK 6/4 - AVK 6 (пак. 15 шт)",
-    "pole": "4",
     "category_id": 830,
-    "mediaFiles": []
+    "mediaFiles": [],
+    "features": {
+      "pole": {
+        "label": "Кількість полюсів",
+        "value": "4",
+        "unit": null
+      }
+    }
   },
   {
     "article": "0.0.0.4.74149",
@@ -928,9 +1072,15 @@
     ],
     "remote_id": 2209083373,
     "description": "0.0.0.4.74149 Перемичка UK 6/10 - AVK 6 (пак. 5 шт)",
-    "pole": "10",
     "category_id": 830,
-    "mediaFiles": []
+    "mediaFiles": [],
+    "features": {
+      "pole": {
+        "label": "Кількість полюсів",
+        "value": "10",
+        "unit": null
+      }
+    }
   },
   {
     "article": "0.0.0.4.76282",
@@ -950,9 +1100,15 @@
     ],
     "remote_id": 2343436909,
     "description": "0.0.0.4.76282 Перемичка гвинтова TKO 6/2  WGO 1 - WGL 1 - WGO3 (пак. 25 шт)",
-    "pole": "2",
     "category_id": 830,
-    "mediaFiles": []
+    "mediaFiles": [],
+    "features": {
+      "pole": {
+        "label": "Кількість полюсів",
+        "value": "2",
+        "unit": null
+      }
+    }
   },
   {
     "article": "0.0.0.4.76283",
@@ -972,9 +1128,15 @@
     ],
     "remote_id": 1191445235,
     "description": "0.0.0.4.76283 Перемичка гвинтова TKO 6/3  WGO 1 - WGL 1 - WGO3 (пак. 20 шт)",
-    "pole": "3",
     "category_id": 830,
-    "mediaFiles": []
+    "mediaFiles": [],
+    "features": {
+      "pole": {
+        "label": "Кількість полюсів",
+        "value": "3",
+        "unit": null
+      }
+    }
   },
   {
     "article": "0.0.0.4.76284",
@@ -994,9 +1156,15 @@
     ],
     "remote_id": 1304497130,
     "description": "0.0.0.4.76284 Перемичка гвинтова TKO 6/4  WGO 1 - WGL 1 - WGO3 (пак. 15 шт)",
-    "pole": "4",
     "category_id": 830,
-    "mediaFiles": []
+    "mediaFiles": [],
+    "features": {
+      "pole": {
+        "label": "Кількість полюсів",
+        "value": "4",
+        "unit": null
+      }
+    }
   },
   {
     "article": "0.0.0.4.76289",
@@ -1016,9 +1184,15 @@
     ],
     "remote_id": 3603177019,
     "description": "0.0.0.4.76289 Перемичка гвинтова TKO 6/10  WGO 1 - WGL 1 - WGO3 (пак. 5 шт)",
-    "pole": "10",
     "category_id": 830,
-    "mediaFiles": []
+    "mediaFiles": [],
+    "features": {
+      "pole": {
+        "label": "Кількість полюсів",
+        "value": "10",
+        "unit": null
+      }
+    }
   },
   {
     "article": "0.0.0.8.12750",
@@ -1039,7 +1213,8 @@
     "remote_id": 2885447244,
     "description": "0.0.0.8.12750* Маркувальна пластина D-NS 8x10 (1 компл = 48 шт | пак = 10 компл)",
     "category_id": 965,
-    "mediaFiles": []
+    "mediaFiles": [],
+    "features": {}
   },
   {
     "article": "0.0.0.5.05410",
@@ -1060,7 +1235,8 @@
     "remote_id": 407088628,
     "description": "0.0.0.5.05410 Маркувальна пластина DG 10/8 (1 компл = 26 шт | пак = 10 компл)",
     "category_id": 964,
-    "mediaFiles": []
+    "mediaFiles": [],
+    "features": {}
   },
   {
     "article": "0.0.0.4.74152",
@@ -1080,9 +1256,15 @@
     ],
     "remote_id": 3384469496,
     "description": "0.0.0.4.74152 Перемичка UK 10/2 - AVK 10 (пак. 25 шт)",
-    "pole": "2",
     "category_id": 830,
-    "mediaFiles": []
+    "mediaFiles": [],
+    "features": {
+      "pole": {
+        "label": "Кількість полюсів",
+        "value": "2",
+        "unit": null
+      }
+    }
   },
   {
     "article": "0.0.0.4.74153",
@@ -1102,9 +1284,15 @@
     ],
     "remote_id": 84993894,
     "description": "0.0.0.4.74153 Перемичка UK 10/3 - AVK 10 (пак. 20 шт)",
-    "pole": "3",
     "category_id": 830,
-    "mediaFiles": []
+    "mediaFiles": [],
+    "features": {
+      "pole": {
+        "label": "Кількість полюсів",
+        "value": "3",
+        "unit": null
+      }
+    }
   },
   {
     "article": "0.0.0.4.74154",
@@ -1124,9 +1312,15 @@
     ],
     "remote_id": 265678463,
     "description": "0.0.0.4.74154 Перемичка UK 10/4 - AVK 10 (пак. 15 шт)",
-    "pole": "4",
     "category_id": 830,
-    "mediaFiles": []
+    "mediaFiles": [],
+    "features": {
+      "pole": {
+        "label": "Кількість полюсів",
+        "value": "4",
+        "unit": null
+      }
+    }
   },
   {
     "article": "0.0.0.4.74159",
@@ -1146,9 +1340,15 @@
     ],
     "remote_id": 2496723886,
     "description": "0.0.0.4.74159 Перемичка UK 10/10 - AVK 10 (пак. 5 шт)",
-    "pole": "10",
     "category_id": 830,
-    "mediaFiles": []
+    "mediaFiles": [],
+    "features": {
+      "pole": {
+        "label": "Кількість полюсів",
+        "value": "10",
+        "unit": null
+      }
+    }
   },
   {
     "article": "0.0.0.4.76292",
@@ -1168,9 +1368,15 @@
     ],
     "remote_id": 2631210542,
     "description": "0.0.0.4.76292 Перемичка TKO 10/2 AVK 10 / ASK 4 (пак. 25 шт)",
-    "pole": "2",
     "category_id": 830,
-    "mediaFiles": []
+    "mediaFiles": [],
+    "features": {
+      "pole": {
+        "label": "Кількість полюсів",
+        "value": "2",
+        "unit": null
+      }
+    }
   },
   {
     "article": "0.0.0.4.76293",
@@ -1190,9 +1396,15 @@
     ],
     "remote_id": 1350506160,
     "description": "0.0.0.4.76293 Перемичка TKO 10/3 AVK 10 / ASK 4 (пак. 20 шт)",
-    "pole": "3",
     "category_id": 830,
-    "mediaFiles": []
+    "mediaFiles": [],
+    "features": {
+      "pole": {
+        "label": "Кількість полюсів",
+        "value": "3",
+        "unit": null
+      }
+    }
   },
   {
     "article": "0.0.0.4.76294",
@@ -1212,9 +1424,15 @@
     ],
     "remote_id": 1522147241,
     "description": "0.0.0.4.76294 Перемичка TKO 10/4 AVK 10 / ASK 4 (пак. 15 шт)",
-    "pole": "4",
     "category_id": 830,
-    "mediaFiles": []
+    "mediaFiles": [],
+    "features": {
+      "pole": {
+        "label": "Кількість полюсів",
+        "value": "4",
+        "unit": null
+      }
+    }
   },
   {
     "article": "0.0.0.4.76299",
@@ -1234,9 +1452,15 @@
     ],
     "remote_id": 3250522744,
     "description": "0.0.0.4.76299 Перемичка TKO 10/10 AVK 10 / ASK 4 (пак. 5 шт)",
-    "pole": "10",
     "category_id": 830,
-    "mediaFiles": []
+    "mediaFiles": [],
+    "features": {
+      "pole": {
+        "label": "Кількість полюсів",
+        "value": "10",
+        "unit": null
+      }
+    }
   },
   {
     "article": "0.0.0.8.13100",
@@ -1287,7 +1511,8 @@
     "remote_id": 771458180,
     "description": "0.0.0.8.13100 Маркувальна пластина D-NS 10x10 (1 компл = 36 шт | пак = 10 компл)",
     "category_id": 965,
-    "mediaFiles": []
+    "mediaFiles": [],
+    "features": {}
   },
   {
     "article": "0.0.0.5.05430",
@@ -1335,7 +1560,8 @@
       "0.0.0.3.04258",
       "0.0.0.3.04259"
     ],
-    "remote_id": null
+    "remote_id": null,
+    "features": {}
   },
   {
     "article": "0.0.0.4.44160",
@@ -1345,7 +1571,8 @@
     "remote_id": 3314290352,
     "description": "0.0.0.4.44160 Торцева кришка NPP/AVK 16 сіра (пак. 100 шт)",
     "category_id": 829,
-    "mediaFiles": []
+    "mediaFiles": [],
+    "features": {}
   },
   {
     "article": "0.0.0.4.62160",
@@ -1355,7 +1582,8 @@
     "remote_id": 3238156908,
     "description": "0.0.0.4.62160 Розмежувач клеммних груп APP / AVK 16 Сіра (пак. 25 шт)",
     "category_id": 834,
-    "mediaFiles": []
+    "mediaFiles": [],
+    "features": {}
   },
   {
     "article": "0.0.0.4.74162",
@@ -1385,9 +1613,15 @@
     ],
     "remote_id": 4030192445,
     "description": "0.0.0.4.74162 Перемичка UK 16/2 - AVK 16 (пак. 25 шт)",
-    "pole": "2",
     "category_id": 830,
-    "mediaFiles": []
+    "mediaFiles": [],
+    "features": {
+      "pole": {
+        "label": "Кількість полюсів",
+        "value": "2",
+        "unit": null
+      }
+    }
   },
   {
     "article": "0.0.0.4.74163",
@@ -1417,9 +1651,15 @@
     ],
     "remote_id": 1016978339,
     "description": "0.0.0.4.74163 Перемичка UK 16/3 - AVK 16 (пак. 20 шт)",
-    "pole": "3",
     "category_id": 830,
-    "mediaFiles": []
+    "mediaFiles": [],
+    "features": {
+      "pole": {
+        "label": "Кількість полюсів",
+        "value": "3",
+        "unit": null
+      }
+    }
   },
   {
     "article": "0.0.0.4.74164",
@@ -1449,9 +1689,15 @@
     ],
     "remote_id": 911790778,
     "description": "0.0.0.4.74164 Перемичка UK 16/4 - AVK 16 (пак. 15 шт)",
-    "pole": "4",
     "category_id": 830,
-    "mediaFiles": []
+    "mediaFiles": [],
+    "features": {
+      "pole": {
+        "label": "Кількість полюсів",
+        "value": "4",
+        "unit": null
+      }
+    }
   },
   {
     "article": "0.0.0.4.74169",
@@ -1481,9 +1727,15 @@
     ],
     "remote_id": 2908604267,
     "description": "0.0.0.4.74169 Перемичка UK 16/10 - AVK 16 (пак. 5 шт)",
-    "pole": "10",
     "category_id": 830,
-    "mediaFiles": []
+    "mediaFiles": [],
+    "features": {
+      "pole": {
+        "label": "Кількість полюсів",
+        "value": "10",
+        "unit": null
+      }
+    }
   },
   {
     "article": "0.0.0.8.13450",
@@ -1524,7 +1776,8 @@
     "remote_id": 2168785551,
     "description": "0.0.0.8.13450 Маркувальна пластина D-NS 12x10 (1 компл = 30 шт | пак = 10 компл)",
     "category_id": 965,
-    "mediaFiles": []
+    "mediaFiles": [],
+    "features": {}
   },
   {
     "article": "0.0.0.4.44161",
@@ -1534,126 +1787,144 @@
     "remote_id": 153488942,
     "description": "0.0.0.4.44161 Торцева кришка NPP/AVK 16 синя (пак. 10 шт)",
     "category_id": 829,
-    "mediaFiles": []
+    "mediaFiles": [],
+    "features": {}
   },
   {
     "article": "0.0.0.4.62161",
     "catalog_article": "462 161",
     "entity": "accessory",
     "related_items": ["0.0.0.3.04161"],
-    "remote_id": null
+    "remote_id": null,
+    "features": {}
   },
   {
     "article": "0.0.0.4.44162",
     "catalog_article": "444 162",
     "entity": "accessory",
     "related_items": ["0.0.0.3.04162"],
-    "remote_id": null
+    "remote_id": null,
+    "features": {}
   },
   {
     "article": "0.0.0.4.62162",
     "catalog_article": "462 162",
     "entity": "accessory",
     "related_items": ["0.0.0.3.04162"],
-    "remote_id": null
+    "remote_id": null,
+    "features": {}
   },
   {
     "article": "0.0.0.4.44163",
     "catalog_article": "444 163",
     "entity": "accessory",
     "related_items": ["0.0.0.3.04163"],
-    "remote_id": null
+    "remote_id": null,
+    "features": {}
   },
   {
     "article": "0.0.0.4.62163",
     "catalog_article": "462 163",
     "entity": "accessory",
     "related_items": ["0.0.0.3.04163"],
-    "remote_id": null
+    "remote_id": null,
+    "features": {}
   },
   {
     "article": "0.0.0.4.44164",
     "catalog_article": "444 164",
     "entity": "accessory",
     "related_items": ["0.0.0.3.04164"],
-    "remote_id": null
+    "remote_id": null,
+    "features": {}
   },
   {
     "article": "0.0.0.4.62164",
     "catalog_article": "462 164",
     "entity": "accessory",
     "related_items": ["0.0.0.3.04164"],
-    "remote_id": null
+    "remote_id": null,
+    "features": {}
   },
   {
     "article": "0.0.0.4.44165",
     "catalog_article": "444 165",
     "entity": "accessory",
     "related_items": ["0.0.0.3.04165"],
-    "remote_id": null
+    "remote_id": null,
+    "features": {}
   },
   {
     "article": "0.0.0.4.62165",
     "catalog_article": "462 165",
     "entity": "accessory",
     "related_items": ["0.0.0.3.04165"],
-    "remote_id": null
+    "remote_id": null,
+    "features": {}
   },
   {
     "article": "0.0.0.4.44166",
     "catalog_article": "444 166",
     "entity": "accessory",
     "related_items": ["0.0.0.3.04166"],
-    "remote_id": null
+    "remote_id": null,
+    "features": {}
   },
   {
     "article": "0.0.0.4.62166",
     "catalog_article": "462 166",
     "entity": "accessory",
     "related_items": ["0.0.0.3.04166"],
-    "remote_id": null
+    "remote_id": null,
+    "features": {}
   },
   {
     "article": "0.0.0.4.44167",
     "catalog_article": "444 167",
     "entity": "accessory",
     "related_items": ["0.0.0.3.04167"],
-    "remote_id": null
+    "remote_id": null,
+    "features": {}
   },
   {
     "article": "0.0.0.4.62167",
     "catalog_article": "462 167",
     "entity": "accessory",
     "related_items": ["0.0.0.3.04167"],
-    "remote_id": null
+    "remote_id": null,
+    "features": {}
   },
   {
     "article": "0.0.0.4.44168",
     "catalog_article": "444 168",
     "entity": "accessory",
     "related_items": ["0.0.0.3.04168"],
-    "remote_id": null
+    "remote_id": null,
+    "features": {}
   },
   {
     "article": "0.0.0.4.62168",
     "catalog_article": "462 168",
     "entity": "accessory",
     "related_items": ["0.0.0.3.04168"],
-    "remote_id": null
+    "remote_id": null,
+    "features": {}
   },
   {
     "article": "0.0.0.4.44169",
     "catalog_article": "444 169",
     "entity": "accessory",
     "related_items": ["0.0.0.3.04169"],
-    "remote_id": null
+    "remote_id": null,
+    "features": {}
   },
   {
     "article": "0.0.0.4.62169",
     "catalog_article": "462 169",
     "entity": "accessory",
     "related_items": ["0.0.0.3.04169"],
-    "remote_id": null
+    "remote_id": null,
+    "features": {}
   },
   {
     "article": "0.0.0.4.50250",
@@ -1663,7 +1934,8 @@
     "remote_id": 1011529371,
     "description": "0.0.0.4.50250 Торцева кришка NPP/AVK 25 RD сіра (пак. 50 шт)",
     "category_id": 829,
-    "mediaFiles": []
+    "mediaFiles": [],
+    "features": {}
   },
   {
     "article": "0.0.0.4.50251",
@@ -1673,63 +1945,72 @@
     "remote_id": 4041258501,
     "description": "0.0.0.4.50251 Торцева кришка NPP/AVK 25 RD синя (пак. 50 шт)",
     "category_id": 829,
-    "mediaFiles": []
+    "mediaFiles": [],
+    "features": {}
   },
   {
     "article": "0.0.0.4.50252",
     "catalog_article": "450 252",
     "entity": "accessory",
     "related_items": ["0.0.0.3.04292"],
-    "remote_id": null
+    "remote_id": null,
+    "features": {}
   },
   {
     "article": "0.0.0.4.50253",
     "catalog_article": "450 253",
     "entity": "accessory",
     "related_items": ["0.0.0.3.04293"],
-    "remote_id": null
+    "remote_id": null,
+    "features": {}
   },
   {
     "article": "0.0.0.4.50254",
     "catalog_article": "450 254",
     "entity": "accessory",
     "related_items": ["0.0.0.3.04294"],
-    "remote_id": null
+    "remote_id": null,
+    "features": {}
   },
   {
     "article": "0.0.0.4.50255",
     "catalog_article": "450 255",
     "entity": "accessory",
     "related_items": ["0.0.0.3.04295"],
-    "remote_id": null
+    "remote_id": null,
+    "features": {}
   },
   {
     "article": "0.0.0.4.50256",
     "catalog_article": "450 256",
     "entity": "accessory",
     "related_items": ["0.0.0.3.04296"],
-    "remote_id": null
+    "remote_id": null,
+    "features": {}
   },
   {
     "article": "0.0.0.4.50257",
     "catalog_article": "450 257",
     "entity": "accessory",
     "related_items": ["0.0.0.3.04297"],
-    "remote_id": null
+    "remote_id": null,
+    "features": {}
   },
   {
     "article": "0.0.0.4.50258",
     "catalog_article": "450 258",
     "entity": "accessory",
     "related_items": ["0.0.0.3.04298"],
-    "remote_id": null
+    "remote_id": null,
+    "features": {}
   },
   {
     "article": "0.0.0.4.50259",
     "catalog_article": "450 259",
     "entity": "accessory",
     "related_items": ["0.0.0.3.04299"],
-    "remote_id": null
+    "remote_id": null,
+    "features": {}
   },
   {
     "article": "0.0.0.4.62180",
@@ -1739,7 +2020,8 @@
     "remote_id": 163611134,
     "description": "0.0.0.4.62180 Розмежувач клеммних груп APP / AVK 35 RD Сіра (пак. 10 шт)",
     "category_id": 834,
-    "mediaFiles": []
+    "mediaFiles": [],
+    "features": {}
   },
   {
     "article": "0.0.0.4.74172",
@@ -1759,9 +2041,15 @@
     ],
     "remote_id": 3880570750,
     "description": "0.0.0.4.74172 Перемичка UK 35/2 - AVK 35 (пак. 25 шт)",
-    "pole": "2",
     "category_id": 830,
-    "mediaFiles": []
+    "mediaFiles": [],
+    "features": {
+      "pole": {
+        "label": "Кількість полюсів",
+        "value": "2",
+        "unit": null
+      }
+    }
   },
   {
     "article": "0.0.0.4.74173",
@@ -1781,9 +2069,15 @@
     ],
     "remote_id": 736546784,
     "description": "0.0.0.4.74173 Перемичка UK 35/3 - AVK 35 (пак. 20 шт)",
-    "pole": "3",
     "category_id": 830,
-    "mediaFiles": []
+    "mediaFiles": [],
+    "features": {
+      "pole": {
+        "label": "Кількість полюсів",
+        "value": "3",
+        "unit": null
+      }
+    }
   },
   {
     "article": "0.0.0.4.74174",
@@ -1803,9 +2097,15 @@
     ],
     "remote_id": 555992825,
     "description": "0.0.0.4.74174 Перемичка UK 35/4 - AVK 35 (пак. 15 шт)",
-    "pole": "4",
     "category_id": 830,
-    "mediaFiles": []
+    "mediaFiles": [],
+    "features": {
+      "pole": {
+        "label": "Кількість полюсів",
+        "value": "4",
+        "unit": null
+      }
+    }
   },
   {
     "article": "0.0.0.4.74179",
@@ -1825,9 +2125,15 @@
     ],
     "remote_id": 3123106600,
     "description": "0.0.0.4.74179 Перемичка UK 35/10 - AVK 35 (пак. 5 шт)",
-    "pole": "10",
     "category_id": 830,
-    "mediaFiles": []
+    "mediaFiles": [],
+    "features": {
+      "pole": {
+        "label": "Кількість полюсів",
+        "value": "10",
+        "unit": null
+      }
+    }
   },
   {
     "article": "0.0.0.8.11800",
@@ -1845,69 +2151,79 @@
       "0.0.0.3.04258",
       "0.0.0.3.04259"
     ],
-    "remote_id": null
+    "remote_id": null,
+    "features": {}
   },
   {
     "article": "0.0.0.4.62181",
     "catalog_article": "462 181",
     "entity": "accessory",
     "related_items": ["0.0.0.3.04251"],
-    "remote_id": null
+    "remote_id": null,
+    "features": {}
   },
   {
     "article": "0.0.0.4.62182",
     "catalog_article": "462 182",
     "entity": "accessory",
     "related_items": ["0.0.0.3.04252"],
-    "remote_id": null
+    "remote_id": null,
+    "features": {}
   },
   {
     "article": "0.0.0.4.62183",
     "catalog_article": "462 183",
     "entity": "accessory",
     "related_items": ["0.0.0.3.04253"],
-    "remote_id": null
+    "remote_id": null,
+    "features": {}
   },
   {
     "article": "0.0.0.4.62184",
     "catalog_article": "462 184",
     "entity": "accessory",
     "related_items": ["0.0.0.3.04254"],
-    "remote_id": null
+    "remote_id": null,
+    "features": {}
   },
   {
     "article": "0.0.0.4.62185",
     "catalog_article": "462 185",
     "entity": "accessory",
     "related_items": ["0.0.0.3.04255"],
-    "remote_id": null
+    "remote_id": null,
+    "features": {}
   },
   {
     "article": "0.0.0.4.62186",
     "catalog_article": "462 186",
     "entity": "accessory",
     "related_items": ["0.0.0.3.04256"],
-    "remote_id": null
+    "remote_id": null,
+    "features": {}
   },
   {
     "article": "0.0.0.4.62187",
     "catalog_article": "462 187",
     "entity": "accessory",
     "related_items": ["0.0.0.3.04257"],
-    "remote_id": null
+    "remote_id": null,
+    "features": {}
   },
   {
     "article": "0.0.0.4.62188",
     "catalog_article": "462 188",
     "entity": "accessory",
     "related_items": ["0.0.0.3.04258"],
-    "remote_id": null
+    "remote_id": null,
+    "features": {}
   },
   {
     "article": "0.0.0.4.62189",
     "catalog_article": "462 189",
     "entity": "accessory",
     "related_items": ["0.0.0.3.04259"],
-    "remote_id": null
+    "remote_id": null,
+    "features": {}
   }
 ]
