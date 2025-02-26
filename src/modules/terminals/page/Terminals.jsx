@@ -1,3 +1,5 @@
+import SCHEMES_SPRITE from "modules/terminals/utils/assets/schemes/schemes.svg";
+import { SvgSprite } from "shared/ui/components/SvgSprite/SvgSprite";
 import { AccessoriesList } from "../components/AccessoriesList/AccessoriesList";
 import { Accessory } from "../components/Accessory/Accessory";
 import { SearchBar } from "../components/SearchBar/SearchBar";
@@ -29,6 +31,7 @@ export const Terminals = () => {
       </Cell>
       <Cell area="g">
         <TerminalScheme />
+        <SvgSprite spriteURL={SCHEMES_SPRITE} />
       </Cell>
       <Cell area="h">
         <TerminalsList />

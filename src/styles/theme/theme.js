@@ -9,5 +9,6 @@ export const theme = {
     acent: getColorToken("#00a8ff"),
     red: getColorToken("#ed1f24"),
     white: getColorToken("#FFFFFF"),
+    black: getColorToken("#000000"),
   },
 };

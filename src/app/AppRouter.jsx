@@ -1,10 +1,10 @@
+import { RootLayout } from "layout";
 import Grab from "modules/G/Grab";
 import { InfoModule } from "modules/info";
 import { Switches } from "modules/switches";
 import { Terminals } from "modules/terminals";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { ProtectedRoute } from "./ProtectedRoute";
-import RootLayout from "./RootLayout";
 
 const AppRouter = () => {
   return (

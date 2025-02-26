@@ -1,4 +1,5 @@
-import BusbarsCurrent from "modules/info/components/BusbarsCurrent/BusbarsCurrent";
+import BusbarsCurrent from "features/BusbarsCurrent/BusbarsCurrent";
+import { Rpc } from "modules/rpc";
 import aluminumData from "../../data/aluminum.json";
 import copperData from "../../data/copper.json";
 import { Container } from "./InfoModule.styled";
@@ -6,8 +7,9 @@ import { Container } from "./InfoModule.styled";
 const InfoModule = () => {
   return (
     <Container>
-      <BusbarsCurrent type="copper" busbarData={copperData} />
-      <BusbarsCurrent type="aluminum" busbarData={aluminumData} />
+      <BusbarsCurrent busbarsMaterial="copper" busbarData={copperData} />
+      <BusbarsCurrent busbarsMaterial="aluminum" busbarData={aluminumData} />
+      <Rpc />
     </Container>
   );
 };

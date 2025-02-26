@@ -3,10 +3,17 @@
     "baseUrl": "src",
     "paths": {
       "app/*": ["app/*"],
-      "modules/*": ["modules/*"],
-      "interface/*": ["interface/*"],
+      "pages/*": ["pages/*"],
+      "features/*": ["features/*"],
+      "layout/*": ["layout/*"],
+      "store/*": ["store/*"],
+      "hooks/*": ["hooks/*"],
+      "lib/*": ["lib/*"],
+      "utils/*": ["utils/*"],
+      "shared/*": ["shared/*"],
+
       "styles/*": ["styles/*"],
-      "shared/*": ["shared/*"]
+      "modules/*": ["modules/*"]
     }
   },
   "include": ["src"]

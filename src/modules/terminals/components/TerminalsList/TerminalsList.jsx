@@ -6,7 +6,8 @@ import { Description, Dummy, Item, List } from "./TerminalsList.styled";
 import { useTerminalsList } from "./useTerminalsList";
 
 export const TerminalsList = () => {
-  const { filteredList, favoriteList, handleItemClick } = useTerminalsList();
+  const { filteredList, favoriteList, handleItemClick, terminalRefs } =
+    useTerminalsList();
   const { terminal: activeTerminal } = useTerminal();
 
   const getList = (list, key) => {
@@ -21,6 +22,7 @@ export const TerminalsList = () => {
               onClick={() => {
                 handleItemClick(terminal.article);
               }}
+              ref={(item) => (terminalRefs.current[terminal.article] = item)}
             >
               {terminal.description ?? terminal.article + "  Немає опису"}
             </Description>

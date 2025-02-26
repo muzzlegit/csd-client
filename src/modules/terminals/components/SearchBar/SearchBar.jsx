@@ -4,7 +4,13 @@ import { Container, InputStyles, Message } from "./SearchBar.styled";
 import useSearchBar from "./useSearchBar";
 
 export const SearchBar = () => {
-  const { query, message, handleQuery } = useSearchBar();
+  const {
+    query,
+    message,
+    handleQuery,
+    queryByAccessory,
+    handleQueryByAccessory,
+  } = useSearchBar();
 
   return (
     <CellLayout title="Пошук по артиклу">
@@ -16,6 +22,12 @@ export const SearchBar = () => {
           placeholder="...артикул"
         />
         <Message>{message}</Message>
+        <TextInput
+          value={queryByAccessory}
+          handleInputValue={handleQueryByAccessory}
+          styles={InputStyles}
+          placeholder="...артикул аксесуару"
+        />
       </Container>
     </CellLayout>
   );

@@ -1,5 +1,6 @@
 import styled from "@emotion/styled";
 import { useState } from "react";
+import terminals from "../terminals/data/Terminals copy 2.json";
 
 const List = styled.div({
   maxHeight: "800px",
@@ -60,6 +61,44 @@ const Grab = () => {
     setBrand(Number(e.currentTarget.value));
   };
 
+  const getColors = (index) => {
+    switch (index) {
+      case "0":
+        return "grey";
+      case "1":
+        return "blue";
+      case "2":
+        return "green";
+      case "3":
+        return "yellow";
+      case "4":
+        return "red";
+      case "5":
+        return "black";
+      case "6":
+        return "white";
+      case "7":
+        return "orange";
+      case "8":
+        return "brown";
+      case "9":
+        return "grey";
+    }
+  };
+
+  const fillColor = () => {
+    console.log(
+      terminals.map((item) => {
+        const index = item.article.slice(12, 13);
+        const color = getColors(index);
+        const { name, features, ...rest } = item;
+
+        features.color.value = color;
+        return { ...rest, features };
+      })
+    );
+  };
+  fillColor();
   const go = async (brand, callback) => {
     fetch("/api/products", {
       method: "POST",
@@ -118,9 +157,20 @@ const Grab = () => {
     console.log(updatedData);
   };
 
+  const klemsanInfo = (data) => {
+    console.log(data);
+    console.log(
+      data.map(({ article, name, remote_id }) => ({
+        article,
+        name,
+        remote_id,
+      }))
+    );
+  };
+
   const addInfo = async () => {
     const updatedData = await Promise.all(
-      switches.map(async (item) => {
+      terminals.map(async (item) => {
         if (!item?.remote_id) return item;
         const newItem = await go2(item?.remote_id);
         if (!newItem) return item;
@@ -128,11 +178,43 @@ const Grab = () => {
         return {
           ...item,
           description: product.description,
-          ...(features?.[4]?.characteristic_id === 254 && {
-            pole: features?.[4]?.value,
-          }),
-
-          category_id: product?.category_id,
+          features: {
+            color: {
+              label: "Колір",
+              value: "blue",
+              unit: null,
+            },
+            series: {
+              label: "Серія",
+              value: features?.[2]?.value,
+              unit: null,
+            },
+            type: {
+              label: "Тип",
+              value: features?.[3]?.value,
+              unit: null,
+            },
+            size: {
+              label: "Розмір (ШхВхД)",
+              value: `${features?.[5]?.value}x${features?.[7]?.value}x${features?.[6]?.value}`,
+              unit: "мм",
+            },
+            voltage: {
+              label: "Напруга",
+              value: features?.[8]?.value,
+              unit: "B",
+            },
+            current: {
+              label: "Струм",
+              value: features?.[9]?.value,
+              unit: "А",
+            },
+            cross_section: {
+              label: "Номінальний переріз провідника",
+              value: features?.[10]?.value,
+              unit: "мм²",
+            },
+          },
           mediaFiles,
           // files,
         };
@@ -152,7 +234,7 @@ const Grab = () => {
         </select>
         <button
           onClick={() => {
-            go(brand);
+            go(brand, klemsanInfo);
           }}
         >
           Спиздить у Вектора
@@ -168,9 +250,7 @@ const Grab = () => {
         <input
           type="number"
           value={value}
-          onChange={(e) => {
-            setValue(e.currentTarget.value);
-          }}
+          onChange={addInfo}
           style={{ width: "80px", textAlign: "center" }}
         />
       </div>

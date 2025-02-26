@@ -1,16 +1,24 @@
+import tailwindcss from "@tailwindcss/vite";
 import react from "@vitejs/plugin-react";
 import { defineConfig } from "vite";
 
 // https://vite.dev/config/
 export default defineConfig({
-  plugins: [react()],
+  plugins: [react(), tailwindcss()],
   resolve: {
     alias: {
       app: "/src/app/",
-      modules: "/src/modules/",
-      interface: "/src/interface/",
-      styles: "/src/styles/",
+      pages: "/src/pages/",
+      features: "/src/features/",
+      layout: "/src/layout/",
+      store: "/src/store/",
+      hooks: "/src/hooks/",
+      lib: "/src/lib/",
+      utils: "/src/utils/",
       shared: "/src/shared/",
+
+      modules: "/src/modules/",
+      styles: "/src/styles/",
     },
   },
   server: {
