@@ -1,0 +1,66 @@
+{
+  "1": {
+    "current": 1.44,
+    "contactor": 2.5
+  },
+  "1.25": {
+    "current": 1.8,
+    "contactor": 2.5
+  },
+  "2.5": {
+    "current": 3.61,
+    "contactor": 5
+  },
+  "4": {
+    "current": 5.77,
+    "contactor": 5
+  },
+  "5": {
+    "current": 7.22,
+    "contactor": 10
+  },
+  "6.25": {
+    "current": 9,
+    "contactor": 10
+  },
+  "7.5": {
+    "current": 10.83,
+    "contactor": 10
+  },
+  "10": {
+    "current": 14.43,
+    "contactor": 12.5
+  },
+  "12.5": {
+    "current": 18.04,
+    "contactor": 15
+  },
+  "15": {
+    "current": 21.65,
+    "contactor": 20
+  },
+  "20": {
+    "current": 28.87,
+    "contactor": 25
+  },
+  "25": {
+    "current": 36.08,
+    "contactor": 30
+  },
+  "30": {
+    "current": 43.3,
+    "contactor": 40
+  },
+  "35": {
+    "current": null,
+    "contactor": 40
+  },
+  "40": {
+    "current": 57.74,
+    "contactor": 50
+  },
+  "50": {
+    "current": 72,
+    "contactor": 50
+  }
+}

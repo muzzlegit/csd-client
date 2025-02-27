@@ -1,8 +1,6 @@
 import styled from "@emotion/styled";
-import { configObj } from "./config";
 
 export const Container = styled.div(({ theme }) => ({
-  padding: "12px",
   width: "fit-content",
   height: "fit-content",
   display: "flex",
@@ -12,15 +10,6 @@ export const Container = styled.div(({ theme }) => ({
   border: `1px solid ${theme.colors?.border?.[100]}`,
   backgroundColor: theme.colors?.secondary?.[100],
   color: theme.colors.textIdle[100],
-}));
-
-export const Title = styled.p(({ theme, type }) => ({
-  textAlign: "center",
-  width: "100%",
-  fontSize: "20px",
-  fontWeight: 700,
-  color: theme.colors.primary[100],
-  backgroundColor: configObj.color[type],
 }));
 
 export const DotBox = styled.div(() => ({

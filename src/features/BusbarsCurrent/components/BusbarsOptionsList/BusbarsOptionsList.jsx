@@ -1,21 +1,18 @@
 import PropTypes from "prop-types";
 import { CopyButton } from "shared/ui";
-import Dot from "../../shared/components/Dot/Dot";
+import Dot from "../../../../shared/components/Dot/Dot";
+import { BusbarsListType } from "../../types";
+import useBusbarsCurrent from "../../useBusbarsCurrent";
 import {
   Container,
   Current,
   CurrentBox,
   DotBox,
   Link,
-  Title,
   Wrap,
-} from "./BusbarsCurrent.styled";
-import BusbarsImg from "./components/BusbarsImg/BusbarsImg";
-import { configObj } from "./config";
-import { BusbarsListType, BusbarsMaterialType } from "./types";
-import useBusbarsCurrent from "./useBusbarsCurrent";
+} from "./BusbarsOptionsList.styled";
 
-const BusbarsCurrent = ({ busbarsMaterial, busbarData }) => {
+const BusbarsOptionsList = ({ busbarsData }) => {
   const {
     thicknessList,
     widthList,
@@ -24,12 +21,10 @@ const BusbarsCurrent = ({ busbarsMaterial, busbarData }) => {
     handleWidth,
     selectedThickness,
     selectedWidth,
-  } = useBusbarsCurrent(busbarData);
+  } = useBusbarsCurrent(busbarsData);
 
   return (
     <Container>
-      <BusbarsImg busbarsMaterial={busbarsMaterial} />
-      <Title type={busbarsMaterial}>{configObj.title[busbarsMaterial]}</Title>
       <DotBox>
         <div>Товщина</div>
         {thicknessList.map((thickness) => {
@@ -83,9 +78,8 @@ const BusbarsCurrent = ({ busbarsMaterial, busbarData }) => {
   );
 };
 
-export default BusbarsCurrent;
+export default BusbarsOptionsList;
 
-BusbarsCurrent.propTypes = {
-  busbarsMaterial: BusbarsMaterialType.isRequired,
-  busbarData: PropTypes.arrayOf(BusbarsListType).isRequired,
+BusbarsOptionsList.propTypes = {
+  busbarsData: PropTypes.arrayOf(BusbarsListType).isRequired,
 };
