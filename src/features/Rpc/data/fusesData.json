@@ -1,6 +1,14 @@
 [
   {
     "size": "10x38",
+    "current": 2
+  },
+  {
+    "size": "10x38",
+    "current": 4
+  },
+  {
+    "size": "10x38",
     "current": 6
   },
   {
@@ -54,5 +62,69 @@
   {
     "size": "NH00",
     "current": 125
+  },
+  {
+    "size": "NH00",
+    "current": 160
+  },
+  {
+    "size": "NH1",
+    "current": 200
+  },
+  {
+    "size": "NH1",
+    "current": 250
+  },
+  {
+    "size": "NH2",
+    "current": 315
+  },
+  {
+    "size": "NH2",
+    "current": 355
+  },
+  {
+    "size": "NH2",
+    "current": 400
+  },
+  {
+    "size": "NH3",
+    "current": 500
+  },
+  {
+    "size": "NH3",
+    "current": 630
+  },
+  {
+    "size": null,
+    "current": 800
+  },
+  {
+    "size": null,
+    "current": 1000
+  },
+  {
+    "size": null,
+    "current": 1250
+  },
+  {
+    "size": null,
+    "current": 1600
+  },
+  {
+    "size": null,
+    "current": 2000
+  },
+  {
+    "size": null,
+    "current": 2500
+  },
+  {
+    "size": null,
+    "current": 3150
+  },
+  {
+    "size": null,
+    "current": 4000
   }
 ]

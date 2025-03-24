@@ -2,6 +2,7 @@ import styled from "@emotion/styled";
 
 export const Container = styled.div({
   height: "100%",
+  width: "fit-content",
   display: "flex",
   alignItems: "center",
   gap: "4px",
@@ -32,7 +33,7 @@ export const Button = styled.div(({ theme }) => ({
   backgroundColor: theme.colors?.primary[80],
 }));
 
-export const List = styled.div(({ theme }) => ({
+export const List = styled.div(({ theme, isShort }) => ({
   position: "absolute",
   zIndex: 20,
   bottom: 0,
@@ -43,6 +44,16 @@ export const List = styled.div(({ theme }) => ({
   borderRadius: "4px",
   border: `1px solid ${theme.colors.textIdle[50]}`,
   backgroundColor: theme.colors?.primary[100],
+  ...(isShort
+    ? {
+        height: "200px",
+        overflowY: "scroll",
+        scrollbarWidth: "thin",
+        "::-webkit-scrollbar": {
+          width: "2px",
+        },
+      }
+    : {}),
 }));
 
 export const Item = styled.div(({ theme }) => ({

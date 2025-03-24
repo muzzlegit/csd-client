@@ -9,7 +9,7 @@ export const Container = styled.div({
   overflowY: "auto",
   scrollbarWidth: "thin",
   "&::-webkit-scrollbar": {
-    width: "8x",
+    width: "8px",
   },
   "@media (max-width: 1720px)": {
     maxHeight: "330px",

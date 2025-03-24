@@ -12,6 +12,7 @@ const Select = ({
   onChange,
   placeholder = "Виберіть варіант",
   width,
+  isShort,
   ...rest
 }) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -61,7 +62,7 @@ const Select = ({
           <FiChevronDown size="20" />
         </Button>
         {isOpen && (
-          <List>
+          <List isShort={isShort}>
             {options.map((option) => (
               <Item
                 key={option.label}
@@ -104,4 +105,5 @@ Select.propTypes = {
   onChange: PropTypes.func.isRequired,
   placeholder: PropTypes.string,
   width: PropTypes.string,
+  isShort: PropTypes.bool,
 };

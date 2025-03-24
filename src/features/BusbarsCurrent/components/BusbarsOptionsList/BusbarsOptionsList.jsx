@@ -8,7 +8,6 @@ import {
   Current,
   CurrentBox,
   DotBox,
-  Link,
   Wrap,
 } from "./BusbarsOptionsList.styled";
 
@@ -71,9 +70,6 @@ const BusbarsOptionsList = ({ busbarsData }) => {
           <p>Не знайдено!</p>
         )}
       </CurrentBox>
-      <Link href="https://services.vector-vs.com/kalkulyator-pidboru-zhorstkoyi-shini">
-        Перейти на справжній калькулятор
-      </Link>
     </Container>
   );
 };

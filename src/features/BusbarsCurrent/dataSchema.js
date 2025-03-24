@@ -7,7 +7,7 @@ export const DataSchema = z.array(
         required_error: "Ширина шини має бути вказана",
       })
       .int()
-      .gt(10, { message: "Невалідний розмір" })
+      .gt(9, { message: "Невалідний розмір" })
       .lt(200, { message: "Невалідний розмір" }),
     thickness: z
       .number({

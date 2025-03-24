@@ -1,11 +1,7 @@
-import RpcStep from "./components/RpcStep/RpcStep";
+import { RpcLayout } from "./components/RpcLayout/RpcLayout";
 
 const Rpc = () => {
-  return (
-    <div>
-      <RpcStep />
-    </div>
-  );
+  return <RpcLayout />;
 };
 
 export default Rpc;

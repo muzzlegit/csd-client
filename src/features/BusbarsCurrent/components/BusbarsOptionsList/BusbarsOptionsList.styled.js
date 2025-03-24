@@ -37,8 +37,3 @@ export const Current = styled.span(({ theme }) => ({
   fontWeight: 700,
   color: theme.colors.text[100],
 }));
-
-export const Link = styled.a(({ theme }) => ({
-  margin: "10px auto",
-  color: theme.colors.acent[60],
-}));

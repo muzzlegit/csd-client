@@ -22,6 +22,7 @@ const AppRouter = () => {
               </ProtectedRoute>
             }
           />
+          <Route path="/*" element={<InfoModule />} />
         </Route>
       </Routes>
     </BrowserRouter>

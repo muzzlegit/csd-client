@@ -21,6 +21,7 @@ export const useTerminalsList = () => {
     if (accessory !== "") {
       return list.filter((terminal) => {
         let isAccessory = false;
+        console.log(terminal);
         terminal?.accessories.forEach((el) => {
           if (el === accessory || el.includes(accessory, 5)) {
             isAccessory = true;

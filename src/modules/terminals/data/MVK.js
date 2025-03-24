@@ -47,7 +47,7 @@ export const MVK = [
   {
     remote_id: 3559392729,
     article: "0.0.0.3.04421",
-
+    accessories: ["0.0.0.4.44421", ...MVK2_5_BASE_ACCESSORIES],
     description: "0.0.0.3.04421 Клема MVK Синя 2,5 мм (пак. 100 шт.)",
     mediaFiles: [
       {

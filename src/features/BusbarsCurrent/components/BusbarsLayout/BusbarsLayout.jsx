@@ -1,6 +1,7 @@
 import { configObj } from "features/BusbarsCurrent/config";
 import { BusbarsMaterialType } from "features/BusbarsCurrent/types";
 import PropTypes from "prop-types";
+import { VectorLink } from "shared/components/VectorLink/VectorLink";
 import BusbarsImg from "../BusbarsImg/BusbarsImg";
 import { Container, Title } from "./BusbarsLayout.styled";
 
@@ -12,6 +13,7 @@ const BusbarsLayout = ({ busbarsMaterial, children }) => {
         {configObj?.title?.[busbarsMaterial]}
       </Title>
       {children}
+      <VectorLink linkName="copper" />
     </Container>
   );
 };

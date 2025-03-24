@@ -16,7 +16,7 @@ const TextInput = ({ value, handleInputValue, placeholder, styles }) => {
 export default TextInput;
 
 TextInput.propTypes = {
-  value: PropTypes.string.isRequired,
+  value: PropTypes.oneOfType([PropTypes.string, PropTypes.number]).isRequired,
   handleInputValue: PropTypes.func.isRequired,
   placeholder: PropTypes.string,
   styles: PropTypes.object,
