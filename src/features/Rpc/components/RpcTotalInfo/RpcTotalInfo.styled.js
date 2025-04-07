@@ -49,3 +49,10 @@ export const Acent = styled.span(({ theme }) => ({
   fontWeight: 700,
   color: theme.colors.acent[100],
 }));
+
+export const Schema = styled.span(({ theme }) => ({
+  marginTop: "auto auto 0 auto",
+  fontSize: "14px",
+  cursor: "pointer",
+  color: theme.colors.acent[100],
+}));

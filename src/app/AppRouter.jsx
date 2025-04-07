@@ -1,8 +1,8 @@
 import { RootLayout } from "layout";
 import Grab from "modules/G/Grab";
-import { InfoModule } from "modules/info";
 import { Switches } from "modules/switches";
 import { Terminals } from "modules/terminals";
+import { Home } from "pages/Home/Home";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { ProtectedRoute } from "./ProtectedRoute";
 
@@ -11,7 +11,7 @@ const AppRouter = () => {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<RootLayout />}>
-          <Route index element={<InfoModule />} />
+          <Route index element={<Home />} />
           <Route path="switch" element={<Switches />} />
           <Route path="terminal" element={<Terminals />} />
           <Route
@@ -22,7 +22,7 @@ const AppRouter = () => {
               </ProtectedRoute>
             }
           />
-          <Route path="/*" element={<InfoModule />} />
+          <Route path="/*" element={<Home />} />
         </Route>
       </Routes>
     </BrowserRouter>

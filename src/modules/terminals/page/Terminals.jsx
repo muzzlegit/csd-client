@@ -1,3 +1,4 @@
+import { fetchItemsByCategory } from "lib/apiService";
 import SCHEMES_SPRITE from "modules/terminals/utils/assets/schemes/schemes.svg";
 import { SvgSprite } from "shared/ui/components/SvgSprite/SvgSprite";
 import { AccessoriesList } from "../components/AccessoriesList/AccessoriesList";
@@ -39,6 +40,13 @@ export const Terminals = () => {
       <Cell area="i">
         <AccessoriesList />
       </Cell>
+      <button
+        onClick={() => {
+          fetchItemsByCategory(848);
+        }}
+      >
+        go
+      </button>
     </Container>
   );
 };

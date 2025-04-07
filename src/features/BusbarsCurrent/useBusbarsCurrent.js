@@ -1,8 +1,6 @@
-import {
-  getBusbarCurrentBySize,
-  getSortedUniqueValuesByProperty,
-} from "modules/info/utils/helpers";
 import { useMemo, useState } from "react";
+import { getSortedUniqueValuesByProperty } from "shared/helpers";
+import { getBusbarCurrentBySize } from "./utils/helpers";
 
 const useBusbarsCurrent = (busbarsData) => {
   const thicknessList = useMemo(() => {

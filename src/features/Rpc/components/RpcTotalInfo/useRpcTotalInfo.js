@@ -1,4 +1,4 @@
-import { getFuseByCurrent } from "features/Rpc/helpers";
+import { getFuseByCurrent, getRpcSchema } from "features/Rpc/helpers";
 import useRpcStore from "features/Rpc/store";
 
 const useRpcTotalInfo = () => {
@@ -10,6 +10,7 @@ const useRpcTotalInfo = () => {
   const {
     totalPower,
     stepsAmount,
+    stepsPowers,
     totalCurrent,
     capacitors,
     contactors,
@@ -29,8 +30,9 @@ const useRpcTotalInfo = () => {
       const oneCapacitorPower = power > 50 ? 50 : power;
 
       acc.totalPower += power;
-
       acc.totalCurrent += current;
+
+      acc.stepsPowers[power] = (acc.stepsPowers[power] || 0) + 1;
 
       acc.capacitors[oneCapacitorPower] = !acc.capacitors[oneCapacitorPower]
         ? 1 * multiplier
@@ -55,12 +57,15 @@ const useRpcTotalInfo = () => {
       totalPower: 0,
       stepsAmount: 0,
       totalCurrent: 0,
+      stepsPowers: {},
       capacitors: {},
       contactors: {},
       fuses: {},
       fuseholders: {},
     }
   );
+
+  const rpcSchema = getRpcSchema(stepsPowers);
 
   const mainSwitchCurrent =
     getFuseByCurrent(totalCurrent * mainSwitchCoefficient)?.current ?? 0;
@@ -73,6 +78,7 @@ const useRpcTotalInfo = () => {
     contactors,
     fuses,
     fuseholders,
+    rpcSchema,
   };
 };
 

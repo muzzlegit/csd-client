@@ -1,5 +1,5 @@
-import { configObj } from "features/BusbarsCurrent/config";
-import { BusbarsMaterialType } from "features/BusbarsCurrent/types";
+import { configObj } from "features/BusbarsCurrent/utils/config";
+import { BusbarsMaterialType } from "features/BusbarsCurrent/utils/types";
 import PropTypes from "prop-types";
 import { VectorLink } from "shared/components/VectorLink/VectorLink";
 import BusbarsImg from "../BusbarsImg/BusbarsImg";

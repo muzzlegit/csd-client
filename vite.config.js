@@ -28,6 +28,11 @@ export default defineConfig({
         changeOrigin: true, // Змінює заголовок Origin, щоб співпадав із сервером
         rewrite: (path) => path.replace(/^\/api/, ""),
       },
+      "/conf": {
+        target: "https://services.vector-vs.com//price-list-internal", // URL вашого сервера
+        changeOrigin: true, // Змінює заголовок Origin, щоб співпадав із сервером
+        rewrite: (path) => path.replace(/^\/api/, ""),
+      },
     },
   },
 });

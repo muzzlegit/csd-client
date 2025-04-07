@@ -1,7 +1,7 @@
 import BusbarsLayout from "./components/BusbarsLayout/BusbarsLayout";
 import BusbarsOptionsList from "./components/BusbarsOptionsList/BusbarsOptionsList";
 import aluminumData from "./data/aluminum.json";
-import { DataSchema } from "./dataSchema";
+import { DataSchema } from "./utils/dataSchema";
 
 const AluminumBusbars = () => {
   const parsedData = DataSchema.safeParse(aluminumData);
