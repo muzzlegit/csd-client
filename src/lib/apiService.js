@@ -1,28 +1,25 @@
 export const fetchItemByArticle = async (article) => {
   try {
-    const response = await fetch(
-      "https://services.vector-vs.com/price-list-internal/products",
-      {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({
-          searchval: article,
-          categories: [0],
-          brands: [],
-          characteristics: [],
-          filters: [],
-          perPage: 10,
-          page: 1,
-          sortBy: null,
-          sortOrder: null,
-          balance: true,
-          custom_brand_view: false,
-          brand_view: false,
-        }),
-      }
-    );
+    const response = await fetch("api/products", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        searchval: article,
+        categories: [0],
+        brands: [],
+        characteristics: [],
+        filters: [],
+        perPage: 10,
+        page: 1,
+        sortBy: null,
+        sortOrder: null,
+        balance: true,
+        custom_brand_view: false,
+        brand_view: false,
+      }),
+    });
 
     if (!response.ok) {
       throw new Error(`Помилка в запиті: ${response.status}`);
@@ -35,12 +32,9 @@ export const fetchItemByArticle = async (article) => {
       return null;
     }
 
-    const productResponse = await fetch(
-      `https://services.vector-vs.com/price-list-internal/product/${remote_id}`,
-      {
-        method: "GET",
-      }
-    );
+    const productResponse = await fetch(`api/product/${remote_id}`, {
+      method: "GET",
+    });
 
     if (!productResponse.ok) {
       throw new Error(`HTTP помилка: ${productResponse.status}`);
