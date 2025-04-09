@@ -24,7 +24,7 @@ export const fetchItemByArticle = async (article) => {
     if (!response.ok) {
       throw new Error(`Помилка в запиті: ${response.status}`);
     }
-
+    console.log(response);
     const data = await response.json();
     const remote_id = data?.data?.data?.[0]?.remote_id;
 
