@@ -1,8 +1,10 @@
+import { copyToClipboard } from "shared/helpers";
 import {
   Acent,
   Block,
   Container,
   Content,
+  Schema,
   Text,
   Title,
   Wrap,
@@ -18,6 +20,7 @@ export const RpcTotalInfo = () => {
     contactors,
     fuseholders,
     fuses,
+    rpcSchema,
   } = useRpcTotalInfo();
 
   return (
@@ -34,6 +37,13 @@ export const RpcTotalInfo = () => {
         <Text>Струм головного вимикача:</Text>
         <Acent>{mainSwitchCurrent} A</Acent>
       </Wrap>
+      <Schema
+        onClick={() => {
+          copyToClipboard(rpcSchema);
+        }}
+      >
+        {rpcSchema}
+      </Schema>
       <Content>
         <Block>
           <div>

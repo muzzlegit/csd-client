@@ -1,0 +1,2 @@
+/api/products https://services.vector-vs.com/price-list-internal/products     200
+/api/product/*  https://services.vector-vs.com/price-list-internal/product/:splat   200

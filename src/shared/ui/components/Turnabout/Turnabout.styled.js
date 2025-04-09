@@ -42,6 +42,6 @@ export const Img = styled.img({
   width: "100%",
   objectFit: "contain",
   overflow: "hidden",
-  borderRadius: "16px",
+  borderRadius: "4px",
   loading: "lazy",
 });

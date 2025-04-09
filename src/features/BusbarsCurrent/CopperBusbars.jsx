@@ -1,7 +1,7 @@
 import BusbarsLayout from "./components/BusbarsLayout/BusbarsLayout";
 import BusbarsOptionsList from "./components/BusbarsOptionsList/BusbarsOptionsList";
 import copperData from "./data/copper.json";
-import { DataSchema } from "./dataSchema";
+import { DataSchema } from "./utils/dataSchema";
 
 const CopperBusBars = () => {
   const parsedData = DataSchema.safeParse(copperData);

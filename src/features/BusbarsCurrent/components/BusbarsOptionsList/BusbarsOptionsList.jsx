@@ -1,8 +1,8 @@
 import PropTypes from "prop-types";
 import { CopyButton } from "shared/ui";
 import Dot from "../../../../shared/components/Dot/Dot";
-import { BusbarsListType } from "../../types";
 import useBusbarsCurrent from "../../useBusbarsCurrent";
+import { BusbarsListType } from "../../utils/types";
 import {
   Container,
   Current,
