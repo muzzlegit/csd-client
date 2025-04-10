@@ -4,7 +4,7 @@ export const Container = styled.div(({ theme }) => ({
   marginLeft: "auto",
   padding: "8px",
   height: "100%",
-  width: "50%",
+  width: "100%",
   display: "flex",
   flexDirection: "column",
   gap: "8px",
