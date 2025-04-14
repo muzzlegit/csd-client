@@ -1,12 +1,12 @@
-import { Layout } from "./components/Layout/Layout";
+import { FeatureLayout } from "./components/Layouts/FeatureLayout/FeatureLayout";
+import { SelectorsPanel } from "./components/Layouts/SelectorsPanel/SelectorsPanel";
 import { SearchItem } from "./components/SearchItem";
-import { SelectorsPanel } from "./components/SelectorsPanel/SelectorsPanel";
 
 export const ProductChoice = () => {
   return (
-    <Layout>
+    <FeatureLayout>
       <SearchItem />
       <SelectorsPanel />
-    </Layout>
+    </FeatureLayout>
   );
 };

@@ -1,5 +1,5 @@
-import { Filter } from "../../Filter/Filter";
-import { useFilter } from "../../Filter/useFilter";
+import { Filter } from "../../Layouts/Filter/Filter";
+import { useFilter } from "../../Layouts/Filter/useFilter";
 import { Container, Item, List } from "./SwitchesSelector.styled";
 import { useSwitchesSelector } from "./useSwitchesSelector";
 

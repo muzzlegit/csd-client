@@ -1,5 +1,5 @@
-import { SwitchesSelector } from "../Selectors/SwitchesSelector/SwitchesSelector";
-import { SwitchesSelectorInput } from "../Selectors/SwitchesSelector/SwitchesSelectorInput/SwitchesSelectorInput";
+import { SwitchesSelector } from "../../Selectors/SwitchesSelector/SwitchesSelector";
+import { SwitchesSelectorInput } from "../../Selectors/SwitchesSelector/SwitchesSelectorInput/SwitchesSelectorInput";
 import { BackButton } from "./BackButton/BackButton";
 import { Container, Selectors } from "./SelectorsPanel.styled";
 import { useSelectorsPanel } from "./useSelectorsPanel";
