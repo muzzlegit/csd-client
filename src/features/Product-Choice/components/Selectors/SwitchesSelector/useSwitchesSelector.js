@@ -1,16 +1,23 @@
+import { technoelectric, telergon } from "features/Product-Choice/data";
 import { useQuery } from "../../SearchItem/useQuery";
-import switches from "./switches.json";
 
 const filterScheme = {
-  manufacturer: { title: "Виробник", unit: null, values: [] },
-  series: { title: "Серія", unit: null, values: [] },
   current: { title: "Струм", unit: "A", values: [] },
   pole: { title: "Кількість полюсів", unit: null, values: [] },
 };
 
+const switchDisconnectors = (() => {
+  return [
+    ...telergon.products.switchDisconnectors.flatMap((el) => el?.list ?? []),
+    ...technoelectric.products.switchDisconnectors.flatMap(
+      (el) => el?.list ?? []
+    ),
+  ];
+})();
+
 const filters = (() => {
   const list = { ...filterScheme };
-  switches.forEach((element) => {
+  switchDisconnectors.forEach((element) => {
     for (const key in list) {
       if (
         element?.[key] &&
@@ -24,10 +31,12 @@ const filters = (() => {
   return list;
 })();
 
+const manufacturers = [telergon, technoelectric];
+
 export const useSwitchesSelector = (activeFilter = {}) => {
   const { handleFetchItemByArticle } = useQuery();
 
-  const list = switches.filter((el) => {
+  const list = switchDisconnectors.filter((el) => {
     return Object.entries(activeFilter).every(([filter, value]) => {
       if (!value) {
         return true;
@@ -36,5 +45,5 @@ export const useSwitchesSelector = (activeFilter = {}) => {
     });
   });
 
-  return { filters, list, handleFetchItemByArticle };
+  return { filters, manufacturers, list, handleFetchItemByArticle };
 };
