@@ -1,7 +1,11 @@
-import logo from "./logo/logo-telergon.png";
 import s5Logo from "./logo/S5.webp";
 import s5nLogo from "./logo/S5N.webp";
+import logo from "./logo/logo-telergon.png";
+import CCF from "./products/CCF-telergon";
+import CEC from "./products/CEC-telergon";
 import S5 from "./products/S5-telergon";
+import S5F from "./products/S5F-telergon";
+import S5L from "./products/S5L-telergon";
 import S5N from "./products/S5N-telergon";
 
 export const telergon = {
@@ -24,6 +28,32 @@ export const telergon = {
         description:
           "Виконання у форматі «спина до спини» з переднім розташуванням механізму керування дозволяє розширити кількість доступних контактів до 6 або 8, що забезпечує більшу гнучкість у застосуванні. Пристрої монтуються на основі за допомогою гвинтів. Для зручності користування передбачено варіанти з зовнішніми або прямими рукоятками керування.",
         list: S5N,
+      },
+    ],
+    changeoverSwitches: [
+      {
+        series: "S5F",
+        logo: s5Logo,
+        description: "",
+        list: S5F,
+      },
+      {
+        series: "CCF",
+        logo: s5Logo,
+        description: "",
+        list: CCF,
+      },
+      {
+        series: "CEC",
+        logo: s5Logo,
+        description: "",
+        list: CEC,
+      },
+      {
+        series: "S5L",
+        logo: s5Logo,
+        description: "",
+        list: S5L,
       },
     ],
   },
