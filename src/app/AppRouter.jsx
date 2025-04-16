@@ -1,3 +1,4 @@
+import { ProductChoice } from "features/Product-Choice";
 import { RootLayout } from "layout";
 import Grab from "modules/G/Grab";
 import { Switches } from "modules/switches";
@@ -12,6 +13,7 @@ const AppRouter = () => {
       <Routes>
         <Route path="/" element={<RootLayout />}>
           <Route index element={<Home />} />
+          <Route path="product-choice" element={<ProductChoice />} />
           <Route path="switch" element={<Switches />} />
           <Route path="terminal" element={<Terminals />} />
           <Route

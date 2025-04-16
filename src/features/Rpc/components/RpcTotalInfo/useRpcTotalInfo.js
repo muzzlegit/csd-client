@@ -65,7 +65,7 @@ const useRpcTotalInfo = () => {
     }
   );
 
-  const rpcSchema = getRpcSchema(stepsPowers);
+  const rpcSchema = getRpcSchema(stepsPowers, totalPower);
 
   const mainSwitchCurrent =
     getFuseByCurrent(totalCurrent * mainSwitchCoefficient)?.current ?? 0;

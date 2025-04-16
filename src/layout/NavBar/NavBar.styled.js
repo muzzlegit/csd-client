@@ -17,11 +17,20 @@ export const Item = styled.div(({ theme, isActive }) => ({
   justifyContent: "center",
   borderRadius: "50%",
   cursor: "pointer",
+  ":hover": {
+    boxShadow: `0px 0px 8px ${theme.colors.acent[100]}`,
+    color: theme.colors?.acent?.[100],
+  },
   color: theme.colors?.textIdle?.[100],
   ...(isActive
     ? {
         backgroundColor: theme.colors.acent[100],
         color: theme.colors?.text?.[100],
+        ":hover": {
+          color: theme.colors?.text?.[100],
+        },
       }
     : { backgroundColor: theme.colors.white[20] }),
+  transition:
+    "box-shadow 250ms ease-in-out, background-color 250ms ease-in-out, color 250ms ease-in-out",
 }));
