@@ -22,7 +22,8 @@ export const LogoBox = styled.div(
     borderRadius: "8px",
     cursor: "pointer",
     backgroundColor: logoColor,
-    boxShadow: isActive ? `0 0 4px 2px ${theme.colors.acent[100]}` : "none",
+    boxShadow: isActive ? `0 0 10px ${theme.colors.acent[60]}` : "none",
+    transition: "all 0.2s ease-in-out",
   })
 );
 
@@ -31,6 +32,7 @@ export const Logo = styled.img(({ width, height, logoColor }) => ({
   display: "block",
   height,
   width,
+  objectFit: "contain",
   borderRadius: "8px",
   cursor: "pointer",
   backgroundColor: logoColor,
@@ -41,7 +43,8 @@ export const Series = styled.div(({ theme, isActive }) => ({
   textAlign: "center",
   borderRadius: "6px",
   cursor: "pointer",
-  boxShadow: isActive ? `0 0 4px 2px ${theme.colors.acent[100]}` : "none",
+  boxShadow: isActive ? `0 0 10px ${theme.colors.acent[60]}` : "none",
+  transition: "all 0.2s ease-in-out",
 }));
 
 export const SeriesTitle = styled.div(({ theme }) => ({
@@ -57,6 +60,7 @@ export const SeriesContainer = styled.div(({ theme }) => ({
 }));
 
 export const ValuesList = styled.div(({ theme }) => ({
+  marginTop: "12px",
   display: "flex",
   flexDirection: "column",
   gap: "6px",

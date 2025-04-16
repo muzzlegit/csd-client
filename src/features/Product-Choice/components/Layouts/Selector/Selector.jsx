@@ -75,8 +75,7 @@ export const Selector = ({
         {Object.entries(filters).map(([property, filter]) => (
           <div key={filter.title}>
             <Title>
-              {filter.title}
-              {filter.unit ? `, ${filter.unit}` : ""}
+              {`${filter.title}${filter.unit ? `, ${filter.unit}` : ""}`}
             </Title>
             <ValuesBox>
               {filter.values.map((value) => (
@@ -105,17 +104,30 @@ Selector.propTypes = {
       logo: PropTypes.shape({
         color: PropTypes.string,
         img: PropTypes.string,
-        description: PropTypes.string,
-        products: PropTypes.shape(
+      }),
+      description: PropTypes.string,
+      products: PropTypes.objectOf(
+        PropTypes.arrayOf(
           PropTypes.shape({
             series: PropTypes.string.isRequired,
             logo: PropTypes.string,
             description: PropTypes.string,
-            list: PropTypes.arrayOf(PropTypes.shape),
+            list: PropTypes.array,
           })
-        ),
-      }),
+        )
+      ),
     })
   ).isRequired,
   productKey: PropTypes.oneOf(["switchDisconnectors"]).isRequired,
+  filters: PropTypes.objectOf(
+    PropTypes.shape({
+      title: PropTypes.string.isRequired,
+      unit: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
+      values: PropTypes.arrayOf(
+        PropTypes.oneOfType([PropTypes.string, PropTypes.number])
+      ).isRequired,
+    })
+  ),
+  activeFilter: PropTypes.object,
+  handleClick: PropTypes.func.isRequired,
 };

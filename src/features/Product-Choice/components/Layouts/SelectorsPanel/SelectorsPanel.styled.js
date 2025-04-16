@@ -17,3 +17,7 @@ export const Selectors = styled.div(({ theme }) => ({
   borderRadius: "8px",
   backgroundColor: theme.colors.primary[100],
 }));
+
+export const ClicableWrap = styled.div({
+  width: "fit-content",
+});

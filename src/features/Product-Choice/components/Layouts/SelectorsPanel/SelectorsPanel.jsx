@@ -1,7 +1,7 @@
 import { SwitchesSelector } from "../../Selectors/SwitchesSelector/SwitchesSelector";
 import { SwitchesSelectorInput } from "../../Selectors/SwitchesSelector/SwitchesSelectorInput/SwitchesSelectorInput";
 import { BackButton } from "./BackButton/BackButton";
-import { Container, Selectors } from "./SelectorsPanel.styled";
+import { ClicableWrap, Container, Selectors } from "./SelectorsPanel.styled";
 import { useSelectorsPanel } from "./useSelectorsPanel";
 
 const selectors = {
@@ -15,24 +15,26 @@ export const SelectorsPanel = () => {
 
   return (
     <Container>
-      <div
-        onClick={() => {
-          handleSelectorClick(null);
-        }}
-      >
-        <BackButton />
-      </div>
+      {selector ? (
+        <div
+          onClick={() => {
+            handleSelectorClick(null);
+          }}
+        >
+          <BackButton />
+        </div>
+      ) : null}
       <Selectors>
         {selector ? (
           <SelectorComponent />
         ) : (
-          <div
+          <ClicableWrap
             onClick={() => {
               handleSelectorClick("switches");
             }}
           >
             <SwitchesSelectorInput />
-          </div>
+          </ClicableWrap>
         )}
       </Selectors>
     </Container>

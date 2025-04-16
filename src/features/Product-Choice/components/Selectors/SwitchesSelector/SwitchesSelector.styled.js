@@ -6,7 +6,7 @@ export const Container = styled.div(({ theme }) => ({
 
 export const List = styled.div(({ theme }) => ({
   marginTop: "24px",
-  height: "500px",
+  height: "400px",
   display: "flex",
   flexDirection: "column",
   gap: "6px",
