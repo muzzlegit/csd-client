@@ -1,4 +1,3 @@
-import { fetchItemByArticle } from "lib/apiService";
 import { useCallback, useState } from "react";
 import { useSearchItemStore } from "../store";
 
@@ -51,7 +50,7 @@ export const useQuery = () => {
 
   const handleFetchItem = useCallback(async () => {
     if (!query || query?.length < 4) return;
-    const item = await fetchItemByArticle(query);
+    const item = await fetchProductByArticle(query);
 
     setItem(createItemDTO(item));
   }, [query, setItem]);
