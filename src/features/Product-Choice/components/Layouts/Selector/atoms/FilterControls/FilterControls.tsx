@@ -1,5 +1,5 @@
 import {
-  FilterSchemeGeneric,
+  ActiveFilterFromScheme,
   FiltersFromScheme,
 } from "features/Product-Choice/types/types";
 import {
@@ -10,44 +10,51 @@ import {
   List,
 } from "./FilterControls.styled";
 
-type FilterControlsProps<Scheme extends FilterSchemeGeneric> = {
-  filters: Scheme;
-  activeFilter: FiltersFromScheme<Scheme>;
-  onFilterChange: (
-    property: keyof Scheme,
-    value: Scheme[keyof Scheme]["values"][number]
-  ) => void;
-};
-
-export const FilterControls = <Scheme extends FilterSchemeGeneric>({
+export const FilterControls = ({
   filters,
   activeFilter,
   onFilterChange,
-}: FilterControlsProps<Scheme>) => {
+}: {
+  filters: FiltersFromScheme;
+  activeFilter: ActiveFilterFromScheme;
+  onFilterChange: <K extends keyof FiltersFromScheme>(
+    property: K,
+    value: FiltersFromScheme[K]["values"][number]
+  ) => void;
+}) => {
+  const entries = Object.entries(filters) as [
+    keyof FiltersFromScheme,
+    FiltersFromScheme[keyof FiltersFromScheme]
+  ][];
+
   return (
     <List>
-      {(Object.entries(filters) as [keyof Scheme, Scheme[keyof Scheme]][]).map(
-        ([property, filter]) => (
+      {entries.map(([property, filter]) => {
+        if (!filter) return null;
+        return (
           <Group key={filter.title}>
             <GroupTitle>
               {`${filter.title}${filter.unit ? `, ${filter.unit}` : ""}`}
             </GroupTitle>
             <ControlsList>
-              {filter.values.map((value) => (
-                <Control
-                  key={value}
-                  isActive={value === activeFilter?.[property]}
-                  onClick={() => {
-                    onFilterChange(property, value);
-                  }}
-                >
-                  {value}
-                </Control>
-              ))}
+              {filter.values.map((value) => {
+                if (!value) return null;
+                return (
+                  <Control
+                    key={value.toString()}
+                    isActive={value === activeFilter?.[property]}
+                    onClick={() => {
+                      onFilterChange(property, value);
+                    }}
+                  >
+                    {value}
+                  </Control>
+                );
+              })}
             </ControlsList>
           </Group>
-        )
-      )}
+        );
+      })}
     </List>
   );
 };

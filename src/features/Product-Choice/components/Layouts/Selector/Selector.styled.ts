@@ -4,44 +4,6 @@ export const Container = styled.div({
   width: "100%",
 });
 
-export const ManufacturersContainer = styled.div(({ theme }) => ({
-  display: "flex",
-  alignItems: "center",
-  justifyContent: "space-around",
-  gap: "24px",
-}));
-
-export const ManufacturerBox = styled.div(({ theme }) => ({
-  display: "flex",
-  flexDirection: "column",
-  alignItems: "center",
-  gap: "16px",
-}));
-
-export const LogoBox = styled.div(
-  ({ theme, width, height, logoColor, isActive }) => ({
-    padding: "4px",
-    height,
-    width,
-    borderRadius: "8px",
-    cursor: "pointer",
-    backgroundColor: logoColor,
-    boxShadow: isActive ? `0 0 10px ${theme.colors.acent[60]}` : "none",
-    transition: "all 0.2s ease-in-out",
-  })
-);
-
-export const Logo = styled.img(({ width, height, logoColor }) => ({
-  padding: "4px",
-  display: "block",
-  height,
-  width,
-  objectFit: "contain",
-  borderRadius: "8px",
-  cursor: "pointer",
-  backgroundColor: logoColor,
-}));
-
 export const Series = styled.div(({ theme, isActive }) => ({
   padding: "2px 8px",
   textAlign: "center",

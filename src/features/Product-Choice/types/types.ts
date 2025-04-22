@@ -52,15 +52,26 @@ export type ProductUnit = SwitchDisconnectorType | ChangeoverSwitchesType;
 
 export type ProductListType = Array<ProductUnit>;
 
-export type FilterSchemeGeneric = Partial<
-  Record<
-    keyof ProductUnit,
-    { title: string; unit: string | null; values: Array<string | number> }
-  >
->;
+export type FilterItem = {
+  title: string;
+  unit: string | null;
+  values: Array<string | number>;
+};
 
-export type FiltersFromScheme<Scheme extends FilterSchemeGeneric> = {
-  [K in keyof Scheme]?: Scheme[K] extends { values: Array<infer V> }
-    ? V
+export type FilterScheme = {
+  [K in keyof ProductUnit]?: FilterItem;
+};
+
+export type FiltersFromScheme = {
+  [K in keyof FilterScheme]: {
+    title: string;
+    unit: string | null;
+    values: Array<K extends keyof ProductUnit ? ProductUnit[K] : never>;
+  };
+};
+
+export type ActiveFilterFromScheme = {
+  [K in keyof FilterScheme]?: K extends keyof ProductUnit
+    ? ProductUnit[K]
     : never;
 };

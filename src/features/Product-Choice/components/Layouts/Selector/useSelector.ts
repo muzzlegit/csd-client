@@ -1,5 +1,7 @@
 import {
-  FilterSchemeGeneric,
+  ActiveFilterFromScheme,
+  FilterScheme,
+  FiltersFromScheme,
   Manufacturer,
   ProductListType,
   ProductUnit,
@@ -8,14 +10,12 @@ import {
 import { useMemo, useState } from "react";
 import { useQuery } from "../../SearchItem/useQuery";
 
-export const useSelector = <Scheme extends FilterSchemeGeneric>(
+export const useSelector = (
   manufacturers: Array<Manufacturer>,
-  filterScheme: FilterSchemeGeneric,
+  filterScheme: FilterScheme,
   productKey: ProductsLine
 ) => {
-  const [activeFilter, setActiveFilter] = useState<
-    Partial<Record<keyof Scheme, string | number>>
-  >({});
+  const [activeFilter, setActiveFilter] = useState<ActiveFilterFromScheme>({});
   const { handleFetchProductByArticle } = useQuery();
 
   const products = useMemo(() => {
@@ -26,14 +26,12 @@ export const useSelector = <Scheme extends FilterSchemeGeneric>(
     }, []);
   }, [manufacturers, productKey]);
 
-  const filters = useMemo(() => {
-    const clonedFilterScheme: FilterSchemeGeneric = JSON.parse(
-      JSON.stringify(filterScheme)
-    );
+  const filters: FiltersFromScheme = useMemo(() => {
+    const clonedFilterScheme = JSON.parse(JSON.stringify(filterScheme));
 
     return products.reduce((acc, element) => {
       for (const key in acc) {
-        const filterKey = key as keyof FilterSchemeGeneric;
+        const filterKey = key as keyof FilterScheme;
         const value = element?.[key as keyof ProductUnit];
         if (
           (typeof value === "string" || typeof value === "number") &&
@@ -56,9 +54,9 @@ export const useSelector = <Scheme extends FilterSchemeGeneric>(
     });
   });
 
-  const handleFilterSelectorClick = (
-    title: keyof Scheme,
-    value: string | number
+  const handleFilterSelectorClick = <K extends keyof FiltersFromScheme>(
+    title: K,
+    value: FiltersFromScheme[K]["values"][number]
   ) => {
     setActiveFilter((prev) => {
       const newValue = prev?.[title] === value ? null : value;

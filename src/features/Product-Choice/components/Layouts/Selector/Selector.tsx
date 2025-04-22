@@ -1,12 +1,23 @@
 import {
-  FilterSchemeGeneric,
+  FilterScheme,
   Manufacturer,
   ProductsLine,
 } from "features/Product-Choice/types/types";
 import { Container } from "./Selector.styled";
 import { FilterControls } from "./atoms/FilterControls/FilterControls";
+import { ManufacturersControls } from "./atoms/ManufacturersControls/ManufacturersControls";
 import { ProductsList } from "./atoms/ProductsList/ProductsList";
 import { useSelector } from "./useSelector";
+
+// export const createFilterScheme = <Product extends object>() => {
+//   return <Keys extends keyof Product>(scheme: {
+//     [K in Keys]: {
+//       title: string;
+//       unit: string | null;
+//       values: (string | number)[];
+//     };
+//   }) => scheme;
+// };
 
 export const Selector = ({
   manufacturers,
@@ -14,7 +25,7 @@ export const Selector = ({
   productKey,
 }: {
   manufacturers: Array<Manufacturer>;
-  filterScheme: FilterSchemeGeneric;
+  filterScheme: FilterScheme;
   productKey: ProductsLine;
 }) => {
   const {
@@ -27,45 +38,12 @@ export const Selector = ({
 
   return (
     <Container>
-      {/* <ManufacturersContainer>
-        {manufacturers.map(({ description, name, logo, products }) => {
-          return (
-            <ManufacturerBox key={name}>
-              <LogoBox isActive={name === activeFilter?.manufacturer}>
-                <Logo
-                  title={description}
-                  src={logo.img}
-                  alt={name}
-                  height="40px"
-                  logoColor={logo.color}
-                  onClick={() => {
-                    handleClick("manufacturer", name);
-                  }}
-                />
-              </LogoBox>
-              <SeriesContainer>
-                {products[productKey].map((product) => (
-                  <Series
-                    key={product.series}
-                    isActive={product.series === activeFilter?.series}
-                  >
-                    <SeriesTitle>Серія {product.series}</SeriesTitle>
-                    <Logo
-                      title={product.description}
-                      src={product.logo}
-                      alt={product.series}
-                      height="80px"
-                      onClick={() => {
-                        handleClick("series", product.series);
-                      }}
-                    />
-                  </Series>
-                ))}
-              </SeriesContainer>
-            </ManufacturerBox>
-          );
-        })}
-      </ManufacturersContainer> */}
+      <ManufacturersControls
+        manufacturers={manufacturers}
+        productKey={productKey}
+        activeFilter={activeFilter}
+        onManufacturerChange={handleFilterSelectorClick}
+      />
       <FilterControls
         activeFilter={activeFilter}
         filters={filters}

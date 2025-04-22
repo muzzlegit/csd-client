@@ -1,9 +1,9 @@
 import { technoelectric, telergon } from "features/Product-Choice/data";
-import { FilterSchemeGeneric } from "features/Product-Choice/types/types";
+import { FilterScheme } from "features/Product-Choice/types/types";
 import { Selector } from "../../Layouts/Selector/Selector";
 import { Container } from "./SwitchDisconnectorsSelector.styled";
 
-const filterScheme: FilterSchemeGeneric = {
+const filterScheme: FilterScheme = {
   current: { title: "Струм", unit: "A", values: [] },
   pole: { title: "Кількість полюсів", unit: null, values: [] },
 };
