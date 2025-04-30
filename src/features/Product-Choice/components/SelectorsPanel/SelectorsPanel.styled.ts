@@ -11,8 +11,8 @@ export const Container = styled.div(({ theme }) => ({
 }));
 
 export const ControlPanel = styled.div({
-  padding: "0 20px",
-  height: "60px",
+  padding: "8px 20px",
+  height: "46px",
   width: "100%",
   display: "flex",
   alignItems: "center",

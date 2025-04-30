@@ -1,7 +1,24 @@
+import { ProductUnit } from "features/Product-Choice/types/types";
 import { productSchema, productSchemaShort } from "./productSchema";
 
-type FileType = { file: string; name: string };
-type MediafileType = { url: string; alt: string };
+type FileType = { file?: string; name?: string };
+export type FilesListType = Record<string, Array<FileType>>;
+
+export type MediafileType = { url: string; alt: string };
+
+export type MediafilesListType = Array<MediafileType>;
+export type AccesoriesListType = Array<{
+  remote_id: number;
+  article: string;
+  description: string;
+}>;
+export type FeaturesListType = Array<{
+  title: string;
+  unit: string | null;
+  value: string | null;
+}>;
+
+export type AnalogsListType = Array<any>;
 
 export type ProductDTO = {
   remote_id: number;
@@ -9,28 +26,20 @@ export type ProductDTO = {
   description: string;
   brand: string;
   balance: string | null;
-  mediaFiles: Array<MediafileType>;
-  files: Record<string, Array<FileType>>;
-  features: Array<{
-    title: string;
-    unit: string | null;
-    value: string | null;
-  }>;
-  accesories: Array<{
-    remote_id: number;
-    article: string;
-    description: string;
-  }>;
-  analogs: Array<any>;
+  mediaFiles: MediafilesListType;
+  files: FilesListType;
+  features: FeaturesListType;
+  accesories: AccesoriesListType;
+  analogs: AnalogsListType;
 };
 
 export type ProductDTOShort = {
   article: string;
   remote_id: number;
   description: string;
-  brand: string;
-  balance: string | null;
-  image: string | null;
+  brand?: string;
+  balance?: string | null;
+  image?: string | null;
 };
 
 export const createProductDTO = (item: unknown): ProductDTO | null => {
@@ -50,17 +59,17 @@ export const createProductDTO = (item: unknown): ProductDTO | null => {
 
   if (!product) return null;
 
-  const formattedFiles: Record<string, Array<FileType>> = {};
-
-  for (const key in files) {
-    const sectionKey = key as string;
-    const sectionFiles = files[sectionKey];
-    formattedFiles[sectionKey] = Object.values(sectionFiles).map(
-      ({ file, name }) => ({
-        file,
-        name,
-      })
-    );
+  const formattedFiles: FilesType = {};
+  if (!Array.isArray(files)) {
+    for (const key in files) {
+      const sectionFiles = files[key];
+      formattedFiles[key] = Object.values(sectionFiles).map(
+        ({ file, name }) => ({
+          file,
+          name,
+        })
+      );
+    }
   }
 
   return {
@@ -84,9 +93,7 @@ export const createProductDTO = (item: unknown): ProductDTO | null => {
   };
 };
 
-export const createProductDTOShort = (
-  item: unknown
-): ProductDTOShort | null => {
+export const createProductDTOShort = (item: unknown): ProductUnit | null => {
   const parsed = productSchemaShort.safeParse(item);
   if (!parsed.success) {
     console.error("Отримано невірну структуру продукта", parsed.error);
@@ -98,10 +105,11 @@ export const createProductDTOShort = (
 
   return {
     article,
+    series: "",
     remote_id,
     description,
     image,
     balance,
-    brand: brand.title,
+    manufacturer: brand.title,
   };
 };

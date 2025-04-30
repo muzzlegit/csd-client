@@ -2,7 +2,6 @@ import SCHEMES_SPRITE from "modules/terminals/utils/assets/schemes/schemes.svg";
 import { SvgSprite } from "shared/ui/components/SvgSprite/SvgSprite";
 import { AccessoriesList } from "../components/AccessoriesList/AccessoriesList";
 import { Accessory } from "../components/Accessory/Accessory";
-import { SearchBar } from "../components/SearchBar/SearchBar";
 import { Terminal } from "../components/Terminal/Terminal";
 import { TerminalImages } from "../components/TerminalImages/TerminalImages";
 import { TerminalScheme } from "../components/TerminalScheme/TerminalScheme";
@@ -16,9 +15,7 @@ export const Terminals = () => {
       <Cell area="a">
         <TerminalImages />
       </Cell>
-      <Cell area="b">
-        <SearchBar />
-      </Cell>
+      <Cell area="b">{/* <SearchBar /> */}</Cell>
       <Cell area="c">
         <AccessoryImage />
       </Cell>

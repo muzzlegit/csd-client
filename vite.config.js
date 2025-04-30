@@ -10,7 +10,7 @@ export default defineConfig({
       app: "/src/app/",
       pages: "/src/pages/",
       features: "/src/features/",
-      layout: "/src/layout/",
+      layouts: "/src/layouts/",
       store: "/src/store/",
       hooks: "/src/hooks/",
       lib: "/src/lib/",

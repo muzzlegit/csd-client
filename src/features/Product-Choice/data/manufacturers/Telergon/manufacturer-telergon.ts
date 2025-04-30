@@ -1,5 +1,9 @@
 import { Manufacturer } from "features/Product-Choice/types/types";
+import ccfLogo from "./logo/CCF.webp";
+import cecLogo from "./logo/CEC.webp";
 import s5Logo from "./logo/S5.webp";
+import s5fLogo from "./logo/S5F.webp";
+import s5lLogo from "./logo/S5L.webp";
 import s5nLogo from "./logo/S5N.webp";
 import logo from "./logo/logo-telergon.png";
 import CCF from "./products/CCF-telergon";
@@ -34,25 +38,25 @@ export const telergon: Manufacturer = {
     changeoverSwitches: [
       {
         series: "S5F",
-        logo: s5Logo,
+        logo: s5fLogo,
         description: "",
         list: S5F,
       },
       {
         series: "CCF",
-        logo: s5Logo,
+        logo: ccfLogo,
         description: "",
         list: CCF,
       },
       {
         series: "CEC",
-        logo: s5Logo,
+        logo: cecLogo,
         description: "",
         list: CEC,
       },
       {
         series: "S5L",
-        logo: s5Logo,
+        logo: s5lLogo,
         description: "",
         list: S5L,
       },

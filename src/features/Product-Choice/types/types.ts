@@ -17,38 +17,21 @@ export type ManufacturerProductSeries = {
 
 export type ProductsLine = "switchDisconnectors" | "changeoverSwitches";
 
-export type BaseProduct = {
+export type ProductUnit = {
   article: string;
   manufacturer: Manufacturer["name"];
   series: ManufacturerProductSeries["series"];
-  description: string;
-  accessories: Array<string>;
+  description?: string;
+  accessories?: Array<string>;
   voltageType?: string;
   connection?: string;
   size?: string;
   section?: string;
-};
-
-type OptionalProductFields = {
-  image?: string;
-  balanse?: string;
-};
-
-export type SwitchDisconnectorType = BaseProduct &
-  OptionalProductFields & {
-    current: string;
-    pole: string;
-    accessories: Array<string>;
-  };
-
-export type ChangeoverSwitchesType = BaseProduct &
-  OptionalProductFields & {
-    current: string;
-    pole: string;
-    accessories: Array<string>;
-  };
-
-export type ProductUnit = SwitchDisconnectorType | ChangeoverSwitchesType;
+  image?: string | null;
+  balance?: string | null;
+  current?: string;
+  pole?: string;
+} & Record<string, unknown>;
 
 export type ProductListType = Array<ProductUnit>;
 

@@ -17,15 +17,12 @@ export const ManufacturerContainer = styled.div({
 type LogoBoxProps = {
   isActive: boolean;
 };
+
 export const LogoBox = styled.div<LogoBoxProps>(({ theme, isActive }) => ({
   padding: "12px",
   borderRadius: "10px",
   cursor: "pointer",
-  boxShadow: isActive ? `0 2px 8px 0px ${theme.colors.black[100]}` : "none",
-  backgroundColor: isActive ? theme.colors.primary[100] : "transparent",
-  "&:hover": {
-    backgroundColor: theme.colors.white[10],
-  },
+  backgroundColor: isActive ? theme.colors.acent[60] : "transparent",
   transition: "all 0.2s ease-in-out",
 }));
 
@@ -46,7 +43,7 @@ export const Logo = styled.img<LogoProps>(
     borderRadius: "8px",
     cursor: "pointer",
     backgroundColor: logoColor,
-    boxShadow: isActive ? `0 2px 8px 0px ${theme.colors.black[100]}` : "none",
+    filter: `drop-shadow(1px 3px 4px ${theme.colors.black[100]})`,
   })
 );
 
@@ -68,7 +65,7 @@ export const Series = styled.div<SeriesProps>(({ theme, isActive }) => ({
   gap: "6px",
   borderRadius: "6px",
   cursor: "pointer",
-  boxShadow: isActive ? `0 0 10px ${theme.colors.acent[60]}` : "none",
+  backgroundColor: isActive ? theme.colors.acent[60] : "transparent",
   transition: "all 0.2s ease-in-out",
 }));
 

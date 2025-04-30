@@ -48,7 +48,6 @@ export const ManufacturersControls = ({
                 alt={name}
                 title={description}
                 logoColor={logo.color}
-                isActive={true}
               />
             </LogoBox>
 
@@ -64,7 +63,7 @@ export const ManufacturersControls = ({
                     }}
                   >
                     <SeriesTitle>{`Серія ${series}`}</SeriesTitle>
-                    <Logo height="40px" src={logo} alt={name} />
+                    <Logo height="70px" src={logo} alt={name} />
                   </Series>
                 );
               })}

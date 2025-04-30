@@ -7,7 +7,8 @@ import {
   ProductUnit,
   ProductsLine,
 } from "features/Product-Choice/types/types";
-import { useMemo, useState } from "react";
+import { fetchProductByArticleShort } from "lib/api/apiService";
+import { useEffect, useMemo, useState } from "react";
 import { useQuery } from "../../SearchItem/useQuery";
 
 export const useSelector = (
@@ -17,6 +18,7 @@ export const useSelector = (
 ) => {
   const [activeFilter, setActiveFilter] = useState<ActiveFilterFromScheme>({});
   const { handleFetchProductByArticle } = useQuery();
+  const [productsList, setProductsList] = useState<ProductListType>([]);
 
   const products = useMemo(() => {
     return manufacturers.reduce<ProductListType>((acc, manufacturer) => {
@@ -45,15 +47,6 @@ export const useSelector = (
     }, clonedFilterScheme);
   }, [filterScheme, products]);
 
-  const productsList = products.filter((el) => {
-    return Object.entries(activeFilter).every(([filter, value]) => {
-      if (!value) {
-        return true;
-      }
-      return el?.[filter as keyof ProductUnit] === value;
-    });
-  });
-
   const handleFilterSelectorClick = <K extends keyof FiltersFromScheme>(
     title: K,
     value: FiltersFromScheme[K]["values"][number]
@@ -64,6 +57,29 @@ export const useSelector = (
     });
   };
 
+  useEffect(() => {
+    const updateProducts = async () => {
+      const list = products.filter((el) => {
+        return Object.entries(activeFilter).every(([filter, value]) => {
+          if (!value) return true;
+          return el?.[filter as keyof ProductUnit] === value;
+        });
+      });
+
+      if (list.length < 5 && list.length > 0) {
+        const updatedList = await Promise.all(
+          list.map(async (product) => {
+            const result = await fetchProductByArticleShort(product.article);
+            return result || product;
+          })
+        );
+        setProductsList(updatedList);
+      } else {
+        setProductsList(list);
+      }
+    };
+    updateProducts();
+  }, [activeFilter]);
   return {
     filters,
     activeFilter,

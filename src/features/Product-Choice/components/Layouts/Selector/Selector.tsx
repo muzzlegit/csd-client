@@ -9,16 +9,6 @@ import { ManufacturersControls } from "./atoms/ManufacturersControls/Manufacture
 import { ProductsList } from "./atoms/ProductsList/ProductsList";
 import { useSelector } from "./useSelector";
 
-// export const createFilterScheme = <Product extends object>() => {
-//   return <Keys extends keyof Product>(scheme: {
-//     [K in Keys]: {
-//       title: string;
-//       unit: string | null;
-//       values: (string | number)[];
-//     };
-//   }) => scheme;
-// };
-
 export const Selector = ({
   manufacturers,
   filterScheme,

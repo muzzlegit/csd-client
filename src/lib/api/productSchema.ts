@@ -23,13 +23,15 @@ export const productSchema = z.object({
   ),
   files: z
     .record(
-      z.array(
+      z.record(
         z.object({
-          file: z.string().url(),
+          file: z.string(),
           name: z.string(),
         })
       )
     )
+
+    .or(z.array(z.any()))
     .optional(),
   accesories: z.array(
     z.object({

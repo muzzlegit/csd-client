@@ -1,8 +1,8 @@
+import { ProductUnit } from "features/Product-Choice/types/types";
 import {
   createProductDTO,
   createProductDTOShort,
   ProductDTO,
-  ProductDTOShort,
 } from "./createProductDTO";
 
 export const fetchProductByArticle = async (
@@ -36,6 +36,9 @@ export const fetchProductByArticle = async (
 
     const data = await response.json();
     const productShort = data?.data?.data?.[0];
+
+    if (!productShort) return null;
+
     const productDataShort = createProductDTOShort(productShort);
 
     if (!productDataShort?.remote_id) {
@@ -54,6 +57,9 @@ export const fetchProductByArticle = async (
     }
 
     const productData = await productResponse.json();
+
+    if (!productData) return null;
+
     const product = createProductDTO(productData);
 
     if (!product) {
@@ -83,6 +89,9 @@ export const fetchProductByRemoteId = async (remote_id: number) => {
     }
 
     const productData = await productResponse.json();
+
+    if (!productData) return null;
+
     const product = createProductDTO(productData);
 
     if (!product) {
@@ -99,7 +108,7 @@ export const fetchProductByRemoteId = async (remote_id: number) => {
 
 export const fetchProductByArticleShort = async (
   article: string
-): Promise<ProductDTOShort | null> => {
+): Promise<ProductUnit | null> => {
   try {
     const response = await fetch("api/products", {
       method: "POST",
@@ -128,6 +137,9 @@ export const fetchProductByArticleShort = async (
 
     const data = await response.json();
     const productShort = data?.data?.data?.[0];
+
+    if (!productShort) return null;
+
     const productDataShort = createProductDTOShort(productShort);
 
     if (!productDataShort) {
