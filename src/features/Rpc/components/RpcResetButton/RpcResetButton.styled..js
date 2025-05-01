@@ -9,7 +9,7 @@ export const Button = styled.button(({ theme }) => ({
   outline: "none",
   cursor: "pointer",
   fontSize: "14px",
-  color: theme.colors.warn[40],
+  color: theme.colors.warn[80],
   borderRadius: "8px",
   border: "none",
   backgroundColor: theme.colors.primary[100],

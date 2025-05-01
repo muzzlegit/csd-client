@@ -11,13 +11,13 @@ import { GoX } from "react-icons/go";
 import { copyToClipboard } from "shared/helpers";
 import { Button } from "./CopyButton.styled";
 
-const initialState = {
+const InitialState = {
   copy: FaRegCopy,
   success: GiCheckMark,
   failed: GoX,
 } as const;
 
-export type InitialStateType = typeof initialState;
+export type InitialStateType = typeof InitialState;
 
 type CopyButtonProps = {
   size?: string;
@@ -35,7 +35,7 @@ export const CopyButton = ({
   const [state, setState] = useState<keyof InitialStateType>("copy");
   const timeoutRef = useRef<ReturnType<typeof setTimeout> | null>(null);
 
-  const Icon = initialState[state];
+  const Icon = InitialState[state];
 
   const handleCopy = useCallback(async () => {
     const result = await copyToClipboard(value);

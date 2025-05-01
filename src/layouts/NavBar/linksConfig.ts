@@ -1,5 +1,10 @@
 import { DiAtom } from "react-icons/di";
-import { GiAbstract095, GiBalloonDog, GiDaisy } from "react-icons/gi";
+import {
+  GiAbstract095,
+  GiAncientColumns,
+  GiBalloonDog,
+  GiDaisy,
+} from "react-icons/gi";
 
 export const links = [
   { icon: DiAtom, path: "/", title: "Вибір продукту", protected: false },
@@ -18,11 +23,11 @@ export const links = [
     path: "/switch",
     title: "Перемикачі",
   },
-  // {
-  //   icon: GiAncientColumns,
-  //   path: "/terminal",
-  //   title: "Клеми",
-  // },
+  {
+    icon: GiAncientColumns,
+    path: "/terminal",
+    title: "Клеми",
+  },
   // {
   //   icon: GiDualityMask,
   //   path: "/admin-panel",

@@ -1,5 +1,4 @@
 import styled from "@emotion/styled";
-import { theme } from "styles/theme";
 
 export const Container = styled.div(({ theme }) => ({
   padding: "8px",
@@ -32,16 +31,18 @@ export const Wrap = styled.div(({ theme }) => ({
   border: `1px solid ${theme.colors.textIdle[30]}`,
 }));
 
-export const InputStyles = {
-  width: "60px",
-  display: "block",
-  textAlign: "center",
-  border: "none",
-  borderRadius: "8px",
-  fontSize: "14px",
-  color: theme.colors.text[100],
-  backgroundColor: theme.colors.text[20],
-  "::placeholder": {
-    color: theme.colors.textIdle[100],
-  },
+export const InputStyles = (theme) => {
+  return {
+    width: "60px",
+    display: "block",
+    textAlign: "center",
+    border: "none",
+    borderRadius: "8px",
+    fontSize: "14px",
+    color: theme.colors.text[100],
+    backgroundColor: theme.colors.text[20],
+    "::placeholder": {
+      color: theme.colors.textIdle[100],
+    },
+  };
 };
