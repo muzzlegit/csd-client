@@ -10,7 +10,7 @@ export const Container = styled.div(({ theme }) => ({
 export const ImageWrap = styled.div(({ theme }) => ({
   width: "300px",
   height: "100%",
-  backgroundColor: theme.colors.white[100],
+  // backgroundColor: theme.colors.white[100],
 }));
 
 export const Description = styled.p(({ theme }) => ({

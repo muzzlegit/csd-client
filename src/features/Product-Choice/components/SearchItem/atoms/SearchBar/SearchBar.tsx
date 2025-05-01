@@ -1,9 +1,12 @@
 import { RiSearch2Line } from "react-icons/ri";
 import { TextInput } from "shared/ui";
+import { useUserTheme } from "styles/theme/useTheme";
 import { useQuery } from "../../useQuery";
 import { Container, InputStyles } from "./SearchBar.styled";
+
 const SearchBar = () => {
   const { query, handleQuery, handleFetchProduct } = useQuery();
+  const { theme } = useUserTheme();
 
   return (
     <Container
@@ -18,7 +21,7 @@ const SearchBar = () => {
         handleInputValue={(e) => {
           handleQuery(e.currentTarget.value);
         }}
-        styles={InputStyles}
+        styles={InputStyles(theme)}
         placeholder="...артикул"
       />
     </Container>

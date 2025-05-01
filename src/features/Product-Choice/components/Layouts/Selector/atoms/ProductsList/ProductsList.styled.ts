@@ -1,5 +1,5 @@
 import styled from "@emotion/styled";
-import { theme } from "styles/theme";
+import { ThemeToken } from "styles/theme/theme";
 
 export const List = styled.div(({ theme }) => ({
   marginTop: "24px",
@@ -25,16 +25,16 @@ export const Item = styled.div(({ theme }) => ({
   color: theme.colors.text[100],
 }));
 
-export const ClicableWrap = styled.div({
+export const ClicableWrap = styled.div(({ theme }) => ({
   cursor: "pointer",
   "&:hover": {
     color: theme.colors.acent[100],
   },
   transition: "all 250ms ease-in-out",
-});
+}));
 
 type AcentProps = {
-  acent: keyof typeof theme.colors;
+  acent: keyof ThemeToken;
   isUppercase?: boolean;
 };
 

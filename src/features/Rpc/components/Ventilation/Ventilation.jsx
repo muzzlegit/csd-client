@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { TextInput } from "shared/ui";
+import { useUserTheme } from "styles/theme/useTheme";
 import useRpcTotalInfo from "../RpcTotalInfo/useRpcTotalInfo";
 import {
   Container,
@@ -13,6 +14,7 @@ export const Ventilation = () => {
   const { totalPower } = useRpcTotalInfo();
   const [manualVentilation, setManualVentilation] = useState(0);
   const [manualPower, setManualPower] = useState(0);
+  const { theme } = useUserTheme();
 
   const calculateVentilation = (power) =>
     Math.ceil((3.1 * (0.3 * power)) / 0.6);
@@ -41,7 +43,7 @@ export const Ventilation = () => {
           value={manualPower}
           handleInputValue={handleManualVentilation}
           placeholder="0"
-          styles={InputStyles}
+          styles={InputStyles(theme)}
         />
         <Value>{manualVentilation} м3</Value>
       </Wrap>
