@@ -7,7 +7,7 @@ type LogoProps = {
 
 export const Logo = ({ width = "200px", height = "43px" }: LogoProps) => {
   return (
-    <a href="https://vector-vs.com">
+    <a href="https://vector-vs.com" target="_blank">
       <svg width={width + "px"} height={height + "px"}>
         <use href={`${icons}#logo`} />i
       </svg>
