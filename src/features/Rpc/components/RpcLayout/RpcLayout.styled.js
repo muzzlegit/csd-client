@@ -2,7 +2,7 @@ import styled from "@emotion/styled";
 
 export const Container = styled.div(({ theme }) => ({
   padding: "12px",
-  width: "800px",
+  minWidth: "860px",
   height: "fit-content",
   borderRadius: "16px",
   backgroundColor: theme.colors.secondary[100],

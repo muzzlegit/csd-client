@@ -27,7 +27,7 @@ const useRpcTotalInfo = () => {
         fuse = {},
       } = step;
       const { size, current: fuseCurrent } = fuse;
-      const oneCapacitorPower = power > 50 ? 50 : power;
+      const oneCapacitorPower = multiplier ? power / multiplier : power;
 
       acc.totalPower += power;
       acc.totalCurrent += current;

@@ -79,6 +79,12 @@
     "current": 72,
     "contactor": 60
   },
+  "80": {
+    "power": 80,
+    "current": 57.74,
+    "contactor": 50,
+    "multiplier": 2
+  },
   "100": {
     "power": 100,
     "current": 72,

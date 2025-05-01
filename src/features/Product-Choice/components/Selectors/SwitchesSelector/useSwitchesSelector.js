@@ -17,6 +17,7 @@ const switchDisconnectors = (() => {
 
 const filters = (() => {
   const list = { ...filterScheme };
+  i;
   switchDisconnectors.forEach((element) => {
     for (const key in list) {
       if (

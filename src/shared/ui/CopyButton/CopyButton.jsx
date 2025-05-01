@@ -10,9 +10,10 @@ const initialState = {
   copy: FaRegCopy,
   success: GiCheckMark,
   failed: GoX,
+  children: ReactNode,
 };
 
-const CopyButton = ({ size = "24", value }) => {
+const CopyButton = ({ size = "24", value, children }) => {
   const [state, setState] = useState("copy");
   const timeoutRef = useRef(null);
 
@@ -33,6 +34,7 @@ const CopyButton = ({ size = "24", value }) => {
   return (
     <Button state={state} onClick={handleCopy}>
       <Icon size={size} />
+      {children}
     </Button>
   );
 };

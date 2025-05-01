@@ -7,7 +7,7 @@ const colors = {
   failed: theme.colors.red[100],
 };
 
-export const Button = styled.button(({ styles, state }) => ({
+export const Button = styled.div(({ styles, state }) => ({
   padding: 0,
   display: "flex",
   alignItems: "center",

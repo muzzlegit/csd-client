@@ -1,0 +1,1 @@
+export { selectorsConfigs } from "./selectorsConfig";

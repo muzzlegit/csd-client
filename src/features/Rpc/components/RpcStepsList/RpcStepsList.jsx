@@ -1,6 +1,7 @@
+import { HiMiniArrowDownOnSquareStack } from "react-icons/hi2";
 import { Select } from "shared/ui";
 import { RpcStep } from "../RpcStep/RpcStep";
-import { Container, Position, Step } from "./RpcStepsList.styled";
+import { Container, CopyBox, Position, Step } from "./RpcStepsList.styled";
 import useRpcStepsList from "./useRpcStepsList";
 
 export const RpcStepsList = () => {
@@ -14,6 +15,18 @@ export const RpcStepsList = () => {
           step && index > 0 && (steps[index - 1]?.power ?? 200) > value;
         return (
           <Step key={`Step_${index}`} isWarn={isWarn}>
+            {step && index < 13 ? (
+              <CopyBox
+                isVisible={step}
+                onClick={() => {
+                  handleStep(index + 1, value);
+                }}
+              >
+                <HiMiniArrowDownOnSquareStack size={18} />
+              </CopyBox>
+            ) : (
+              <CopyBox />
+            )}
             <Position>{index + 1}.</Position>
             <Select
               id={`Step_${index}`}
