@@ -1,7 +1,6 @@
 import styled from "@emotion/styled";
 
 export const Container = styled.div({
-  // width: "fit-content",
   display: "flex",
   flexDirection: "column",
   alignItems: "start",
