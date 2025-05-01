@@ -2,9 +2,16 @@ import styled from "@emotion/styled";
 
 export const Container = styled.div({
   padding: "8px",
+  maxHeight: "300px",
   display: "flex",
   flexDirection: "column",
   gap: "6px",
+  overflowY: "auto",
+  scrollBehavior: "smooth",
+  scrollbarWidth: "thin",
+  "::-webkit-scrollbar": {
+    width: "2px",
+  },
 });
 
 export const Accessory = styled.div({

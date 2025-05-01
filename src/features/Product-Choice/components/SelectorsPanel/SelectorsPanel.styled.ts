@@ -36,8 +36,8 @@ export const Button = styled.button(({ theme }) => ({
   width: "fit-content",
   cursor: "pointer",
   backgroundColor: theme.colors.secondary[100],
-  borderRadius: "4px",
-  border: `1px solid ${theme.colors.text[100]}`,
+  borderRadius: "6px",
+  border: `2px solid ${theme.colors.textIdle[100]}`,
   color: theme.colors.text[100],
   transition: "all 300ms ease",
   "&:hover": {

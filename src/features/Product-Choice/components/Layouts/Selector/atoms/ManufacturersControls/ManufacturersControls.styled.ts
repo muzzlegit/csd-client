@@ -30,11 +30,10 @@ type LogoProps = {
   width?: string;
   height?: string;
   logoColor?: string;
-  isActive?: boolean;
 };
 
 export const Logo = styled.img<LogoProps>(
-  ({ theme, width, height, logoColor, isActive }) => ({
+  ({ theme, width, height, logoColor }) => ({
     padding: "4px",
     display: "block",
     height,

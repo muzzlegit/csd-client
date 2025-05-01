@@ -9,6 +9,7 @@ type FlexWrap = {
   gap?: string;
   margin?: CSSProperties["margin"];
   padding?: CSSProperties["padding"];
+  height?: CSSProperties["height"];
 };
 
 export const FlexWrap = styled.div<FlexWrap>(
@@ -20,9 +21,11 @@ export const FlexWrap = styled.div<FlexWrap>(
     gap,
     margin,
     padding,
+    height,
   }) => ({
     margin,
     padding,
+    height,
     display: "flex",
     flexDirection,
     flexWrap,

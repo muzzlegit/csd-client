@@ -5,6 +5,7 @@ import FiltersBox from "modules/switches/components/FiltersBox/FiltersBox";
 import ImagesContainer from "modules/switches/components/ImagesContainer/ImagesContainer";
 import ItemsList from "modules/switches/components/ItemsList/ItemsList";
 import QueryItem from "modules/switches/components/QueryItem/QueryItem";
+import SearchBar from "modules/switches/components/SearchBar/SearchBar";
 import { Cell, Container } from "./Switches.styled";
 
 function Switches() {
@@ -14,7 +15,7 @@ function Switches() {
         <ImagesContainer />
       </Cell>
       <Cell area="b" height="140px">
-        {/* <SearchBar /> */}
+        <SearchBar />
       </Cell>
       <Cell area="c" height="140px">
         <FiltersBox />

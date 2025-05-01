@@ -13,7 +13,7 @@ export const Container = styled.div(({ theme }) => ({
 }));
 
 export const Title = styled.div(({ theme }) => ({
-  fontSize: "24px",
+  fontSize: "20px",
   color: theme.colors.text[100],
 }));
 

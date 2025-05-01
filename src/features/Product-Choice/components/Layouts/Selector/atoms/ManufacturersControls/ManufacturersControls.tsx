@@ -43,7 +43,7 @@ export const ManufacturersControls = ({
               }}
             >
               <Logo
-                height="40px"
+                height="30px"
                 src={logo.img}
                 alt={name}
                 title={description}
