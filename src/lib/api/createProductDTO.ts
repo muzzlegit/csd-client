@@ -7,11 +7,14 @@ export type FilesListType = Record<string, Array<FileType>>;
 export type MediafileType = { url: string; alt: string };
 
 export type MediafilesListType = Array<MediafileType>;
-export type AccesoriesListType = Array<{
-  remote_id: number;
-  article: string;
-  description: string;
-}>;
+export type AccesoriesListType = Record<
+  string,
+  Array<{
+    remote_id: number;
+    article: string;
+    name: string;
+  }>
+>;
 export type FeaturesListType = Array<{
   title: string;
   unit: string | null;
@@ -53,19 +56,33 @@ export const createProductDTO = (item: unknown): ProductDTO | null => {
     mediaFiles = [],
     files = {},
     features = [],
-    accesories = [],
+    accesories = {},
     analogs = [],
   } = parsed.data;
 
   if (!product) return null;
 
-  const formattedFiles: FilesType = {};
+  const formattedFiles: FilesListType = {};
   if (!Array.isArray(files)) {
     for (const key in files) {
       const sectionFiles = files[key];
       formattedFiles[key] = Object.values(sectionFiles).map(
         ({ file, name }) => ({
           file,
+          name,
+        })
+      );
+    }
+  }
+
+  const formattedAccessories: AccesoriesListType = {};
+  if (!Array.isArray(accesories)) {
+    for (const key in accesories) {
+      const sectionAccessories = accesories[key];
+      formattedAccessories[key] = Object.values(sectionAccessories).map(
+        ({ remote_id, article, name }) => ({
+          remote_id,
+          article,
           name,
         })
       );
@@ -84,11 +101,7 @@ export const createProductDTO = (item: unknown): ProductDTO | null => {
     })),
     files: formattedFiles,
     features,
-    accesories: accesories.map(({ remote_id, article, description }) => ({
-      remote_id,
-      article,
-      description,
-    })),
+    accesories: formattedAccessories,
     analogs,
   };
 };

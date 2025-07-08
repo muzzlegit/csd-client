@@ -10,24 +10,33 @@ type AccesoriesListProps = {
 
 export const AccesoriesList = ({ accesoriesList }: AccesoriesListProps) => {
   if (!accesoriesList) return null;
-  if (!accesoriesList.length) return <EmptyList />;
-
+  if (!Object.keys(accesoriesList).length) return <EmptyList />;
   const { handleFetchProductAccessoryByArticle } = useQuery();
 
   return (
     <Container>
-      {accesoriesList.map(({ article, description }) => {
+      {Object.entries(accesoriesList).map(([section, accessories]) => {
         return (
-          <Accessory key={article}>
-            <Property
-              onClick={() => {
-                handleFetchProductAccessoryByArticle(article);
-              }}
-            >
-              {description}
-            </Property>
-            <CopyButton size="16" value={article} title="Скопіювати артикул" />
-          </Accessory>
+          <div key={section}>
+            {accessories.map(({ name, article }) => {
+              return (
+                <Accessory key={article}>
+                  <Property
+                    onClick={() => {
+                      handleFetchProductAccessoryByArticle(article);
+                    }}
+                  >
+                    {name}
+                  </Property>
+                  <CopyButton
+                    size="16"
+                    value={article}
+                    title="Скопіювати артикул"
+                  />
+                </Accessory>
+              );
+            })}
+          </div>
         );
       })}
     </Container>

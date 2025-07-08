@@ -20,7 +20,6 @@ const useRpcStepsList = () => {
   );
 
   const handleStep = (index, power) => {
-    console.log(power);
     if (power === "0") {
       setStep(index, null);
       return;

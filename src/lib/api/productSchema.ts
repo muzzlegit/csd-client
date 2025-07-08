@@ -30,16 +30,30 @@ export const productSchema = z.object({
         })
       )
     )
-
     .or(z.array(z.any()))
     .optional(),
-  accesories: z.array(
-    z.object({
-      remote_id: z.number(),
-      article: z.string(),
-      description: z.string(),
+  accesories: z
+    .object({})
+    .extend({
+      інше: z
+        .array(
+          z.object({
+            remote_id: z.number(),
+            article: z.string(),
+            name: z.string(),
+          })
+        )
+        .optional(),
     })
-  ),
+    .catchall(
+      z.array(
+        z.object({
+          remote_id: z.number(),
+          article: z.string(),
+          name: z.string(),
+        })
+      )
+    ),
   analogs: z.array(z.any()),
 });
 

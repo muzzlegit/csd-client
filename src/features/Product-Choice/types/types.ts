@@ -22,7 +22,7 @@ export type ProductUnit = {
   manufacturer: Manufacturer["name"];
   series: ManufacturerProductSeries["series"];
   description?: string;
-  accessories?: Array<string>;
+  accessories?: Record<string, Array<string>>;
   voltageType?: string;
   connection?: string;
   size?: string;

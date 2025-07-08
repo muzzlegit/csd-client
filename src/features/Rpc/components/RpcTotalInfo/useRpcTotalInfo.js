@@ -35,20 +35,20 @@ const useRpcTotalInfo = () => {
       acc.stepsPowers[power] = (acc.stepsPowers[power] || 0) + 1;
 
       acc.capacitors[oneCapacitorPower] = !acc.capacitors[oneCapacitorPower]
-        ? 1 * multiplier
-        : acc.capacitors[oneCapacitorPower] + 1 * multiplier;
+        ? multiplier
+        : acc.capacitors[oneCapacitorPower] + multiplier;
 
       acc.contactors[contactor] = !acc.contactors[contactor]
-        ? 1 * multiplier
-        : acc.contactors[contactor] + 1 * multiplier;
+        ? multiplier
+        : acc.contactors[contactor] + multiplier;
 
       acc.fuses[fuseCurrent] = !acc.fuses[fuseCurrent]
-        ? 1 * multiplier * 3
-        : acc.fuses[fuseCurrent] + 1 * multiplier * 3;
+        ? multiplier * 3
+        : acc.fuses[fuseCurrent] + multiplier * 3;
 
       acc.fuseholders[size] = !acc.fuseholders[size]
-        ? 1 * multiplier
-        : acc.fuseholders[size] + 1 * multiplier;
+        ? multiplier
+        : acc.fuseholders[size] + multiplier;
 
       acc.stepsAmount += 1;
       return acc;

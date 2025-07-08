@@ -66,6 +66,7 @@ export const RpcTotalInfo = () => {
         <Block>
           <div>
             <Title>Запобіжники</Title>
+
             {Object.entries(fuses).map(([current, quantity]) => (
               <div key={current + "cur"}>
                 <p>{current + " A - " + quantity + " шт"}</p>

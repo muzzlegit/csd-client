@@ -19,7 +19,6 @@ export const useQuery = () => {
     const product = await fetchProductByArticle(query);
     if (!product) return;
     setItem(product);
-    console.log(product);
   }, [query, setItem]);
 
   const handleFetchProductByArticle = useCallback(
