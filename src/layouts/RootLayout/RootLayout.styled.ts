@@ -13,4 +13,5 @@ export const Module = styled.main({
   minHeight: "calc(100%-102px)",
   width: "100%",
   flex: 1,
+  overflowY: "auto",
 });
